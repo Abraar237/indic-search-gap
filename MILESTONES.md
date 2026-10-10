@@ -82,17 +82,19 @@ OpenRouter calls so far are 14 one-line key checks ($0.00017). Verbatim from INS
   models already know many XorQA facts) and before reading any agent-grid result: all core contrasts are repeated
   on the "needs-search" subset (items the model got wrong closed-book in both question languages). Primary
   analysis stays on all factorial items; the subset is reported as such.
-- [ ] Full fractional grid on 2 families; headline slice on 2 more
-- [ ] Closed-book, oracle, symmetric monolingual, NONE subset, repeat battery
-- [ ] Cov_L measured (hi ____, te ____) with 50-item manual spot-check
-- [ ] Judge: EM/F1 + LLM on disagreements; hand audit n >= 40 shipped
-- [ ] analyze.py -> results/analysis.json; BH family size: ____
-- Headline decomposition: ____
-- Spend: ____
+- [x] Gemini 2.5 Flash-Lite: all 19 cells x 414 items under dense AND BM25 (15,800 episodes); Qwen3-30B-A3B (Modal vLLM): all 19 cells dense + 8 headline cells BM25 (11,200); Gemini 3.1 Flash-Lite: 15 cells x 200 items; Gemini 3.6 Flash: 8 cells x 100 items
+- [x] Closed-book and oracle arms for all four models; NONE (gold hidden) 100 episodes; repeat battery 30 x 5 per language (1/30 Hindi and 0/30 Telugu verdicts changed); native-Telugu subset (TyDi XOR, 120 items x 4 cells) on two models
+- [x] Cov_L: hi 157/539 = 0.291, te 127/539 = 0.236 (string match + two independent LLM reads; 50-item manual audit in results/coverage_audit.json: 21 yes / 7 uncertain / 2 no among first-read acceptances, which is why the second read was added)
+- [x] Judge: string rule 41%, LLM 58%, empty 1%; 40-item hand audit agreed 40/40 (results/audit_sample.json)
+- [x] analyze.py -> results/analysis.json; 37,582 judged records; global BH family 134 tests, threshold p <= 0.0067, 18 survivors
+- Headline: dense retriever: Hindi gap 9.4 (Gemini 2.5 Flash-Lite, survives) and 9.1 (Qwen, survives), 3.0 / 2.0 for the stronger Gemini (n.s.); forcing the query language recovers <= 4.5 points; served pool makes no difference for Gemini; oracle gap 6.3 (survives). BM25: Hindi gap 18.9 / 19.5 (survive); dual recovers 9.3 / 13.6 (survive); Hindi-only queries on Hindi-only pool 35%. Coverage-weighted Hindi user (Gemini 2.5 Flash-Lite): 45.4 vs 71.4 English user under BM25 (62.9 with English queries); 66.7 vs 75.8 under dense. Query-language share under free policy 18-57% (D1 fails); D3 holds for one model/language; D5 holds; D6 holds for the stronger Gemini only.
+- Spend: $11.49 metered (88,212 calls); Modal ~3 GPU-hours
+- **CP3 DONE 2026-10-10 22:52.**
 
 ## CP4 · Paper
-- [ ] ICLR dual build compiles (Indic glyphs render); pages ____; refs verified ____/____; figures ____
-- [ ] Title: ____
+- [x] ICLR dual build compiles with tectonic (XeTeX; Devanagari MT / Telugu MN for the Indic glyphs); 23 pages with appendix; 61 cited keys, all verified (paper/refs_verification.md; 143 CSV ids via the arXiv API + 7 manual non-arXiv entries + Where's Waldo added from the recency sweep); figures: HTML->Chrome teaser + 4 matplotlib (house style) + 3 tables generated from analysis.json
+- [x] Title: "Search in Whose Language? Separating the Query-Side Gap from the Evidence-Side Gap for Search Agents in Indic Languages"
+- **CP4 DONE 2026-10-10 23:00** (compression to the 8-page workshop body is listed under CP6 fixes)
 
 ## CP5 · Publish
 - [ ] Repo: ____

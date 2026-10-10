@@ -12,6 +12,10 @@ Gemini 3.1 Flash-Lite & Hindi & 29.1\% & 76.4 & 77.4 & 77.0 & 77.0 \\
 Gemini 3.1 Flash-Lite & Telugu & 23.6\% & 78.0 & 75.2 & 78.0 & 80.0 \\
 Gemini 3.6 Flash & Hindi & 29.1\% & 74.0 & 75.4 & 78.6 & 76.0 \\
 Gemini 3.6 Flash & Telugu & 23.6\% & 82.5 & 85.1 & 77.4 & 78.0 \\
+Qwen3-30B-A3B & Hindi & 29.1\% & 61.6 & 68.3 & 63.4 & 74.6 \\
+\quad under BM25 & Hindi & 29.1\% & 43.3 & 59.9 & -- & 69.7 \\
+Qwen3-30B-A3B & Telugu & 23.6\% & 70.6 & 74.0 & 71.5 & 74.0 \\
+\quad under BM25 & Telugu & 23.6\% & 56.6 & 64.8 & -- & 68.5 \\
 \bottomrule
 \end{tabular}}
 \caption{Expected accuracy for a real user, Eq.~\ref{eq:decomp}: Cov$_L$ is the share of the 539 XorQA questions whose Hindi or Telugu Wikipedia article verifiably states the answer; the Indic user's accuracy weights the both-pools cell by Cov$_L$ and the English-only cell by $1-$Cov$_L$; the English user is the English question on the English-only pool.}

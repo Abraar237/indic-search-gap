@@ -1,5 +1,5 @@
 {
- "n_records": 29133,
+ "n_records": 37582,
  "models": {
   "google/gemini-2.5-flash-lite": {
    "n_records": 18559,
@@ -6127,16 +6127,112 @@
    }
   },
   "modal/Qwen3-30B-A3B-Instruct-2507": {
-   "n_records": 5278,
+   "n_records": 13727,
    "spend_usd": 0.0,
+   "native_te": {
+    "L|dual|both": {
+     "n": 120,
+     "acc": 0.65,
+     "ci": [
+      0.5666666666666667,
+      0.7333333333333333
+     ],
+     "latin_share": 0.5,
+     "any_gold": 0.058333333333333334
+    },
+    "L|dual|en": {
+     "n": 120,
+     "acc": 0.6166666666666667,
+     "ci": [
+      0.525,
+      0.7
+     ],
+     "latin_share": 0.5,
+     "any_gold": 0.06666666666666667
+    },
+    "L|free|both": {
+     "n": 120,
+     "acc": 0.6166666666666667,
+     "ci": [
+      0.525,
+      0.7
+     ],
+     "latin_share": 0.47706422018348627,
+     "any_gold": 0.03333333333333333
+    },
+    "L|free|en": {
+     "n": 120,
+     "acc": 0.6166666666666667,
+     "ci": [
+      0.5333333333333333,
+      0.7083333333333334
+     ],
+     "latin_share": 0.42990654205607476,
+     "any_gold": 0.058333333333333334
+    }
+   },
+   "native_te_vs_translated": {
+    "L|dual|both": {
+     "translated_acc": 0.7637795275590551,
+     "translated_ci": [
+      0.6929133858267716,
+      0.8346456692913385
+     ],
+     "translated_n": 127,
+     "translated_latin_share": 0.5
+    },
+    "L|dual|en": {
+     "translated_acc": 0.7322834645669292,
+     "translated_ci": [
+      0.6535433070866141,
+      0.8110236220472441
+     ],
+     "translated_n": 127,
+     "translated_latin_share": 0.5039370078740157
+    },
+    "L|free|both": {
+     "translated_acc": 0.7244094488188977,
+     "translated_ci": [
+      0.6456692913385826,
+      0.8031496062992126
+     ],
+     "translated_n": 127,
+     "translated_latin_share": 0.4642857142857143
+    },
+    "L|free|en": {
+     "translated_acc": 0.7007874015748031,
+     "translated_ci": [
+      0.6220472440944882,
+      0.7795275590551181
+     ],
+     "translated_n": 127,
+     "translated_latin_share": 0.4864864864864865
+    }
+   },
    "hi": {
     "cells": {
+     "L|closed|closed": {
+      "n": 287,
+      "acc": 0.39372822299651566,
+      "ci": [
+       0.33797909407665505,
+       0.44947735191637633
+      ],
+      "abstain": 0.003484320557491289,
+      "latin_share": 0.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.0,
+      "searches_per_episode": 0.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 97.31358885017421
+     },
      "L|dual|L": {
       "n": 287,
       "acc": 0.6515679442508711,
       "ci": [
        0.5958188153310104,
-       0.7038327526132404
+       0.7073170731707317
       ],
       "abstain": 0.0,
       "latin_share": 0.5,
@@ -6146,6 +6242,22 @@
       "empty": 0.0,
       "cost_per_episode": 0.0,
       "tin_per_episode": 7501.710801393729
+     },
+     "L|dual|both|bm25": {
+      "n": 287,
+      "acc": 0.6306620209059234,
+      "ci": [
+       0.5749128919860628,
+       0.686411149825784
+      ],
+      "abstain": 0.017421602787456445,
+      "latin_share": 0.5,
+      "mixed_share": 0.006968641114982578,
+      "any_gold": 0.6202090592334495,
+      "searches_per_episode": 2.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 5032.668989547038
      },
      "L|dual|both": {
       "n": 287,
@@ -6163,12 +6275,44 @@
       "cost_per_episode": 0.0,
       "tin_per_episode": 4670.655052264809
      },
+     "L|dual|en|bm25": {
+      "n": 287,
+      "acc": 0.5853658536585366,
+      "ci": [
+       0.5296167247386759,
+       0.6411149825783972
+      ],
+      "abstain": 0.013937282229965157,
+      "latin_share": 0.5017421602787456,
+      "mixed_share": 0.006968641114982578,
+      "any_gold": 0.5679442508710801,
+      "searches_per_episode": 2.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 3436.630662020906
+     },
+     "L|dual|en": {
+      "n": 287,
+      "acc": 0.6759581881533101,
+      "ci": [
+       0.6202090592334495,
+       0.7282229965156795
+      ],
+      "abstain": 0.010452961672473868,
+      "latin_share": 0.5017421602787456,
+      "mixed_share": 0.006968641114982578,
+      "any_gold": 0.8466898954703833,
+      "searches_per_episode": 2.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 2729.2195121951218
+     },
      "L|english|L": {
       "n": 287,
       "acc": 0.5958188153310104,
       "ci": [
-       0.5365853658536586,
-       0.6550522648083623
+       0.5400696864111498,
+       0.651655052264807
       ],
       "abstain": 0.013937282229965157,
       "latin_share": 1.0,
@@ -6195,6 +6339,22 @@
       "cost_per_episode": 0.0,
       "tin_per_episode": 1950.0522648083625
      },
+     "L|english|en": {
+      "n": 287,
+      "acc": 0.6306620209059234,
+      "ci": [
+       0.5749128919860628,
+       0.686411149825784
+      ],
+      "abstain": 0.013937282229965157,
+      "latin_share": 1.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.7839721254355401,
+      "searches_per_episode": 0.9895470383275261,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1665.0487804878048
+     },
      "L|free|L": {
       "n": 287,
       "acc": 0.6411149825783972,
@@ -6210,6 +6370,22 @@
       "empty": 0.0,
       "cost_per_episode": 0.0,
       "tin_per_episode": 3683.1114982578397
+     },
+     "L|free|both|bm25": {
+      "n": 287,
+      "acc": 0.49477351916376305,
+      "ci": [
+       0.4355400696864111,
+       0.5505226480836237
+      ],
+      "abstain": 0.04529616724738676,
+      "latin_share": 0.1947565543071161,
+      "mixed_share": 0.003745318352059925,
+      "any_gold": 0.2264808362369338,
+      "searches_per_episode": 0.9303135888501742,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 3319.3937282229967
      },
      "L|free|both": {
       "n": 287,
@@ -6227,6 +6403,38 @@
       "cost_per_episode": 0.0,
       "tin_per_episode": 2939.02787456446
      },
+     "L|free|en|bm25": {
+      "n": 287,
+      "acc": 0.4076655052264808,
+      "ci": [
+       0.3519163763066202,
+       0.4634146341463415
+      ],
+      "abstain": 0.059233449477351915,
+      "latin_share": 0.1947565543071161,
+      "mixed_share": 0.003745318352059925,
+      "any_gold": 0.11149825783972125,
+      "searches_per_episode": 0.9303135888501742,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 2195.9163763066204
+     },
+     "L|free|en": {
+      "n": 287,
+      "acc": 0.5993031358885017,
+      "ci": [
+       0.5435540069686411,
+       0.6550522648083623
+      ],
+      "abstain": 0.020905923344947737,
+      "latin_share": 0.19083969465648856,
+      "mixed_share": 0.003816793893129771,
+      "any_gold": 0.5853658536585366,
+      "searches_per_episode": 0.9128919860627178,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1584.1881533101046
+     },
      "L|match|L": {
       "n": 287,
       "acc": 0.6376306620209059,
@@ -6243,6 +6451,22 @@
       "cost_per_episode": 0.0,
       "tin_per_episode": 4066.3379790940767
      },
+     "L|match|both|bm25": {
+      "n": 287,
+      "acc": 0.43205574912891986,
+      "ci": [
+       0.37630662020905925,
+       0.4878048780487805
+      ],
+      "abstain": 0.04529616724738676,
+      "latin_share": 0.0035087719298245615,
+      "mixed_share": 0.010526315789473684,
+      "any_gold": 0.14982578397212543,
+      "searches_per_episode": 0.9930313588850174,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 4078.1428571428573
+     },
      "L|match|both": {
       "n": 287,
       "acc": 0.6585365853658537,
@@ -6258,6 +6482,86 @@
       "empty": 0.0,
       "cost_per_episode": 0.0,
       "tin_per_episode": 3335.334494773519
+     },
+     "L|match|en|bm25": {
+      "n": 287,
+      "acc": 0.37282229965156793,
+      "ci": [
+       0.3170731707317073,
+       0.42857142857142855
+      ],
+      "abstain": 0.07317073170731707,
+      "latin_share": 0.0035335689045936395,
+      "mixed_share": 0.014134275618374558,
+      "any_gold": 0.003484320557491289,
+      "searches_per_episode": 0.9860627177700348,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 2462.0731707317073
+     },
+     "L|match|en": {
+      "n": 287,
+      "acc": 0.5923344947735192,
+      "ci": [
+       0.5365853658536586,
+       0.6480836236933798
+      ],
+      "abstain": 0.010452961672473868,
+      "latin_share": 0.0035211267605633804,
+      "mixed_share": 0.014084507042253521,
+      "any_gold": 0.6480836236933798,
+      "searches_per_episode": 0.9895470383275261,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1720.0905923344949
+     },
+     "L|oracle_L|oracle": {
+      "n": 287,
+      "acc": 0.818815331010453,
+      "ci": [
+       0.7735191637630662,
+       0.8606271777003485
+      ],
+      "abstain": 0.003484320557491289,
+      "latin_share": 0.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.0,
+      "searches_per_episode": 0.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 821.7909407665505
+     },
+     "L|oracle_en|oracle": {
+      "n": 287,
+      "acc": 0.8641114982578397,
+      "ci": [
+       0.8222996515679443,
+       0.9024390243902439
+      ],
+      "abstain": 0.0,
+      "latin_share": 0.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.0,
+      "searches_per_episode": 0.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 296.7560975609756
+     },
+     "en|closed|closed": {
+      "n": 287,
+      "acc": 0.5226480836236934,
+      "ci": [
+       0.46689895470383275,
+       0.5818815331010453
+      ],
+      "abstain": 0.003484320557491289,
+      "latin_share": 0.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.0,
+      "searches_per_episode": 0.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 66.12543554006969
      },
      "en|dual|L": {
       "n": 287,
@@ -6291,6 +6595,22 @@
       "cost_per_episode": 0.0,
       "tin_per_episode": 3334.156794425087
      },
+     "en|free|both|bm25": {
+      "n": 287,
+      "acc": 0.6898954703832753,
+      "ci": [
+       0.6376306620209059,
+       0.7421602787456446
+      ],
+      "abstain": 0.006968641114982578,
+      "latin_share": 1.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.5331010452961672,
+      "searches_per_episode": 0.8850174216027874,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1423.5156794425086
+     },
      "en|free|both": {
       "n": 287,
       "acc": 0.7456445993031359,
@@ -6306,6 +6626,38 @@
       "empty": 0.0,
       "cost_per_episode": 0.0,
       "tin_per_episode": 1662.184668989547
+     },
+     "en|free|en|bm25": {
+      "n": 287,
+      "acc": 0.6968641114982579,
+      "ci": [
+       0.6445993031358885,
+       0.7491289198606271
+      ],
+      "abstain": 0.006968641114982578,
+      "latin_share": 1.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.5226480836236934,
+      "searches_per_episode": 0.8780487804878049,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1381.7909407665504
+     },
+     "en|free|en": {
+      "n": 287,
+      "acc": 0.7456445993031359,
+      "ci": [
+       0.6933797909407665,
+       0.794425087108014
+      ],
+      "abstain": 0.0,
+      "latin_share": 1.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.710801393728223,
+      "searches_per_episode": 0.8606271777003485,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1405.0836236933799
      },
      "en|match|L": {
       "n": 287,
@@ -6338,6 +6690,38 @@
       "empty": 0.0,
       "cost_per_episode": 0.0,
       "tin_per_episode": 1846.1742160278745
+     },
+     "en|match|en": {
+      "n": 287,
+      "acc": 0.7700348432055749,
+      "ci": [
+       0.7212543554006968,
+       0.8153310104529616
+      ],
+      "abstain": 0.003484320557491289,
+      "latin_share": 1.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.8048780487804879,
+      "searches_per_episode": 0.9721254355400697,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1560.773519163763
+     },
+     "en|oracle_en|oracle": {
+      "n": 287,
+      "acc": 0.9059233449477352,
+      "ci": [
+       0.8710801393728222,
+       0.9372822299651568
+      ],
+      "abstain": 0.003484320557491289,
+      "latin_share": 0.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.0,
+      "searches_per_episode": 0.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 264.89198606271776
      }
     },
     "contrasts": {
@@ -6346,9 +6730,9 @@
       "delta": 0.09059233449477352,
       "ci": [
        0.03832752613240418,
-       0.14634146341463414
+       0.14285714285714285
       ],
-      "p": 0.0018,
+      "p": 0.00145,
       "mean_a": 0.7456445993031359,
       "mean_b": 0.6550522648083623
      },
@@ -6359,7 +6743,7 @@
        0.006968641114982578,
        0.08362369337979095
       ],
-      "p": 0.0352,
+      "p": 0.0355,
       "mean_a": 0.7003484320557491,
       "mean_b": 0.6550522648083623
      },
@@ -6370,7 +6754,7 @@
        -0.0627177700348432,
        0.03484320557491289
       ],
-      "p": 0.67465,
+      "p": 0.6733,
       "mean_a": 0.6411149825783972,
       "mean_b": 0.6550522648083623
      },
@@ -6389,30 +6773,34 @@
       "n": 287,
       "delta": 0.013937282229965157,
       "ci": [
-       -0.01750871080139365,
+       -0.020905923344947737,
        0.04878048780487805
       ],
-      "p": 0.54615,
+      "p": 0.53855,
       "mean_a": 0.6550522648083623,
       "mean_b": 0.6411149825783972
      },
      "EG_both_minus_ENonly": {
-      "n": 0,
-      "delta": NaN,
+      "n": 287,
+      "delta": 0.05574912891986063,
       "ci": [
-       NaN,
-       NaN
+       0.010452961672473868,
+       0.10452961672473868
       ],
-      "p": NaN
+      "p": 0.03,
+      "mean_a": 0.6550522648083623,
+      "mean_b": 0.5993031358885017
      },
      "english_policy_on_ENonly": {
-      "n": 0,
-      "delta": NaN,
+      "n": 287,
+      "delta": 0.03832752613240418,
       "ci": [
-       NaN,
-       NaN
+       -0.010452961672473868,
+       0.08710801393728224
       ],
-      "p": NaN
+      "p": 0.15185,
+      "mean_a": 0.6306620209059234,
+      "mean_b": 0.5923344947735192
      },
      "english_policy_on_Lonly": {
       "n": 287,
@@ -6421,18 +6809,20 @@
        -0.08362369337979095,
        0.0
       ],
-      "p": 0.07255,
+      "p": 0.07365,
       "mean_a": 0.5958188153310104,
       "mean_b": 0.6376306620209059
      },
      "symmetric_monolingual": {
-      "n": 0,
-      "delta": NaN,
+      "n": 287,
+      "delta": 0.13240418118466898,
       "ci": [
-       NaN,
-       NaN
+       0.07665505226480836,
+       0.18815331010452963
       ],
-      "p": NaN
+      "p": 0.0,
+      "mean_a": 0.7700348432055749,
+      "mean_b": 0.6376306620209059
      },
      "en_user_dual_on_Lonly": {
       "n": 287,
@@ -6441,27 +6831,31 @@
        0.017421602787456445,
        0.10104529616724739
       ],
-      "p": 0.0082,
+      "p": 0.00815,
       "mean_a": 0.7073170731707317,
       "mean_b": 0.6480836236933798
      },
      "IG_oracle_en": {
-      "n": 0,
-      "delta": NaN,
+      "n": 287,
+      "delta": 0.041811846689895474,
       "ci": [
-       NaN,
-       NaN
+       0.006968641114982578,
+       0.07665505226480836
       ],
-      "p": NaN
+      "p": 0.0279,
+      "mean_a": 0.9059233449477352,
+      "mean_b": 0.8641114982578397
      },
      "closed_gap": {
-      "n": 0,
-      "delta": NaN,
+      "n": 287,
+      "delta": 0.1289198606271777,
       "ci": [
-       NaN,
-       NaN
+       0.07317073170731707,
+       0.18466898954703834
       ],
-      "p": NaN
+      "p": 5e-05,
+      "mean_a": 0.5226480836236934,
+      "mean_b": 0.39372822299651566
      },
      "symmetric_monolingual_bm25": {
       "n": 0,
@@ -6473,31 +6867,37 @@
       "p": NaN
      },
      "total_gap_free_both_bm25": {
-      "n": 0,
-      "delta": NaN,
+      "n": 287,
+      "delta": 0.1951219512195122,
       "ci": [
-       NaN,
-       NaN
+       0.13588850174216027,
+       0.25435540069686413
       ],
-      "p": NaN
+      "p": 0.0,
+      "mean_a": 0.6898954703832753,
+      "mean_b": 0.49477351916376305
      },
      "L_free_both_bm25_minus_dense": {
-      "n": 0,
-      "delta": NaN,
+      "n": 287,
+      "delta": -0.1602787456445993,
       "ci": [
-       NaN,
-       NaN
+       -0.21602787456445993,
+       -0.10104529616724739
       ],
-      "p": NaN
+      "p": 0.0,
+      "mean_a": 0.49477351916376305,
+      "mean_b": 0.6550522648083623
      },
      "QG_recover_dual_bm25": {
-      "n": 0,
-      "delta": NaN,
+      "n": 287,
+      "delta": 0.13588850174216027,
       "ci": [
-       NaN,
-       NaN
+       0.08362369337979095,
+       0.1916376306620209
       ],
-      "p": NaN
+      "p": 0.0,
+      "mean_a": 0.6306620209059234,
+      "mean_b": 0.49477351916376305
      },
      "symmetric_monolingual_hybrid": {
       "n": 0,
@@ -6537,32 +6937,60 @@
      }
     },
     "interaction_policy_x_evidence": {
-     "n": 0,
-     "delta": NaN,
-     "p": NaN
+     "n": 287,
+     "delta": 0.08013937282229966,
+     "ci": [
+      0.017421602787456445,
+      0.14285714285714285
+     ],
+     "p": 0.015
     },
     "free_latin_share_by_E": {
      "L": 0.1891891891891892,
-     "both": 0.18250950570342206
+     "both": 0.18867924528301888,
+     "en": 0.19281663516068054
     },
-    "attribution_rate": 0.8345323741007195,
+    "attribution_rate": 0.755060314864036,
     "gold_hit_rate_by_cell": {
+     "L|closed|closed": 0.0,
      "L|dual|L": 0.794425087108014,
+     "L|dual|both|bm25": 0.6202090592334495,
      "L|dual|both": 0.8745644599303136,
+     "L|dual|en|bm25": 0.5679442508710801,
+     "L|dual|en": 0.8466898954703833,
      "L|english|L": 0.6445993031358885,
      "L|english|both": 0.7874564459930313,
+     "L|english|en": 0.7839721254355401,
      "L|free|L": 0.6515679442508711,
+     "L|free|both|bm25": 0.2264808362369338,
      "L|free|both": 0.686411149825784,
+     "L|free|en|bm25": 0.11149825783972125,
+     "L|free|en": 0.5853658536585366,
      "L|match|L": 0.7212543554006968,
+     "L|match|both|bm25": 0.14982578397212543,
      "L|match|both": 0.735191637630662,
+     "L|match|en|bm25": 0.003484320557491289,
+     "L|match|en": 0.6480836236933798,
+     "L|oracle_L|oracle": 0.0,
+     "L|oracle_en|oracle": 0.0,
+     "en|closed|closed": 0.0,
      "en|dual|L": 0.7386759581881533,
      "en|free|L": 0.5505226480836237,
+     "en|free|both|bm25": 0.5331010452961672,
      "en|free|both": 0.7142857142857143,
+     "en|free|en|bm25": 0.5226480836236934,
+     "en|free|en": 0.710801393728223,
      "en|match|L": 0.6376306620209059,
-     "en|match|both": 0.8048780487804879
+     "en|match|both": 0.8048780487804879,
+     "en|match|en": 0.8048780487804879,
+     "en|oracle_en|oracle": 0.0
     },
     "by_source": {
      "mlqa": {
+      "L|closed|closed": {
+       "n": 130,
+       "acc": 0.24615384615384617
+      },
       "L|dual|both": {
        "n": 130,
        "acc": 0.6846153846153846
@@ -6579,12 +7007,32 @@
        "n": 130,
        "acc": 0.6153846153846154
       },
+      "L|free|en": {
+       "n": 130,
+       "acc": 0.5230769230769231
+      },
+      "L|oracle_en|oracle": {
+       "n": 130,
+       "acc": 0.8846153846153846
+      },
+      "en|closed|closed": {
+       "n": 130,
+       "acc": 0.4461538461538462
+      },
       "en|free|both": {
        "n": 130,
        "acc": 0.7615384615384615
+      },
+      "en|oracle_en|oracle": {
+       "n": 130,
+       "acc": 0.9307692307692308
       }
      },
      "xorqa_in": {
+      "L|closed|closed": {
+       "n": 157,
+       "acc": 0.5159235668789809
+      },
       "L|dual|both": {
        "n": 157,
        "acc": 0.7133757961783439
@@ -6601,9 +7049,25 @@
        "n": 157,
        "acc": 0.6878980891719745
       },
+      "L|free|en": {
+       "n": 157,
+       "acc": 0.6624203821656051
+      },
+      "L|oracle_en|oracle": {
+       "n": 157,
+       "acc": 0.8471337579617835
+      },
+      "en|closed|closed": {
+       "n": 157,
+       "acc": 0.5859872611464968
+      },
       "en|free|both": {
        "n": 157,
        "acc": 0.732484076433121
+      },
+      "en|oracle_en|oracle": {
+       "n": 157,
+       "acc": 0.8853503184713376
       }
      }
     },
@@ -6612,9 +7076,21 @@
       "searched_share": 1.0,
       "gold_calls_per_search": 0.705574912891986
      },
+     "L|dual|both|bm25": {
+      "searched_share": 1.0,
+      "gold_calls_per_search": 0.3693379790940767
+     },
      "L|dual|both": {
       "searched_share": 1.0,
       "gold_calls_per_search": 0.7857142857142857
+     },
+     "L|dual|en|bm25": {
+      "searched_share": 1.0,
+      "gold_calls_per_search": 0.2857142857142857
+     },
+     "L|dual|en": {
+      "searched_share": 1.0,
+      "gold_calls_per_search": 0.7491289198606271
      },
      "L|english|L": {
       "searched_share": 0.9895470383275261,
@@ -6624,21 +7100,49 @@
       "searched_share": 0.9860627177700348,
       "gold_calls_per_search": 0.7985865724381626
      },
+     "L|english|en": {
+      "searched_share": 0.9895470383275261,
+      "gold_calls_per_search": 0.7922535211267606
+     },
      "L|free|L": {
       "searched_share": 0.9024390243902439,
       "gold_calls_per_search": 0.722007722007722
+     },
+     "L|free|both|bm25": {
+      "searched_share": 0.9303135888501742,
+      "gold_calls_per_search": 0.24344569288389514
      },
      "L|free|both": {
       "searched_share": 0.9163763066202091,
       "gold_calls_per_search": 0.7490494296577946
      },
+     "L|free|en|bm25": {
+      "searched_share": 0.9163763066202091,
+      "gold_calls_per_search": 0.1198501872659176
+     },
+     "L|free|en": {
+      "searched_share": 0.9128919860627178,
+      "gold_calls_per_search": 0.6412213740458015
+     },
      "L|match|L": {
       "searched_share": 0.9930313588850174,
       "gold_calls_per_search": 0.7263157894736842
      },
+     "L|match|both|bm25": {
+      "searched_share": 0.9860627177700348,
+      "gold_calls_per_search": 0.15087719298245614
+     },
      "L|match|both": {
       "searched_share": 0.9895470383275261,
       "gold_calls_per_search": 0.7429577464788732
+     },
+     "L|match|en|bm25": {
+      "searched_share": 0.9860627177700348,
+      "gold_calls_per_search": 0.0035335689045936395
+     },
+     "L|match|en": {
+      "searched_share": 0.9895470383275261,
+      "gold_calls_per_search": 0.6549295774647887
      },
      "en|dual|L": {
       "searched_share": 0.9930313588850174,
@@ -6648,9 +7152,21 @@
       "searched_share": 0.8466898954703833,
       "gold_calls_per_search": 0.6502057613168725
      },
+     "en|free|both|bm25": {
+      "searched_share": 0.8850174216027874,
+      "gold_calls_per_search": 0.6023622047244095
+     },
      "en|free|both": {
       "searched_share": 0.8571428571428571,
       "gold_calls_per_search": 0.8333333333333334
+     },
+     "en|free|en|bm25": {
+      "searched_share": 0.8780487804878049,
+      "gold_calls_per_search": 0.5952380952380952
+     },
+     "en|free|en": {
+      "searched_share": 0.8606271777003485,
+      "gold_calls_per_search": 0.8259109311740891
      },
      "en|match|L": {
       "searched_share": 0.9547038327526133,
@@ -6659,45 +7175,287 @@
      "en|match|both": {
       "searched_share": 0.9581881533101045,
       "gold_calls_per_search": 0.84
+     },
+     "en|match|en": {
+      "searched_share": 0.9721254355400697,
+      "gold_calls_per_search": 0.8279569892473119
      }
     },
-    "needs_search_n": 0,
+    "needs_search_n": 121,
+    "needs_search_contrasts": {
+     "total_gap_free_both": {
+      "n": 121,
+      "delta": 0.0743801652892562,
+      "ci": [
+       -0.008264462809917356,
+       0.15702479338842976
+      ],
+      "p": 0.12265,
+      "mean_a": 0.5206611570247934,
+      "mean_b": 0.4462809917355372
+     },
+     "QG_recover_dual": {
+      "n": 121,
+      "delta": 0.04132231404958678,
+      "ci": [
+       -0.01652892561983471,
+       0.09917355371900827
+      ],
+      "p": 0.26975,
+      "mean_a": 0.48760330578512395,
+      "mean_b": 0.4462809917355372
+     },
+     "QG_recover_english": {
+      "n": 121,
+      "delta": -0.049586776859504134,
+      "ci": [
+       -0.12396694214876033,
+       0.024793388429752067
+      ],
+      "p": 0.2636,
+      "mean_a": 0.39669421487603307,
+      "mean_b": 0.4462809917355372
+     },
+     "EG_both_minus_Lonly": {
+      "n": 121,
+      "delta": -0.01652892561983471,
+      "ci": [
+       -0.0743801652892562,
+       0.04132231404958678
+      ],
+      "p": 0.77325,
+      "mean_a": 0.4462809917355372,
+      "mean_b": 0.4628099173553719
+     },
+     "EG_both_minus_ENonly": {
+      "n": 121,
+      "delta": 0.03305785123966942,
+      "ci": [
+       -0.04132231404958678,
+       0.10743801652892562
+      ],
+      "p": 0.52085,
+      "mean_a": 0.4462809917355372,
+      "mean_b": 0.4132231404958678
+     }
+    },
+    "needs_search_cells": {
+     "L|closed|closed": {
+      "n": 121,
+      "acc": 0.0
+     },
+     "L|dual|L": {
+      "n": 121,
+      "acc": 0.4462809917355372
+     },
+     "L|dual|both": {
+      "n": 121,
+      "acc": 0.48760330578512395
+     },
+     "L|dual|en": {
+      "n": 121,
+      "acc": 0.4628099173553719
+     },
+     "L|english|L": {
+      "n": 121,
+      "acc": 0.4049586776859504
+     },
+     "L|english|both": {
+      "n": 121,
+      "acc": 0.39669421487603307
+     },
+     "L|english|en": {
+      "n": 121,
+      "acc": 0.4214876033057851
+     },
+     "L|free|L": {
+      "n": 121,
+      "acc": 0.4628099173553719
+     },
+     "L|free|both": {
+      "n": 121,
+      "acc": 0.4462809917355372
+     },
+     "L|free|en": {
+      "n": 121,
+      "acc": 0.4132231404958678
+     },
+     "L|match|L": {
+      "n": 121,
+      "acc": 0.4297520661157025
+     },
+     "L|match|both": {
+      "n": 121,
+      "acc": 0.4628099173553719
+     },
+     "L|match|en": {
+      "n": 121,
+      "acc": 0.34710743801652894
+     },
+     "L|oracle_L|oracle": {
+      "n": 121,
+      "acc": 0.6859504132231405
+     },
+     "L|oracle_en|oracle": {
+      "n": 121,
+      "acc": 0.7603305785123967
+     },
+     "en|closed|closed": {
+      "n": 121,
+      "acc": 0.0
+     },
+     "en|dual|L": {
+      "n": 121,
+      "acc": 0.4628099173553719
+     },
+     "en|free|L": {
+      "n": 121,
+      "acc": 0.4214876033057851
+     },
+     "en|free|both": {
+      "n": 121,
+      "acc": 0.5206611570247934
+     },
+     "en|free|en": {
+      "n": 121,
+      "acc": 0.512396694214876
+     },
+     "en|match|L": {
+      "n": 121,
+      "acc": 0.4297520661157025
+     },
+     "en|match|both": {
+      "n": 121,
+      "acc": 0.5454545454545454
+     },
+     "en|match|en": {
+      "n": 121,
+      "acc": 0.5537190082644629
+     },
+     "en|oracle_en|oracle": {
+      "n": 121,
+      "acc": 0.8099173553719008
+     }
+    },
     "coverage": {
      "n": 539,
      "cov_article": 0.6753246753246753,
      "cov_string": 0.22077922077922077,
      "cov_verified": 0.2912801484230056,
      "cov_verified_ci": [
-      0.2541743970315399,
+      0.2523191094619666,
       0.3302411873840445
      ]
     },
-    "decomposition_wild": {},
-    "decomposition_wild_bm25": {}
+    "decomposition_wild": {
+     "free": {
+      "acc_wild": 0.615541750434732,
+      "term_covered": 0.19080372091820574,
+      "term_uncovered": 0.4247380295165262,
+      "acc_both": 0.6550522648083623,
+      "acc_enonly": 0.5993031358885017
+     },
+     "dual": {
+      "acc_wild": 0.6830625820172858,
+      "term_covered": 0.20399759523701785,
+      "term_uncovered": 0.47906498678026793,
+      "acc_both": 0.7003484320557491,
+      "acc_enonly": 0.6759581881533101
+     },
+     "english": {
+      "acc_wild": 0.6337067611333416,
+      "term_covered": 0.18674406728164816,
+      "term_uncovered": 0.44696269385169335,
+      "acc_both": 0.6411149825783972,
+      "acc_enonly": 0.6306620209059234
+     },
+     "match": {
+      "acc_wild": 0.6116178495471676,
+      "term_covered": 0.19181863432734517,
+      "term_uncovered": 0.41979921521982244,
+      "acc_both": 0.6585365853658537,
+      "acc_enonly": 0.5923344947735192
+     }
+    },
+    "decomposition_wild_bm25": {
+     "free": {
+      "acc_wild": 0.4330383404549656,
+      "term_covered": 0.1441177040977937,
+      "term_uncovered": 0.2889206363571719,
+      "acc_both": 0.49477351916376305,
+      "acc_enonly": 0.4076655052264808
+     },
+     "dual": {
+      "acc_wild": 0.5985597279773486,
+      "term_covered": 0.18369932705423,
+      "term_uncovered": 0.4148604009231186,
+      "acc_both": 0.6306620209059234,
+      "acc_enonly": 0.5853658536585366
+     },
+     "match": {
+      "acc_wild": 0.3900758276069376,
+      "term_covered": 0.12584926273328464,
+      "term_uncovered": 0.2642265648736529,
+      "acc_both": 0.43205574912891986,
+      "acc_enonly": 0.37282229965156793
+     }
+    }
    },
    "te": {
     "cells": {
-     "L|dual|L": {
-      "n": 110,
-      "acc": 0.7363636363636363,
+     "L|closed|closed": {
+      "n": 127,
+      "acc": 0.48031496062992124,
       "ci": [
-       0.6545454545454545,
-       0.8181818181818182
+       0.3937007874015748,
+       0.5669291338582677
+      ],
+      "abstain": 0.015748031496062992,
+      "latin_share": 0.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.0,
+      "searches_per_episode": 0.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 117.92913385826772
+     },
+     "L|dual|L": {
+      "n": 127,
+      "acc": 0.7244094488188977,
+      "ci": [
+       0.6456692913385826,
+       0.8031496062992126
       ],
       "abstain": 0.0,
       "latin_share": 0.5,
       "mixed_share": 0.0,
-      "any_gold": 0.7818181818181819,
+      "any_gold": 0.7952755905511811,
       "searches_per_episode": 2.0,
       "empty": 0.0,
       "cost_per_episode": 0.0,
-      "tin_per_episode": 11721.918181818182
+      "tin_per_episode": 11662.102362204725
+     },
+     "L|dual|both|bm25": {
+      "n": 127,
+      "acc": 0.6299212598425197,
+      "ci": [
+       0.5433070866141733,
+       0.7165354330708661
+      ],
+      "abstain": 0.023622047244094488,
+      "latin_share": 0.5039370078740157,
+      "mixed_share": 0.0,
+      "any_gold": 0.6220472440944882,
+      "searches_per_episode": 2.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 7170.535433070866
      },
      "L|dual|both": {
       "n": 127,
       "acc": 0.7637795275590551,
       "ci": [
-       0.6850393700787402,
+       0.6929133858267716,
        0.8346456692913385
       ],
       "abstain": 0.0,
@@ -6709,21 +7467,53 @@
       "cost_per_episode": 0.0,
       "tin_per_episode": 6266.118110236221
      },
-     "L|english|L": {
-      "n": 110,
-      "acc": 0.6545454545454545,
+     "L|dual|en|bm25": {
+      "n": 127,
+      "acc": 0.6535433070866141,
       "ci": [
-       0.5636363636363636,
-       0.7454545454545455
+       0.5669291338582677,
+       0.7322834645669292
       ],
-      "abstain": 0.00909090909090909,
-      "latin_share": 1.0,
+      "abstain": 0.023622047244094488,
+      "latin_share": 0.5,
       "mixed_share": 0.0,
-      "any_gold": 0.5909090909090909,
-      "searches_per_episode": 0.9818181818181818,
+      "any_gold": 0.6062992125984252,
+      "searches_per_episode": 2.0,
       "empty": 0.0,
       "cost_per_episode": 0.0,
-      "tin_per_episode": 5991.809090909091
+      "tin_per_episode": 6593.574803149606
+     },
+     "L|dual|en": {
+      "n": 127,
+      "acc": 0.7322834645669292,
+      "ci": [
+       0.6535433070866141,
+       0.8031496062992126
+      ],
+      "abstain": 0.0,
+      "latin_share": 0.5039370078740157,
+      "mixed_share": 0.0,
+      "any_gold": 0.937007874015748,
+      "searches_per_episode": 2.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 2766.771653543307
+     },
+     "L|english|L": {
+      "n": 127,
+      "acc": 0.6614173228346457,
+      "ci": [
+       0.5748031496062992,
+       0.7401574803149606
+      ],
+      "abstain": 0.007874015748031496,
+      "latin_share": 1.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.6141732283464567,
+      "searches_per_episode": 0.984251968503937,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 5998.779527559055
      },
      "L|english|both": {
       "n": 127,
@@ -6741,28 +7531,60 @@
       "cost_per_episode": 0.0,
       "tin_per_episode": 2087.196850393701
      },
-     "L|free|L": {
-      "n": 118,
-      "acc": 0.6949152542372882,
+     "L|english|en": {
+      "n": 127,
+      "acc": 0.7165354330708661,
       "ci": [
-       0.6101694915254238,
-       0.7796610169491526
+       0.6377952755905512,
+       0.7952755905511811
       ],
-      "abstain": 0.00847457627118644,
-      "latin_share": 0.42857142857142855,
+      "abstain": 0.0,
+      "latin_share": 1.0,
       "mixed_share": 0.0,
-      "any_gold": 0.5932203389830508,
-      "searches_per_episode": 0.8898305084745762,
+      "any_gold": 0.8740157480314961,
+      "searches_per_episode": 0.984251968503937,
       "empty": 0.0,
       "cost_per_episode": 0.0,
-      "tin_per_episode": 5624.1016949152545
+      "tin_per_episode": 1683.4566929133857
+     },
+     "L|free|L": {
+      "n": 127,
+      "acc": 0.6850393700787402,
+      "ci": [
+       0.5984251968503937,
+       0.7637795275590551
+      ],
+      "abstain": 0.007874015748031496,
+      "latin_share": 0.4336283185840708,
+      "mixed_share": 0.0,
+      "any_gold": 0.6062992125984252,
+      "searches_per_episode": 0.889763779527559,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 5604.149606299213
+     },
+     "L|free|both|bm25": {
+      "n": 127,
+      "acc": 0.5354330708661418,
+      "ci": [
+       0.44881889763779526,
+       0.6220472440944882
+      ],
+      "abstain": 0.03937007874015748,
+      "latin_share": 0.4700854700854701,
+      "mixed_share": 0.0,
+      "any_gold": 0.2755905511811024,
+      "searches_per_episode": 0.9212598425196851,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 3742.8976377952754
      },
      "L|free|both": {
       "n": 127,
       "acc": 0.7244094488188977,
       "ci": [
        0.6456692913385826,
-       0.8031496062992126
+       0.795472440944879
       ],
       "abstain": 0.0,
       "latin_share": 0.4642857142857143,
@@ -6773,21 +7595,69 @@
       "cost_per_episode": 0.0,
       "tin_per_episode": 3305.716535433071
      },
-     "L|match|L": {
-      "n": 110,
-      "acc": 0.7454545454545455,
+     "L|free|en|bm25": {
+      "n": 127,
+      "acc": 0.5748031496062992,
       "ci": [
-       0.6636363636363637,
-       0.8272727272727273
+       0.4881889763779528,
+       0.6614173228346457
       ],
-      "abstain": 0.0,
-      "latin_share": 0.009174311926605505,
+      "abstain": 0.05511811023622047,
+      "latin_share": 0.45614035087719296,
       "mixed_share": 0.0,
-      "any_gold": 0.7363636363636363,
-      "searches_per_episode": 0.990909090909091,
+      "any_gold": 0.23622047244094488,
+      "searches_per_episode": 0.8976377952755905,
       "empty": 0.0,
       "cost_per_episode": 0.0,
-      "tin_per_episode": 6147.790909090909
+      "tin_per_episode": 3433.748031496063
+     },
+     "L|free|en": {
+      "n": 127,
+      "acc": 0.7007874015748031,
+      "ci": [
+       0.6220472440944882,
+       0.7795275590551181
+      ],
+      "abstain": 0.007874015748031496,
+      "latin_share": 0.4864864864864865,
+      "mixed_share": 0.0,
+      "any_gold": 0.7086614173228346,
+      "searches_per_episode": 0.8740157480314961,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1554.8897637795276
+     },
+     "L|match|L": {
+      "n": 127,
+      "acc": 0.7322834645669292,
+      "ci": [
+       0.6535433070866141,
+       0.8110236220472441
+      ],
+      "abstain": 0.0,
+      "latin_share": 0.008,
+      "mixed_share": 0.0,
+      "any_gold": 0.7401574803149606,
+      "searches_per_episode": 0.984251968503937,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 6138.645669291339
+     },
+     "L|match|both|bm25": {
+      "n": 126,
+      "acc": 0.4126984126984127,
+      "ci": [
+       0.3253968253968254,
+       0.5
+      ],
+      "abstain": 0.015873015873015872,
+      "latin_share": 0.008,
+      "mixed_share": 0.0,
+      "any_gold": 0.0873015873015873,
+      "searches_per_episode": 0.9920634920634921,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 6188.9682539682535
      },
      "L|match|both": {
       "n": 127,
@@ -6805,37 +7675,133 @@
       "cost_per_episode": 0.0,
       "tin_per_episode": 4877.55905511811
      },
-     "en|dual|L": {
-      "n": 114,
-      "acc": 0.7105263157894737,
+     "L|match|en|bm25": {
+      "n": 127,
+      "acc": 0.3779527559055118,
       "ci": [
-       0.6228070175438597,
-       0.7894736842105263
+       0.2992125984251969,
+       0.4645669291338583
+      ],
+      "abstain": 0.03937007874015748,
+      "latin_share": 0.008,
+      "mixed_share": 0.0,
+      "any_gold": 0.007874015748031496,
+      "searches_per_episode": 0.984251968503937,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 5499.0157480314965
+     },
+     "L|match|en": {
+      "n": 127,
+      "acc": 0.6929133858267716,
+      "ci": [
+       0.6141732283464567,
+       0.7716535433070866
+      ],
+      "abstain": 0.007874015748031496,
+      "latin_share": 0.008,
+      "mixed_share": 0.0,
+      "any_gold": 0.7716535433070866,
+      "searches_per_episode": 0.984251968503937,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1761.4724409448818
+     },
+     "L|oracle_L|oracle": {
+      "n": 127,
+      "acc": 0.8503937007874016,
+      "ci": [
+       0.7874015748031497,
+       0.905511811023622
+      ],
+      "abstain": 0.0,
+      "latin_share": 0.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.0,
+      "searches_per_episode": 0.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1124.763779527559
+     },
+     "L|oracle_en|oracle": {
+      "n": 127,
+      "acc": 0.8582677165354331,
+      "ci": [
+       0.7952755905511811,
+       0.9133858267716536
+      ],
+      "abstain": 0.0,
+      "latin_share": 0.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.0,
+      "searches_per_episode": 0.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 267.3307086614173
+     },
+     "en|closed|closed": {
+      "n": 127,
+      "acc": 0.5511811023622047,
+      "ci": [
+       0.4645669291338583,
+       0.6377952755905512
+      ],
+      "abstain": 0.0,
+      "latin_share": 0.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.0,
+      "searches_per_episode": 0.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 65.86614173228347
+     },
+     "en|dual|L": {
+      "n": 127,
+      "acc": 0.7165354330708661,
+      "ci": [
+       0.6377952755905512,
+       0.7952755905511811
       ],
       "abstain": 0.0,
       "latin_share": 1.0,
       "mixed_share": 0.0,
-      "any_gold": 0.7105263157894737,
-      "searches_per_episode": 1.8859649122807018,
+      "any_gold": 0.7086614173228346,
+      "searches_per_episode": 1.889763779527559,
       "empty": 0.0,
       "cost_per_episode": 0.0,
-      "tin_per_episode": 10746.631578947368
+      "tin_per_episode": 10850.377952755905
      },
      "en|free|L": {
-      "n": 109,
-      "acc": 0.6880733944954128,
+      "n": 127,
+      "acc": 0.6614173228346457,
       "ci": [
-       0.5963302752293578,
-       0.7706422018348624
+       0.5826771653543307,
+       0.7401574803149606
       ],
       "abstain": 0.0,
       "latin_share": 1.0,
       "mixed_share": 0.0,
-      "any_gold": 0.4954128440366973,
-      "searches_per_episode": 0.7981651376146789,
+      "any_gold": 0.47244094488188976,
+      "searches_per_episode": 0.8031496062992126,
       "empty": 0.0,
       "cost_per_episode": 0.0,
-      "tin_per_episode": 4779.908256880734
+      "tin_per_episode": 4845.070866141732
+     },
+     "en|free|both|bm25": {
+      "n": 127,
+      "acc": 0.6771653543307087,
+      "ci": [
+       0.5984251968503937,
+       0.7559055118110236
+      ],
+      "abstain": 0.015748031496062992,
+      "latin_share": 1.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.41732283464566927,
+      "searches_per_episode": 0.8188976377952756,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1328.6771653543308
      },
      "en|free|both": {
       "n": 127,
@@ -6853,27 +7819,59 @@
       "cost_per_episode": 0.0,
       "tin_per_episode": 1698.2992125984251
      },
-     "en|match|L": {
-      "n": 114,
-      "acc": 0.7017543859649122,
+     "en|free|en|bm25": {
+      "n": 127,
+      "acc": 0.6850393700787402,
       "ci": [
-       0.6140350877192983,
-       0.7807017543859649
+       0.6062992125984252,
+       0.7637795275590551
       ],
-      "abstain": 0.008771929824561403,
+      "abstain": 0.023622047244094488,
       "latin_share": 1.0,
       "mixed_share": 0.0,
-      "any_gold": 0.5877192982456141,
-      "searches_per_episode": 0.9210526315789473,
+      "any_gold": 0.4251968503937008,
+      "searches_per_episode": 0.8188976377952756,
       "empty": 0.0,
       "cost_per_episode": 0.0,
-      "tin_per_episode": 5537.675438596491
+      "tin_per_episode": 1307.2047244094488
+     },
+     "en|free|en": {
+      "n": 127,
+      "acc": 0.7401574803149606,
+      "ci": [
+       0.6614173228346457,
+       0.8110236220472441
+      ],
+      "abstain": 0.007874015748031496,
+      "latin_share": 1.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.7007874015748031,
+      "searches_per_episode": 0.8031496062992126,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1323.3700787401574
+     },
+     "en|match|L": {
+      "n": 127,
+      "acc": 0.6929133858267716,
+      "ci": [
+       0.6141732283464567,
+       0.7716535433070866
+      ],
+      "abstain": 0.007874015748031496,
+      "latin_share": 1.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.5748031496062992,
+      "searches_per_episode": 0.9291338582677166,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 5579.5511811023625
      },
      "en|match|both": {
       "n": 127,
       "acc": 0.7637795275590551,
       "ci": [
-       0.6850393700787402,
+       0.6929133858267716,
        0.8346456692913385
       ],
       "abstain": 0.0,
@@ -6884,6 +7882,38 @@
       "empty": 0.0,
       "cost_per_episode": 0.0,
       "tin_per_episode": 1828.5984251968505
+     },
+     "en|match|en": {
+      "n": 127,
+      "acc": 0.7637795275590551,
+      "ci": [
+       0.6850393700787402,
+       0.8346456692913385
+      ],
+      "abstain": 0.0,
+      "latin_share": 1.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.8346456692913385,
+      "searches_per_episode": 0.952755905511811,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 1517.5748031496064
+     },
+     "en|oracle_en|oracle": {
+      "n": 127,
+      "acc": 0.9212598425196851,
+      "ci": [
+       0.8740157480314961,
+       0.968503937007874
+      ],
+      "abstain": 0.023622047244094488,
+      "latin_share": 0.0,
+      "mixed_share": 0.0,
+      "any_gold": 0.0,
+      "searches_per_episode": 0.0,
+      "empty": 0.0,
+      "cost_per_episode": 0.0,
+      "tin_per_episode": 214.8503937007874
      }
     },
     "contrasts": {
@@ -6894,7 +7924,7 @@
        -0.047244094488188976,
        0.09448818897637795
       ],
-      "p": 0.6665,
+      "p": 0.66135,
       "mean_a": 0.7480314960629921,
       "mean_b": 0.7244094488188977
      },
@@ -6905,7 +7935,7 @@
        -0.007874015748031496,
        0.09448818897637795
       ],
-      "p": 0.2219,
+      "p": 0.2327,
       "mean_a": 0.7637795275590551,
       "mean_b": 0.7244094488188977
      },
@@ -6916,7 +7946,7 @@
        -0.07086614173228346,
        0.03937007874015748
       ],
-      "p": 0.7884,
+      "p": 0.79415,
       "mean_a": 0.7086614173228346,
       "mean_b": 0.7244094488188977
      },
@@ -6932,82 +7962,92 @@
       "mean_b": 0.7244094488188977
      },
      "EG_both_minus_Lonly": {
-      "n": 118,
-      "delta": 0.0423728813559322,
+      "n": 127,
+      "delta": 0.03937007874015748,
       "ci": [
-       -0.025423728813559324,
-       0.11864406779661017
+       -0.023622047244094488,
+       0.11023622047244094
       ],
       "p": 0.3595,
-      "mean_a": 0.7372881355932204,
-      "mean_b": 0.6949152542372882
+      "mean_a": 0.7244094488188977,
+      "mean_b": 0.6850393700787402
      },
      "EG_both_minus_ENonly": {
-      "n": 0,
-      "delta": NaN,
+      "n": 127,
+      "delta": 0.023622047244094488,
       "ci": [
-       NaN,
-       NaN
+       -0.031496062992125984,
+       0.07874015748031496
       ],
-      "p": NaN
+      "p": 0.5818,
+      "mean_a": 0.7244094488188977,
+      "mean_b": 0.7007874015748031
      },
      "english_policy_on_ENonly": {
-      "n": 0,
-      "delta": NaN,
+      "n": 127,
+      "delta": 0.023622047244094488,
       "ci": [
-       NaN,
-       NaN
+       -0.03937007874015748,
+       0.09448818897637795
       ],
-      "p": NaN
+      "p": 0.65305,
+      "mean_a": 0.7165354330708661,
+      "mean_b": 0.6929133858267716
      },
      "english_policy_on_Lonly": {
-      "n": 96,
-      "delta": -0.09375,
+      "n": 127,
+      "delta": -0.07086614173228346,
       "ci": [
-       -0.1875,
-       -0.010416666666666666
+       -0.14173228346456693,
+       0.0
       ],
-      "p": 0.06025,
-      "mean_a": 0.65625,
-      "mean_b": 0.75
+      "p": 0.07925,
+      "mean_a": 0.6614173228346457,
+      "mean_b": 0.7322834645669292
      },
      "symmetric_monolingual": {
-      "n": 0,
-      "delta": NaN,
+      "n": 127,
+      "delta": 0.031496062992125984,
       "ci": [
-       NaN,
-       NaN
+       -0.047244094488188976,
+       0.11023622047244094
       ],
-      "p": NaN
+      "p": 0.5548,
+      "mean_a": 0.7637795275590551,
+      "mean_b": 0.7322834645669292
      },
      "en_user_dual_on_Lonly": {
-      "n": 99,
-      "delta": 0.050505050505050504,
+      "n": 127,
+      "delta": 0.05511811023622047,
       "ci": [
-       0.0,
-       0.10101010101010101
+       0.007874015748031496,
+       0.11023622047244094
       ],
-      "p": 0.12345,
-      "mean_a": 0.7474747474747475,
-      "mean_b": 0.696969696969697
+      "p": 0.0653,
+      "mean_a": 0.7165354330708661,
+      "mean_b": 0.6614173228346457
      },
      "IG_oracle_en": {
-      "n": 0,
-      "delta": NaN,
+      "n": 127,
+      "delta": 0.06299212598425197,
       "ci": [
-       NaN,
-       NaN
+       0.015748031496062992,
+       0.11023622047244094
       ],
-      "p": NaN
+      "p": 0.02235,
+      "mean_a": 0.9212598425196851,
+      "mean_b": 0.8582677165354331
      },
      "closed_gap": {
-      "n": 0,
-      "delta": NaN,
+      "n": 127,
+      "delta": 0.07086614173228346,
       "ci": [
-       NaN,
-       NaN
+       0.0,
+       0.14173228346456693
       ],
-      "p": NaN
+      "p": 0.0957,
+      "mean_a": 0.5511811023622047,
+      "mean_b": 0.48031496062992124
      },
      "symmetric_monolingual_bm25": {
       "n": 0,
@@ -7019,31 +8059,37 @@
       "p": NaN
      },
      "total_gap_free_both_bm25": {
-      "n": 0,
-      "delta": NaN,
+      "n": 127,
+      "delta": 0.14173228346456693,
       "ci": [
-       NaN,
-       NaN
+       0.06299212598425197,
+       0.2204724409448819
       ],
-      "p": NaN
+      "p": 0.00115,
+      "mean_a": 0.6771653543307087,
+      "mean_b": 0.5354330708661418
      },
      "L_free_both_bm25_minus_dense": {
-      "n": 0,
-      "delta": NaN,
+      "n": 127,
+      "delta": -0.1889763779527559,
       "ci": [
-       NaN,
-       NaN
+       -0.28346456692913385,
+       -0.10236220472440945
       ],
-      "p": NaN
+      "p": 0.0001,
+      "mean_a": 0.5354330708661418,
+      "mean_b": 0.7244094488188977
      },
      "QG_recover_dual_bm25": {
-      "n": 0,
-      "delta": NaN,
+      "n": 127,
+      "delta": 0.09448818897637795,
       "ci": [
-       NaN,
-       NaN
+       0.023622047244094488,
+       0.1732283464566929
       ],
-      "p": NaN
+      "p": 0.0202,
+      "mean_a": 0.6299212598425197,
+      "mean_b": 0.5354330708661418
      },
      "symmetric_monolingual_hybrid": {
       "n": 0,
@@ -7083,32 +8129,60 @@
      }
     },
     "interaction_policy_x_evidence": {
-     "n": 0,
-     "delta": NaN,
-     "p": NaN
+     "n": 127,
+     "delta": 0.09448818897637795,
+     "ci": [
+      -0.007874015748031496,
+      0.1889763779527559
+     ],
+     "p": 0.075
     },
     "free_latin_share_by_E": {
-     "L": 0.42857142857142855,
-     "both": 0.4642857142857143
+     "L": 0.4336283185840708,
+     "both": 0.4672489082969432,
+     "en": 0.4711111111111111
     },
-    "attribution_rate": 0.8053811659192825,
+    "attribution_rate": 0.7432900432900433,
     "gold_hit_rate_by_cell": {
-     "L|dual|L": 0.7818181818181819,
+     "L|closed|closed": 0.0,
+     "L|dual|L": 0.7952755905511811,
+     "L|dual|both|bm25": 0.6220472440944882,
      "L|dual|both": 0.9291338582677166,
-     "L|english|L": 0.5909090909090909,
+     "L|dual|en|bm25": 0.6062992125984252,
+     "L|dual|en": 0.937007874015748,
+     "L|english|L": 0.6141732283464567,
      "L|english|both": 0.8740157480314961,
-     "L|free|L": 0.5932203389830508,
+     "L|english|en": 0.8740157480314961,
+     "L|free|L": 0.6062992125984252,
+     "L|free|both|bm25": 0.2755905511811024,
      "L|free|both": 0.7007874015748031,
-     "L|match|L": 0.7363636363636363,
+     "L|free|en|bm25": 0.23622047244094488,
+     "L|free|en": 0.7086614173228346,
+     "L|match|L": 0.7401574803149606,
+     "L|match|both|bm25": 0.0873015873015873,
      "L|match|both": 0.7795275590551181,
-     "en|dual|L": 0.7105263157894737,
-     "en|free|L": 0.4954128440366973,
+     "L|match|en|bm25": 0.007874015748031496,
+     "L|match|en": 0.7716535433070866,
+     "L|oracle_L|oracle": 0.0,
+     "L|oracle_en|oracle": 0.0,
+     "en|closed|closed": 0.0,
+     "en|dual|L": 0.7086614173228346,
+     "en|free|L": 0.47244094488188976,
+     "en|free|both|bm25": 0.41732283464566927,
      "en|free|both": 0.6929133858267716,
-     "en|match|L": 0.5877192982456141,
-     "en|match|both": 0.7874015748031497
+     "en|free|en|bm25": 0.4251968503937008,
+     "en|free|en": 0.7007874015748031,
+     "en|match|L": 0.5748031496062992,
+     "en|match|both": 0.7874015748031497,
+     "en|match|en": 0.8346456692913385,
+     "en|oracle_en|oracle": 0.0
     },
     "by_source": {
      "xorqa_in": {
+      "L|closed|closed": {
+       "n": 127,
+       "acc": 0.48031496062992124
+      },
       "L|dual|both": {
        "n": 127,
        "acc": 0.7637795275590551
@@ -7118,74 +8192,301 @@
        "acc": 0.7086614173228346
       },
       "L|free|L": {
-       "n": 118,
-       "acc": 0.6949152542372882
+       "n": 127,
+       "acc": 0.6850393700787402
       },
       "L|free|both": {
        "n": 127,
        "acc": 0.7244094488188977
       },
+      "L|free|en": {
+       "n": 127,
+       "acc": 0.7007874015748031
+      },
+      "L|oracle_en|oracle": {
+       "n": 127,
+       "acc": 0.8582677165354331
+      },
+      "en|closed|closed": {
+       "n": 127,
+       "acc": 0.5511811023622047
+      },
       "en|free|both": {
        "n": 127,
        "acc": 0.7480314960629921
+      },
+      "en|oracle_en|oracle": {
+       "n": 127,
+       "acc": 0.9212598425196851
       }
      }
     },
     "search_behaviour": {
      "L|dual|L": {
       "searched_share": 1.0,
-      "gold_calls_per_search": 0.7090909090909091
+      "gold_calls_per_search": 0.7244094488188977
+     },
+     "L|dual|both|bm25": {
+      "searched_share": 1.0,
+      "gold_calls_per_search": 0.33070866141732286
      },
      "L|dual|both": {
       "searched_share": 1.0,
       "gold_calls_per_search": 0.8464566929133859
      },
+     "L|dual|en|bm25": {
+      "searched_share": 1.0,
+      "gold_calls_per_search": 0.3031496062992126
+     },
+     "L|dual|en": {
+      "searched_share": 1.0,
+      "gold_calls_per_search": 0.8543307086614174
+     },
      "L|english|L": {
-      "searched_share": 0.9818181818181818,
-      "gold_calls_per_search": 0.6018518518518519
+      "searched_share": 0.984251968503937,
+      "gold_calls_per_search": 0.624
      },
      "L|english|both": {
       "searched_share": 0.984251968503937,
       "gold_calls_per_search": 0.888
      },
+     "L|english|en": {
+      "searched_share": 0.984251968503937,
+      "gold_calls_per_search": 0.888
+     },
      "L|free|L": {
-      "searched_share": 0.8898305084745762,
-      "gold_calls_per_search": 0.6666666666666666
+      "searched_share": 0.889763779527559,
+      "gold_calls_per_search": 0.6814159292035398
+     },
+     "L|free|both|bm25": {
+      "searched_share": 0.9212598425196851,
+      "gold_calls_per_search": 0.29914529914529914
      },
      "L|free|both": {
       "searched_share": 0.8818897637795275,
       "gold_calls_per_search": 0.7946428571428571
      },
+     "L|free|en|bm25": {
+      "searched_share": 0.8976377952755905,
+      "gold_calls_per_search": 0.2631578947368421
+     },
+     "L|free|en": {
+      "searched_share": 0.8740157480314961,
+      "gold_calls_per_search": 0.8108108108108109
+     },
      "L|match|L": {
-      "searched_share": 0.990909090909091,
-      "gold_calls_per_search": 0.7431192660550459
+      "searched_share": 0.984251968503937,
+      "gold_calls_per_search": 0.752
+     },
+     "L|match|both|bm25": {
+      "searched_share": 0.9841269841269841,
+      "gold_calls_per_search": 0.088
      },
      "L|match|both": {
       "searched_share": 0.984251968503937,
       "gold_calls_per_search": 0.792
      },
+     "L|match|en|bm25": {
+      "searched_share": 0.984251968503937,
+      "gold_calls_per_search": 0.008
+     },
+     "L|match|en": {
+      "searched_share": 0.984251968503937,
+      "gold_calls_per_search": 0.784
+     },
      "en|dual|L": {
-      "searched_share": 0.9824561403508771,
-      "gold_calls_per_search": 0.6558139534883721
+      "searched_share": 0.984251968503937,
+      "gold_calls_per_search": 0.6416666666666667
      },
      "en|free|L": {
-      "searched_share": 0.7981651376146789,
-      "gold_calls_per_search": 0.6206896551724138
+      "searched_share": 0.8031496062992126,
+      "gold_calls_per_search": 0.5882352941176471
+     },
+     "en|free|both|bm25": {
+      "searched_share": 0.8188976377952756,
+      "gold_calls_per_search": 0.5096153846153846
      },
      "en|free|both": {
       "searched_share": 0.7952755905511811,
       "gold_calls_per_search": 0.8712871287128713
      },
+     "en|free|en|bm25": {
+      "searched_share": 0.8188976377952756,
+      "gold_calls_per_search": 0.5192307692307693
+     },
+     "en|free|en": {
+      "searched_share": 0.8031496062992126,
+      "gold_calls_per_search": 0.8725490196078431
+     },
      "en|match|L": {
-      "searched_share": 0.9210526315789473,
-      "gold_calls_per_search": 0.638095238095238
+      "searched_share": 0.9291338582677166,
+      "gold_calls_per_search": 0.6186440677966102
      },
      "en|match|both": {
       "searched_share": 0.8976377952755905,
       "gold_calls_per_search": 0.8771929824561403
+     },
+     "en|match|en": {
+      "searched_share": 0.952755905511811,
+      "gold_calls_per_search": 0.8760330578512396
      }
     },
-    "needs_search_n": 0,
+    "needs_search_n": 50,
+    "needs_search_contrasts": {
+     "total_gap_free_both": {
+      "n": 50,
+      "delta": 0.02,
+      "ci": [
+       -0.06,
+       0.1
+      ],
+      "p": 1.0,
+      "mean_a": 0.64,
+      "mean_b": 0.62
+     },
+     "QG_recover_dual": {
+      "n": 50,
+      "delta": 0.0,
+      "ci": [
+       -0.08,
+       0.08
+      ],
+      "p": 1.0,
+      "mean_a": 0.62,
+      "mean_b": 0.62
+     },
+     "QG_recover_english": {
+      "n": 50,
+      "delta": -0.04,
+      "ci": [
+       -0.12,
+       0.04
+      ],
+      "p": 0.6265,
+      "mean_a": 0.58,
+      "mean_b": 0.62
+     },
+     "EG_both_minus_Lonly": {
+      "n": 50,
+      "delta": 0.12,
+      "ci": [
+       0.0,
+       0.24
+      ],
+      "p": 0.10655,
+      "mean_a": 0.62,
+      "mean_b": 0.5
+     },
+     "EG_both_minus_ENonly": {
+      "n": 50,
+      "delta": 0.04,
+      "ci": [
+       -0.04,
+       0.12
+      ],
+      "p": 0.6236,
+      "mean_a": 0.62,
+      "mean_b": 0.58
+     }
+    },
+    "needs_search_cells": {
+     "L|closed|closed": {
+      "n": 50,
+      "acc": 0.0
+     },
+     "L|dual|L": {
+      "n": 50,
+      "acc": 0.52
+     },
+     "L|dual|both": {
+      "n": 50,
+      "acc": 0.62
+     },
+     "L|dual|en": {
+      "n": 50,
+      "acc": 0.6
+     },
+     "L|english|L": {
+      "n": 50,
+      "acc": 0.44
+     },
+     "L|english|both": {
+      "n": 50,
+      "acc": 0.58
+     },
+     "L|english|en": {
+      "n": 50,
+      "acc": 0.6
+     },
+     "L|free|L": {
+      "n": 50,
+      "acc": 0.5
+     },
+     "L|free|both": {
+      "n": 50,
+      "acc": 0.62
+     },
+     "L|free|en": {
+      "n": 50,
+      "acc": 0.58
+     },
+     "L|match|L": {
+      "n": 50,
+      "acc": 0.6
+     },
+     "L|match|both": {
+      "n": 50,
+      "acc": 0.58
+     },
+     "L|match|en": {
+      "n": 50,
+      "acc": 0.54
+     },
+     "L|oracle_L|oracle": {
+      "n": 50,
+      "acc": 0.78
+     },
+     "L|oracle_en|oracle": {
+      "n": 50,
+      "acc": 0.8
+     },
+     "en|closed|closed": {
+      "n": 50,
+      "acc": 0.0
+     },
+     "en|dual|L": {
+      "n": 50,
+      "acc": 0.52
+     },
+     "en|free|L": {
+      "n": 50,
+      "acc": 0.46
+     },
+     "en|free|both": {
+      "n": 50,
+      "acc": 0.64
+     },
+     "en|free|en": {
+      "n": 50,
+      "acc": 0.6
+     },
+     "en|match|L": {
+      "n": 50,
+      "acc": 0.48
+     },
+     "en|match|both": {
+      "n": 50,
+      "acc": 0.62
+     },
+     "en|match|en": {
+      "n": 50,
+      "acc": 0.62
+     },
+     "en|oracle_en|oracle": {
+      "n": 50,
+      "acc": 0.82
+     }
+    },
     "coverage": {
      "n": 539,
      "cov_article": 0.5250463821892394,
@@ -7196,60 +8497,129 @@
       0.27087198515769945
      ]
     },
-    "decomposition_wild": {},
-    "decomposition_wild_bm25": {}
+    "decomposition_wild": {
+     "free": {
+      "acc_wild": 0.706353264283523,
+      "term_covered": 0.17068645640074212,
+      "term_uncovered": 0.5356668078827809,
+      "acc_both": 0.7244094488188977,
+      "acc_enonly": 0.7007874015748031
+     },
+     "dual": {
+      "acc_wild": 0.7397046148452223,
+      "term_covered": 0.17996289424860853,
+      "term_uncovered": 0.5597417205966138,
+      "acc_both": 0.7637795275590551,
+      "acc_enonly": 0.7322834645669292
+     },
+     "english": {
+      "acc_wild": 0.7146801455012929,
+      "term_covered": 0.16697588126159554,
+      "term_uncovered": 0.5477042642396973,
+      "acc_both": 0.7086614173228346,
+      "acc_enonly": 0.7165354330708661
+     },
+     "match": {
+      "acc_wild": 0.6984792485354916,
+      "term_covered": 0.16883116883116883,
+      "term_uncovered": 0.5296480797043227,
+      "acc_both": 0.7165354330708661,
+      "acc_enonly": 0.6929133858267716
+     }
+    },
+    "decomposition_wild_bm25": {
+     "free": {
+      "acc_wild": 0.5655267117584328,
+      "term_covered": 0.1261595547309833,
+      "term_uncovered": 0.4393671570274495,
+      "acc_both": 0.5354330708661418,
+      "acc_enonly": 0.5748031496062992
+     },
+     "dual": {
+      "acc_wild": 0.6479774443778943,
+      "term_covered": 0.14842300556586271,
+      "term_uncovered": 0.4995544388120316,
+      "acc_both": 0.6299212598425197,
+      "acc_enonly": 0.6535433070866141
+     },
+     "match": {
+      "acc_wild": 0.3861395804188669,
+      "term_covered": 0.09724062785287274,
+      "term_uncovered": 0.2888989525659942,
+      "acc_both": 0.4126984126984127,
+      "acc_enonly": 0.3779527559055118
+     }
+    }
    },
    "bh": {
-    "m": 14,
+    "m": 42,
     "q": 0.05,
-    "threshold": 0.0035714285714285718,
+    "threshold": 0.010714285714285714,
     "survivors": [
-     "hi:total_gap_free_both"
+     "hi:L_free_both_bm25_minus_dense",
+     "hi:QG_recover_dual_bm25",
+     "hi:closed_gap",
+     "hi:en_user_dual_on_Lonly",
+     "hi:symmetric_monolingual",
+     "hi:total_gap_free_both",
+     "hi:total_gap_free_both_bm25",
+     "te:L_free_both_bm25_minus_dense",
+     "te:total_gap_free_both_bm25"
     ]
    },
    "tests": {
-    "hi:total_gap_free_both": 0.0018,
-    "hi:QG_recover_dual": 0.0352,
-    "hi:QG_recover_english": 0.67465,
+    "hi:total_gap_free_both": 0.00145,
+    "hi:QG_recover_dual": 0.0355,
+    "hi:QG_recover_english": 0.6733,
     "hi:QG_recover_match": 1.0,
-    "hi:EG_both_minus_Lonly": 0.54615,
-    "hi:EG_both_minus_ENonly": NaN,
-    "hi:english_policy_on_ENonly": NaN,
-    "hi:english_policy_on_Lonly": 0.07255,
-    "hi:symmetric_monolingual": NaN,
-    "hi:en_user_dual_on_Lonly": 0.0082,
-    "hi:IG_oracle_en": NaN,
-    "hi:closed_gap": NaN,
+    "hi:EG_both_minus_Lonly": 0.53855,
+    "hi:EG_both_minus_ENonly": 0.03,
+    "hi:english_policy_on_ENonly": 0.15185,
+    "hi:english_policy_on_Lonly": 0.07365,
+    "hi:symmetric_monolingual": 0.0,
+    "hi:en_user_dual_on_Lonly": 0.00815,
+    "hi:IG_oracle_en": 0.0279,
+    "hi:closed_gap": 5e-05,
     "hi:symmetric_monolingual_bm25": NaN,
-    "hi:total_gap_free_both_bm25": NaN,
-    "hi:L_free_both_bm25_minus_dense": NaN,
-    "hi:QG_recover_dual_bm25": NaN,
+    "hi:total_gap_free_both_bm25": 0.0,
+    "hi:L_free_both_bm25_minus_dense": 0.0,
+    "hi:QG_recover_dual_bm25": 0.0,
     "hi:symmetric_monolingual_hybrid": NaN,
     "hi:total_gap_free_both_hybrid": NaN,
     "hi:L_free_both_hybrid_minus_dense": NaN,
     "hi:QG_recover_dual_hybrid": NaN,
-    "hi:interaction_policy_x_evidence": NaN,
-    "te:total_gap_free_both": 0.6665,
-    "te:QG_recover_dual": 0.2219,
-    "te:QG_recover_english": 0.7884,
+    "hi:interaction_policy_x_evidence": 0.015,
+    "hi:needs_search:total_gap_free_both": 0.12265,
+    "hi:needs_search:QG_recover_dual": 0.26975,
+    "hi:needs_search:QG_recover_english": 0.2636,
+    "hi:needs_search:EG_both_minus_Lonly": 0.77325,
+    "hi:needs_search:EG_both_minus_ENonly": 0.52085,
+    "te:total_gap_free_both": 0.66135,
+    "te:QG_recover_dual": 0.2327,
+    "te:QG_recover_english": 0.79415,
     "te:QG_recover_match": 1.0,
     "te:EG_both_minus_Lonly": 0.3595,
-    "te:EG_both_minus_ENonly": NaN,
-    "te:english_policy_on_ENonly": NaN,
-    "te:english_policy_on_Lonly": 0.06025,
-    "te:symmetric_monolingual": NaN,
-    "te:en_user_dual_on_Lonly": 0.12345,
-    "te:IG_oracle_en": NaN,
-    "te:closed_gap": NaN,
+    "te:EG_both_minus_ENonly": 0.5818,
+    "te:english_policy_on_ENonly": 0.65305,
+    "te:english_policy_on_Lonly": 0.07925,
+    "te:symmetric_monolingual": 0.5548,
+    "te:en_user_dual_on_Lonly": 0.0653,
+    "te:IG_oracle_en": 0.02235,
+    "te:closed_gap": 0.0957,
     "te:symmetric_monolingual_bm25": NaN,
-    "te:total_gap_free_both_bm25": NaN,
-    "te:L_free_both_bm25_minus_dense": NaN,
-    "te:QG_recover_dual_bm25": NaN,
+    "te:total_gap_free_both_bm25": 0.00115,
+    "te:L_free_both_bm25_minus_dense": 0.0001,
+    "te:QG_recover_dual_bm25": 0.0202,
     "te:symmetric_monolingual_hybrid": NaN,
     "te:total_gap_free_both_hybrid": NaN,
     "te:L_free_both_hybrid_minus_dense": NaN,
     "te:QG_recover_dual_hybrid": NaN,
-    "te:interaction_policy_x_evidence": NaN
+    "te:interaction_policy_x_evidence": 0.075,
+    "te:needs_search:total_gap_free_both": 1.0,
+    "te:needs_search:QG_recover_dual": 1.0,
+    "te:needs_search:QG_recover_english": 0.6265,
+    "te:needs_search:EG_both_minus_Lonly": 0.10655,
+    "te:needs_search:EG_both_minus_ENonly": 0.6236
    }
   }
  },
@@ -7258,9 +8628,9 @@
   "te": 127
  },
  "bh_global": {
-  "m": 106,
+  "m": 134,
   "q": 0.05,
-  "threshold": 0.0051886792452830195,
+  "threshold": 0.006716417910447761,
   "survivors": [
    "google/gemini-2.5-flash-lite:hi:IG_oracle_en",
    "google/gemini-2.5-flash-lite:hi:L_free_both_bm25_minus_dense",
@@ -7272,7 +8642,14 @@
    "google/gemini-2.5-flash-lite:hi:total_gap_free_both_bm25",
    "google/gemini-2.5-flash-lite:te:L_free_both_bm25_minus_dense",
    "google/gemini-2.5-flash-lite:te:symmetric_monolingual_bm25",
-   "modal/Qwen3-30B-A3B-Instruct-2507:hi:total_gap_free_both"
+   "modal/Qwen3-30B-A3B-Instruct-2507:hi:L_free_both_bm25_minus_dense",
+   "modal/Qwen3-30B-A3B-Instruct-2507:hi:QG_recover_dual_bm25",
+   "modal/Qwen3-30B-A3B-Instruct-2507:hi:closed_gap",
+   "modal/Qwen3-30B-A3B-Instruct-2507:hi:symmetric_monolingual",
+   "modal/Qwen3-30B-A3B-Instruct-2507:hi:total_gap_free_both",
+   "modal/Qwen3-30B-A3B-Instruct-2507:hi:total_gap_free_both_bm25",
+   "modal/Qwen3-30B-A3B-Instruct-2507:te:L_free_both_bm25_minus_dense",
+   "modal/Qwen3-30B-A3B-Instruct-2507:te:total_gap_free_both_bm25"
   ]
  }
 }
