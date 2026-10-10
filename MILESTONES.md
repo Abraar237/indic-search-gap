@@ -91,21 +91,36 @@ OpenRouter calls so far are 14 one-line key checks ($0.00017). Verbatim from INS
 - Spend: $11.49 metered (88,212 calls); Modal ~3 GPU-hours
 - **CP3 DONE 2026-10-10 22:52.**
 
+- 2026-10-10 23:20 Post-review addition (after CP6 scoring, before any further data): the "uncovered" XorQA
+  items (Indic article does not verifiably state the answer; 382 hi, 412 te) are run directly on the Indic
+  question (free/dual, English-only and both pools) plus the English question and closed-book, so the
+  real-user estimate can be measured rather than extrapolated through Eq. 1. Gemini 2.5 Flash-Lite only.
+
 ## CP4 · Paper
 - [x] ICLR dual build compiles with tectonic (XeTeX; Devanagari MT / Telugu MN for the Indic glyphs); 23 pages with appendix; 61 cited keys, all verified (paper/refs_verification.md; 143 CSV ids via the arXiv API + 7 manual non-arXiv entries + Where's Waldo added from the recency sweep); figures: HTML->Chrome teaser + 4 matplotlib (house style) + 3 tables generated from analysis.json
 - [x] Title: "Search in Whose Language? Separating the Query-Side Gap from the Evidence-Side Gap for Search Agents in Indic Languages"
 - **CP4 DONE 2026-10-10 23:00** (compression to the 8-page workshop body is listed under CP6 fixes)
 
 ## CP5 · Publish
-- [ ] Repo: ____
-- [ ] Pages: ____
-- [ ] Film: ____ (duration, LUFS, QA)
-- [ ] GIFs: ____
+- [x] Repo public: https://github.com/Abraar237/indic-search-gap (pools, indexes and embeddings regenerate; raw logs, judged labels, analysis.json, audits and spend log shipped)
+- [x] Pages: https://abraar237.github.io/indic-search-gap/ (story-driven sections, both PDFs, film, 3 GIFs; built by figures/build_site.py from analysis.json)
+- [x] Film: 4:02, 1080p60, -14.3 LUFS, phrase-anchored to the narration (video/build_film.py, words.json); contact-sheet QA (60 frames) passed after two fixes (arrow glyph, overflowing end line). NARRATION VOICE: macOS `say` (Daniel) with faster-whisper word timings, because every ELEVENLABS_API_KEY on this machine returns 401; `video/tts.py` switches to Matilda automatically when a working key is placed in .env (re-run tts.py, build_film.py, encode.sh).
+- [x] GIFs: whose-language, engine-not-query, reading-not-web (clean flat chart style, 840x840, + MP4)
+- **CP5 DONE 2026-10-10 23:15.**
 
 ## CP6 · Self-review
-- [ ] REVIEW.md: R1 ____ R2 ____ R3 ____ avg ____ P(accept) ____; venue shortlist ____
+- [x] REVIEW.md: R1 rigor 5, R2 novelty 5, R3 clarity/impact 6; avg 5.33; ICLR band 5.0-5.5 = 31.6% historical accept; workshop range 50-70%. Top fixes: run the uncovered items directly (in progress), retriever-recall sweep, stronger models on the full item set, native Hindi set, larger judge audit, compress to 8 pages. Shortlist: multilingual/low-resource NLP workshops (ACL/EMNLP), LLM-agents workshops (ICLR/NeurIPS), IR workshops (SIGIR/ECIR), BHASHA/IndoNLP; ACL Findings after fixes 1-3.
+- **CP6 DONE 2026-10-10 23:20.**
 
-## Spend log
+## Spend log (results/spend.json; exact OpenRouter usage.cost)
 | Date | Item | Amount | Running total |
 |---|---|---|---|
-| | | | |
+| 2026-10-10 | Key checks (14 calls) | $0.00 | $0.00 |
+| 2026-10-10 | Coverage pass 1 (gemini-2.5-flash-lite, 647 articles) | $0.19 | $0.19 |
+| 2026-10-10 | Pilots (97 episodes, archived) + MLQA filter (450 calls) | $0.04 | $0.23 |
+| 2026-10-10 | Coverage pass 2 (gemini-3.6-flash, 404 articles) | $0.63 | $0.86 |
+| 2026-10-10 | Core grids: gemini-2.5-flash-lite dense + BM25, gemini-3.1-flash-lite, gemini-3.6-flash | $9.21 | $10.07 |
+| 2026-10-10 | Closed-book, oracle, noise, none, native batteries | $0.63 | $10.70 |
+| 2026-10-10 | Judge (gemini-2.5-flash, ~22k disagreement calls) | $0.79 | $11.49 |
+| 2026-10-10 | Qwen3-30B-A3B on Modal (vLLM, A100-40GB, ~2.5 GPU-h) + bge-m3 embeddings (~0.5 GPU-h) | Modal credit | $11.49 |
+| 2026-10-10 | Post-review uncovered-items grid (in progress) | ~$2.5 | ~$14 |

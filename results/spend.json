@@ -1,7 +1,7 @@
 {
- "total_usd": 11.48786,
+ "total_usd": 11.504918,
  "by_model": {
-  "google/gemini-2.5-flash-lite": 6.815511,
+  "google/gemini-2.5-flash-lite": 6.832567,
   "modal/Qwen3-30B-A3B-Instruct-2507": 0.0,
   "google/gemini-2.5-flash": 0.794362,
   "google/gemini-3.6-flash": 2.134032,
@@ -18,8 +18,9 @@
   "oracle": 0.221891,
   "noise": 0.075202,
   "none": 0.031906,
-  "native_te": 0.217197
+  "native_te": 0.217197,
+  "uncovered": 0.017055
  },
- "n_calls": 88212,
- "updated": "2026-10-10T22:49:48"
+ "n_calls": 88469,
+ "updated": "2026-10-10T23:04:01"
 }

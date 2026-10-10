@@ -88,6 +88,17 @@ def build_jobs(args, items):
             for p in ("free", "dual"):
                 for e in ("en", "both"):
                     jobs.append(("episode", it, "L", p, e, 0))
+    elif args.grid == "uncovered":
+        # post-review addition (2026-10-10 23:20): XorQA items whose Indic article does NOT verifiably state the answer
+        # (evidence only in English), run directly instead of extrapolated through Eq. 1
+        unc = [it for it in items if it["source"] == "xorqa_in" and it["lang"] in langs and not it.get("factorial")]
+        if args.items:
+            unc = select(unc, args.items, langs)
+        for it in unc:
+            for q, p, e in (("L", "free", "en"), ("L", "free", "both"), ("L", "dual", "both"), ("en", "free", "en"), ("en", "free", "both")):
+                jobs.append(("episode", it, q, p, e, 0))
+            for q in ("en", "L"):
+                jobs.append(("closed", it, q, None, None, 0))
     elif args.grid == "none":
         pool_items = select(eligible(items, langs), 50, langs)
         for it in pool_items:
