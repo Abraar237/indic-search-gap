@@ -1,0 +1,14 @@
+numpy
+pandas
+pyarrow
+scipy
+bm25s
+datasets
+huggingface_hub
+sentence-transformers
+torch
+transformers
+matplotlib
+pillow
+pymupdf
+modal

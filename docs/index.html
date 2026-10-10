@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search in Whose Language?</title>
+<meta name="description" content="Separating the query-side gap from the evidence-side gap for search agents in Hindi and Telugu: parallel questions, a frozen two-language Wikipedia pool, the agent's query language logged and then forced, and coverage measured on the live Indic Wikipedias.">
+<style>
+  :root { --slate:#155e8c; --hot:#b3006b; --shelf:#c0641a; --good:#1c7a55;
+          --ink:#16130d; --ink2:#3a352b; --muted:#6d665a; --faint:#a49c8c;
+          --rule:#e7e2d5; --rule2:#cfdfeb; --cardbg:#fdfcfa; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background:#ffffff; color:var(--ink);
+         font-size:18px; line-height:1.72; }
+  .wrap { max-width:760px; margin:0 auto; padding:56px 24px 90px; }
+  .eyebrow { font-family: Helvetica, Arial, sans-serif; font-size:12px; letter-spacing:2.5px;
+             text-transform:uppercase; color:var(--muted); font-weight:700; margin-bottom:16px; }
+  h1 { font-size:40px; line-height:1.14; margin-bottom:8px; letter-spacing:-0.3px; }
+  .subtitle { font-size:21px; color:var(--ink2); line-height:1.5; margin:14px 0 18px; }
+  .byline { font-family: Helvetica, Arial, sans-serif; font-size:14px; color:var(--muted); margin-bottom:22px; }
+  .pills { margin-bottom:8px; }
+  .pills a { font-family: Helvetica, Arial, sans-serif; display:inline-block; font-size:14px;
+             text-decoration:none; border:1px solid var(--rule2); border-radius:999px;
+             padding:5px 14px; font-weight:600; color:var(--slate); margin:0 8px 10px 0; }
+  .pills a.solid { background:var(--ink); border-color:var(--ink); color:#fff; }
+  h2 { font-size:26px; line-height:1.25; margin:60px 0 8px; padding-top:26px;
+       border-top:1px solid var(--rule); letter-spacing:-0.2px; }
+  p { margin:14px 0; color:var(--ink2); }
+  p b, li b { color:var(--ink); }
+  .num { font-family:'SF Mono', Menlo, Consolas, monospace; font-size:0.92em; font-variant-numeric:tabular-nums; }
+  .fig { margin:28px 0 32px; border:1px solid var(--rule); border-radius:12px;
+         padding:18px 18px 14px; background:#fff; overflow-x:auto; }
+  .fig img { width:100%; display:block; }
+  .figcap { font-family: Helvetica, Arial, sans-serif; font-size:13px; line-height:1.55;
+            color:var(--muted); margin-top:12px; }
+  .gifnote { font-family: Helvetica, Arial, sans-serif; font-size:12px; color:var(--muted);
+             letter-spacing:1.5px; text-transform:uppercase; margin-bottom:6px; }
+  .stats { display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; margin:26px 0; }
+  .stat { border:1px solid var(--rule); border-radius:10px; padding:14px 12px; text-align:center; }
+  .stat .v { font-family:'SF Mono', Menlo, monospace; font-size:24px; font-weight:700; color:var(--slate); display:block; }
+  .stat .k { font-family: Helvetica, Arial, sans-serif; font-size:12px; color:var(--muted);
+             letter-spacing:1px; text-transform:uppercase; }
+  .toc { font-family: Helvetica, Arial, sans-serif; font-size:14px; margin:26px 0 12px;
+         padding:20px 22px; border:1px solid var(--rule); border-radius:12px; background:var(--cardbg); }
+  .toctitle { font-weight:700; letter-spacing:1.5px; text-transform:uppercase; font-size:12px;
+              color:var(--muted); margin-bottom:8px; }
+  .toc a { color:var(--slate); text-decoration:none; display:block; padding:3px 0; }
+  table { border-collapse:collapse; width:100%; margin:20px 0; font-family: Helvetica, Arial, sans-serif; font-size:14px; }
+  th { text-align:left; border-bottom:2px solid var(--ink); padding:8px; font-size:12.5px;
+       letter-spacing:.5px; text-transform:uppercase; color:var(--muted); }
+  td { border-bottom:1px solid var(--rule); padding:8px; }
+  td.n { font-family:'SF Mono', Menlo, monospace; font-variant-numeric:tabular-nums; }
+  td.hi { color:var(--good); font-weight:700; } td.lo { color:var(--hot); font-weight:700; }
+  .filmwrap { margin:34px 0 40px; border:1px solid var(--rule); border-radius:14px;
+              overflow:hidden; background:#000; position:relative; }
+  .filmwrap video { display:block; width:100%; height:auto; }
+  blockquote { border-left:3px solid var(--rule2); margin:18px 0; padding:4px 0 4px 18px;
+               color:var(--muted); font-style:italic; }
+  .cite { background:var(--cardbg); border:1px solid var(--rule); border-radius:10px; padding:16px 18px;
+          font-family:'SF Mono', Menlo, monospace; font-size:12.5px; color:var(--ink2);
+          white-space:pre-wrap; margin:16px 0; }
+  footer { font-family: Helvetica, Arial, sans-serif; margin-top:70px; padding-top:24px;
+           border-top:1px solid var(--rule); color:var(--muted); font-size:13.5px; }
+  footer a { color:var(--slate); }
+  @media (max-width:640px){ h1{font-size:30px;} body{font-size:17px;} .stats{grid-template-columns:repeat(2,1fr);} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="eyebrow">Search agents · Indic languages · October 2026</div>
+<h1>Search in whose language?</h1>
+<div class="subtitle">When a search agent answers a Hindi or Telugu question worse than the same question in English, is it the agent's queries or the web? With a cross-lingual search engine the query language barely matters and the remaining gap is the model's reading; with a keyword engine the query language is everything, and most of the evidence an Indian user needs exists only in English.</div>
+<div class="byline">Mohammed Abraar · Vizuara Research · abraar@vizz.vizuara.ai</div>
+<div class="pills">
+  <a class="solid" href="#film">Film</a>
+  <a href="paper_iclr_preprint.pdf">Paper (PDF)</a>
+  <a href="paper_iclr_submission.pdf">Anonymous build</a>
+  <a href="https://github.com/Abraar237/indic-search-gap">Code + data</a>
+</div>
+
+<div class="stats">
+  <div class="stat"><span class="v">287 + 127</span><span class="k">parallel Hindi + Telugu items</span></div>
+  <div class="stat"><span class="v">1.9M</span><span class="k">Wikipedia passages, 3 languages</span></div>
+  <div class="stat"><span class="v">19 × 2</span><span class="k">cells × retrievers</span></div>
+  <div class="stat"><span class="v">75,196</span><span class="k">metered model calls</span></div>
+</div>
+
+<div class="toc"><div class="toctitle">Contents</div>
+  <a href="#film">0. The film</a>
+  <a href="#why">1. Two causes, two fixes</a>
+  <a href="#design">2. Same question in two languages, same web served three ways</a>
+  <a href="#drift">3. In whose language does the agent search?</a>
+  <a href="#gap">4. The gap exists for the cheap models, and forcing the query language does not close it</a>
+  <a href="#engine">5. Swap the search engine and the query language becomes everything</a>
+  <a href="#coverage">6. Most of the evidence an Indian user needs exists only in English</a>
+  <a href="#reading">7. What remains is reading, not the web</a>
+  <a href="#prereg">8. Six pre-registered predictions, scored</a>
+  <a href="#known">9. What was known, what is new</a>
+  <a href="#practice">10. What product teams should do</a>
+  <a href="#limits">11. Limitations</a>
+  <a href="#repro">12. Reproduce it</a>
+</div>
+
+<h2 id="film">0. The film</h2>
+<div class="filmwrap"><video controls preload="metadata" poster="assets/film-poster.png" src="assets/film.mp4"></video></div>
+
+<h2 id="why">1. Two causes, two fixes</h2>
+<p>Search agents, a language model that writes queries, reads what comes back, and answers, are how hundreds of millions of people in India now reach the web through chat products. When the question is in Hindi or Telugu rather than English, the answer is wrong more often. Two different things can cause that. The agent may write a worse query, or write it in a language where the evidence is not: an English query for a fact only Hindi Wikipedia records, or a Hindi query for a fact only English Wikipedia records. We call that the <b>query-side gap</b>, and prompting or training can fix it. Or the fact may never have been written in the user's language. Hindi Wikipedia has 2.4% of the articles of English Wikipedia, Telugu 1.8%. That is the <b>evidence-side gap</b>, and only cross-lingual search or new content fixes it. A third residue remains when the right passage is in front of the model and it still answers worse in Hindi: the <b>integration gap</b>.</p>
+<p>Nobody had separated these for a search agent. The closest study translates an English deep-research corpus into twelve languages with the question always in English and the agent's query language never observed; a Marathi study attributes failures by inspection with one language and no manipulation. We built the instrument that separates them.</p>
+
+<h2 id="design">2. Same question in two languages, same web served three ways</h2>
+<div class="fig"><img src="assets/fig1_teaser.png" alt="study design and headline numbers"><div class="figcap">The instrument, the agent's query language, and the decomposition of the real-world gap.</div></div>
+<p><b>Parallel questions.</b> Human-translated Hindi/English and Telugu/English pairs from IndicGenBench XorQA-In, and natively parallel Hindi/English Wikipedia paragraphs from MLQA, kept only when the Indic Wikipedia article verifiably states the answer, so that the evidence exists in both languages by construction: 287 Hindi and 127 Telugu items. A natively written Telugu set (TyDi XOR, 120 items) checks that translated questions do not drive the behaviour.</p>
+<p><b>A frozen two-language web.</b> The complete Hindi Wikipedia (353,075 passages), the complete Telugu Wikipedia (518,524) and a 1.8% sample of English Wikipedia plus the full English article behind every item (1,065,485), all from the October 2026 snapshot. The agent has one tool, <span class="num">search(query)</span>, served from the English-only pool, the Indic-only pool, or both.</p>
+<p><b>Two retrievers.</b> bge-m3 dense embeddings (cross-lingual: a Hindi query finds English text) and BM25 keyword search (monolingual). With the question itself as the query, the gold passage is in the top five for 70% of Hindi questions under bge-m3 and 8% under BM25, because transliteration variants and Telugu case suffixes defeat exact tokens.</p>
+<p><b>The query-language log and lever.</b> A fixed ReAct loop: three searches at most, then a short answer. Under a <b>free</b> policy we log the script of every query; under <b>match</b>, <b>english</b> and <b>dual</b> the agent must query in the question's language, in English, or in both. Closed-book and oracle-passage arms bound the parametric and reading contributions. Four models: Gemini 2.5 Flash-Lite (every cell, both retrievers), Gemini 3.1 Flash-Lite, Gemini 3.6 Flash, and Qwen3-30B-A3B served on our own GPU.</p>
+
+<h2 id="drift">3. In whose language does the agent search?</h2>
+<div class="fig"><img src="assets/fig2_query_language.png" alt="share of English queries"><div class="figcap">Share of search queries written in Latin script under the free policy, by question language and served pool.</div></div>
+<p>Left free with a Hindi question, Gemini 2.5 Flash-Lite writes <span class="num">30%</span> of its queries in English, the two stronger Gemini models 31% and 45%, and Qwen 18%. With a Telugu question every model searches in English more often: 44% for Gemini 2.5 Flash-Lite. The share hardly moves with the pool served: an agent that gets no Hindi text back from an English-only pool does not switch language. The pre-registered prediction of a majority of English queries fails for all but one model on one pool.</p>
+
+<h2 id="gap">4. The gap exists for the cheap models, and forcing the query language does not close it</h2>
+<div class="fig"><img src="assets/fig3_policy_by_pool.png" alt="policy by pool"><div class="figcap">Accuracy of the Indic question under four query policies and three served pools (dense retriever); dashed line: the same question in English.</div></div>
+<p>With the evidence present in both languages, the Hindi question costs Gemini 2.5 Flash-Lite <span class="num">9.4</span> points (66.2 vs 75.9, interval 4.5 to 14.3, survives correction) and Qwen3-30B-A3B 9.1 points. The two stronger Gemini models show no measurable gap (3.0 and 2.0 points, intervals through zero). Telugu gaps are smaller and not significant.</p>
+<p>Where the gap exists, the lever does little. Matched-language queries: 0.7 points. Dual-language queries: 1.8. English-only queries: 4.5, not surviving correction. The gold passage was already in the top five for 79% of free-policy episodes. The served pool makes no difference either: the Hindi question on the English-only pool scores 66.9, on the Hindi-only pool 65.9, on both 66.2. The one place the policy matters is the pre-registered interaction: English queries beat matched queries by 6.3 points on the English-only pool and lose 4.9 on the Hindi-only pool (interaction 11.2 points, survives), for this model and Hindi only.</p>
+
+<h2 id="engine">5. Swap the search engine and the query language becomes everything</h2>
+<div class="gifnote">GIF · the query gap belongs to the engine</div>
+<div class="fig"><img src="assets/gifs/engine-not-query.gif" alt="lexical vs cross-lingual search"><div class="figcap">Expected accuracy of a real Hindi user under keyword search (top) and cross-lingual search (bottom), Gemini 2.5 Flash-Lite.</div></div>
+<p>The same model and items under BM25: the Hindi question now costs <span class="num">18.9</span> points, the Telugu question 11.0, and the Indic question with the keyword retriever sits 15.7 (Hindi) and 21.3 (Telugu) points below the same question with the dense retriever. Now the policy matters: dual queries recover 9.3 of the Hindi points (survives), and English-only queries on the English-only pool reach 62.7 against 43.4 under the free policy. Hindi-only queries on the Hindi-only pool collapse to 35.3. Under BM25 the agent abstains in 23% of episodes against 6% with dense retrieval. The query-side gap is a property of the search engine, not of the user.</p>
+
+<h2 id="coverage">6. Most of the evidence an Indian user needs exists only in English</h2>
+<p>For 539 XorQA questions per language we resolved the English source article to its Hindi or Telugu counterpart through Wikidata and checked whether that article states the answer: a string match, then two independent LLM reads of the full article that had to quote a sentence found verbatim, then a 50-item manual audit. The Hindi article exists for 67.5% of questions and states the answer for <span class="num">29.1%</span>; Telugu 52.5% and <span class="num">23.6%</span>. The audit found the first read too generous (2 of 30 acceptances wrong, 7 uncertain), which is why the second read was added; the figures are conservative.</p>
+<div class="fig"><img src="assets/fig4_decomposition.png" alt="decomposition"><div class="figcap">Expected accuracy of a real Indic user: the share of facts the Indic Wikipedia holds times the both-pools accuracy (slate) plus the share only English holds times the English-only accuracy (orange); black is the English user; hatched bars use BM25.</div></div>
+<p>Weighting the controlled cells by coverage gives the real-world decomposition. With cross-lingual search the evidence-side term vanishes, because the Hindi query finds the English passage: a Hindi user of Gemini 2.5 Flash-Lite can expect <span class="num">66.7</span> against 75.8 for an English user, and the whole remaining gap is the agent's reading. With keyword search the Hindi user gets <span class="num">45.4</span> against 71.4, the Telugu user 49.9 against 66.9, and most of that loss is the 71% of facts only English holds; telling the agent to search in English lifts the Hindi user to 62.9.</p>
+
+<h2 id="reading">7. What remains is reading, not the web</h2>
+<div class="gifnote">GIF · what remains is reading</div>
+<div class="fig"><img src="assets/gifs/reading-not-web.gif" alt="closed-book, search, oracle"><div class="figcap">Hindi questions on Gemini 2.5 Flash-Lite: closed-book, with search, with the gold passage given, and the English question for comparison.</div></div>
+<div class="fig"><img src="assets/fig5_retriever_oracle.png" alt="retriever and oracle"><div class="figcap">Closed-book, BM25 search, dense search, oracle passage and the English-question reference, per model and language.</div></div>
+<p>With the gold English passage in the prompt, Gemini 2.5 Flash-Lite answers the English question 86.8% of the time and the Hindi question 80.5% (gap 6.3, survives); given the Hindi passage instead, the Hindi question drops to 72.8%. The cheap model reads English evidence better than Hindi evidence even for a Hindi question. The stronger Gemini models read as well in Hindi as in English (integration gaps of -2.0 and -2.0 points). Closed-book, the models already know 58% to 70% of the Hindi answers, with closed-book gaps of 2 to 4 points; on the pre-specified subset Gemini 2.5 Flash-Lite got wrong closed-book in both languages (97 Hindi items) the gap is 12.5 points and dual queries recover 7.4.</p>
+
+<h2 id="prereg">8. Six pre-registered predictions, scored</h2>
+<table>
+<tr><th>Direction (recorded before any grid call)</th><th>Result</th></tr>
+<tr><td>D1 Agents write a majority of English queries for Indic questions; more for Telugu than Hindi</td><td class="lo">Fails on the majority (30–48%, one exception); holds on Telugu &gt; Hindi for three of four models</td></tr>
+<tr><td>D2 A query-side gap exists; dual queries recover at least half; English-only recovers less than dual</td><td>Gap exists for the two cheap models (9 points); dual recovers half for Qwen only; under BM25 dual recovers half for Gemini too; English-only recovers more, not less</td></tr>
+<tr><td>D3 English queries help on the English-only pool and hurt on the Indic-only pool</td><td class="hi">Holds for Gemini 2.5 Flash-Lite, Hindi (11.2-point interaction, survives); absent elsewhere</td></tr>
+<tr><td>D4 Coverage below one half, Hindi above Telugu; the coverage term exceeds the agent term for Telugu</td><td>First clause holds (29.1% vs 23.6%); second clause fails under cross-lingual retrieval and holds under BM25</td></tr>
+<tr><td>D5 The retriever carries the symmetric monolingual deficit: BM25 &gt; dense &gt; oracle</td><td class="hi">Holds: 35.3 &gt; 10.1 &gt; 6.3 points (Hindi), all survive</td></tr>
+<tr><td>D6 With the oracle passage the Indic question is within 5 points of English</td><td>Holds for the two stronger Gemini models; fails by 1.3 points for Gemini 2.5 Flash-Lite</td></tr>
+</table>
+<p>Noise floor: 30 items re-run five times each at temperature 0 changed the verdict on 1 of 30 Hindi items and 0 of 30 Telugu items.</p>
+
+<table>
+<tr><th>Model</th><th>Hindi gap</th><th>Hindi: dual recovers</th><th>Hindi: both − English-only pool</th><th>Hindi: oracle gap</th><th>Telugu gap</th><th>Telugu: dual recovers</th></tr>
+<tr><td>Gemini 2.5 Flash-Lite (full grid)</td><td class='n'><b>+9.4 [+4.5, +14.3]</b></td><td class='n'>+1.8 [-3.2, +6.8]</td><td class='n'>-0.7 [-5.2, +4.2]</td><td class='n'><b>+6.3 [+2.8, +9.8]</b></td><td class='n'>+4.7 [-1.6, +11.0]</td><td class='n'>-2.5 [-9.2, +4.2]</td></tr><tr><td>Gemini 3.1 Flash-Lite (100 items per language)</td><td class='n'>+3.0 [-2.0, +8.0]</td><td class='n'>+1.0 [-4.0, +6.0]</td><td class='n'>-2.0 [-7.0, +3.0]</td><td class='n'>-2.0 [-6.0, +2.0]</td><td class='n'>+1.0 [-5.1, +7.1]</td><td class='n'>-3.0 [-10.1, +3.0]</td></tr><tr><td>Gemini 3.6 Flash (50 items per language, headline cells)</td><td class='n'>+2.0 [-4.0, +10.0]</td><td class='n'>+0.0 [-6.0, +6.0]</td><td class='n'>+0.0 [-6.0, +6.0]</td><td class='n'>-2.0 [-10.0, +4.0]</td><td class='n'>-6.0 [-14.0, +0.0]</td><td class='n'>-2.0 [-8.0, +4.0]</td></tr><tr><td>Qwen3-30B-A3B (open weights, full grid)</td><td class='n'><b>+9.1 [+3.8, +14.6]</b></td><td class='n'>+4.5 [+0.7, +8.4]</td><td class='n'>+nan [+nan, +nan]</td><td class='n'>+nan [+nan, +nan]</td><td class='n'>+2.4 [-4.7, +9.4]</td><td class='n'>+3.9 [-0.8, +9.4]</td></tr>
+</table>
+<p class="figcap">Percentage points with 95% item-bootstrap intervals; bold survives Benjamini–Hochberg over all 106 tests. Positive gap = the English question is answered more often.</p>
+
+<h2 id="known">9. What was known, what is new</h2>
+<p>That agents do worse on non-English tasks is known, and Hindi is among the weakest languages in every multilingual GAIA variant. That retrievers prefer English and query-language passages is known, and that the apparent preference is partly an artefact of where gold evidence lives was shown for single-shot RAG. That models write tool arguments in the wrong language is known. What is new is the agent's search-query language as a measured mediator and then a forced factor, parallel Indic/English questions over a pool whose evidence language is served or withheld, the retriever as a factor in the query-side gap, and a coverage term measured on the live Indic Wikipedias that turns the controlled cells into a statement about real users.</p>
+
+<h2 id="practice">10. What product teams should do</h2>
+<p><b>Find out which engine you have.</b> With keyword search, translate the Indic query into English before searching; it recovers most of the loss, because most of the evidence is in English. With a cross-lingual dense engine, leave the query alone; the language of the query and of the pool no longer matter. <b>Then look at the model.</b> The residual Indic deficit is reading, not retrieval: the cheapest models answer a Hindi question several points worse with the same passage in front of them, and read Hindi passages worse than English ones; the stronger models do not. <b>Do not expect the agent to adapt.</b> Agents keep searching in the same mix of languages whatever the pool returns.</p>
+
+<h2 id="limits">11. Limitations</h2>
+<p>Wikipedia is not the web, and the English pool is a 1.8% sample plus the articles behind the items, so it has fewer near-topic distractors than a real engine returns. Two languages only. The XorQA questions are human translations; the natively written Telugu subset shows the same query-language behaviour but is a different, harder set of items. Coverage was estimated with string matching and two LLM reads with a 50-item audit; the figure is conservative. The closed-model arm is Gemini only because a workspace guardrail blocked other families during the study; the open-weight arm is one model. The judge is a Gemini model; the string rule decides 41% of answers and a 40-item audit agreed on all 40. No live-web arm was run.</p>
+
+<h2 id="repro">12. Reproduce it</h2>
+<p>The question bank with coverage flags and hashes, the corpus builder (the snapshot is public), the sitelink resolver, the coverage checks, both retrievers, the agent loop and every prompt, the grid runner, the judge, the single analysis script that produces every number on this page, the audited samples and the spend log are in <a href="https://github.com/Abraar237/indic-search-gap">the repository</a>. Metered spend: $11.34 over 75,196 calls, plus about three GPU-hours on a rented A100 for the open-weight arm and the embeddings.</p>
+<div class="cite">@article{abraar2026whoselanguage,
+  title={Search in Whose Language? Separating the Query-Side Gap from the Evidence-Side Gap for Search Agents in Indic Languages},
+  author={Abraar, Mohammed},
+  year={2026},
+  note={Vizuara Research}
+}</div>
+
+<footer>
+Every number on this page traces to <a href="https://github.com/Abraar237/indic-search-gap/blob/main/results/analysis.json">results/analysis.json</a>, produced by one scripted analysis over the raw call logs. · Mohammed Abraar, Vizuara Research, 2026.
+</footer>
+</div>
+</body>
+</html>

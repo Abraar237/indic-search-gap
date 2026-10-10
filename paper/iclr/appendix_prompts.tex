@@ -1,0 +1,64 @@
+\section{Verbatim prompts and tool schema}
+\label{app:prompts}
+
+All prompts are reproduced exactly as sent. The policy sentence is appended to the system prompt; \texttt{\{qlang\}} is the name of the question's language and \texttt{\{max\_searches\}}=3, \texttt{\{k\}}=5.
+
+\paragraph{Agent system prompt}
+\begin{quote}\small\ttfamily\raggedright
+You are a search agent. You answer factual questions by searching a document collection with the `search` tool, reading the returned passages, and then giving a short final answer. \par Rules: \par - You may call `search` at most \{max\_searches\} times. Each call returns the top \{k\} passages. \par - When you have enough evidence, or when you have used all your searches, stop calling tools and reply with the final answer only: a short phrase (a name, date, number, or term), no explanation. \par - Answer in the same language as the question. \par - If the evidence does not contain the answer, you may still answer from your own knowledge, but prefer the evidence.\{policy\}
+\end{quote}
+
+\paragraph{Policy sentence: free}
+\begin{quote}\small\ttfamily\raggedright
+(none)
+\end{quote}
+
+\paragraph{Policy sentence: match}
+\begin{quote}\small\ttfamily\raggedright
+- Write every search query in \{qlang\}, the language of the question.
+\end{quote}
+
+\paragraph{Policy sentence: english}
+\begin{quote}\small\ttfamily\raggedright
+- Write every search query in English, even though the question is in \{qlang\}. Translate the information need into an English query.
+\end{quote}
+
+\paragraph{Policy sentence: dual}
+\begin{quote}\small\ttfamily\raggedright
+- At every step call `search` twice: once with a query in \{qlang\} (the language of the question) and once with the same information need as an English query. Both calls count as one step.
+\end{quote}
+
+\paragraph{Tool schema (JSON)}
+\begin{quote}\small\ttfamily\raggedright
+\{ \par  "type": "function", \par  "function": \{ \par   "name": "search", \par   "description": "Search the document collection. Returns the most relevant passages with their titles.", \par   "parameters": \{ \par    "type": "object", \par    "properties": \{ \par     "query": \{ \par      "type": "string", \par      "description": "The search query." \par     \} \par    \}, \par    "required": [ \par     "query" \par    ] \par   \} \par  \} \par \}
+\end{quote}
+
+\paragraph{Empty-result message}
+\begin{quote}\small\ttfamily\raggedright
+No passages found for this query.
+\end{quote}
+
+\paragraph{Closed-book system prompt}
+\begin{quote}\small\ttfamily\raggedright
+You answer factual questions from your own knowledge. Reply with the final answer only: a short phrase (a name, date, number, or term), no explanation. Answer in the same language as the question.
+\end{quote}
+
+\paragraph{Oracle system prompt}
+\begin{quote}\small\ttfamily\raggedright
+You answer a factual question using the passage provided. Reply with the final answer only: a short phrase (a name, date, number, or term), no explanation. Answer in the same language as the question.
+\end{quote}
+
+\paragraph{Oracle user message}
+\begin{quote}\small\ttfamily\raggedright
+Passage: \par """ \par \{passage\} \par """ \par  \par Question: \{question\}
+\end{quote}
+
+\paragraph{Judge system prompt}
+\begin{quote}\small\ttfamily\raggedright
+You are a strict grader of short answers to factual questions. Decide whether the candidate answer expresses the same fact as any of the gold answers. Accept equivalent forms: a transliteration or translation of the gold answer into another language or script, a date written differently, a number with or without units, a name with or without honorifics, a more specific answer that contains the gold answer. Reject answers that name a different entity, date, or number, that hedge between several candidates. If the candidate declines to answer, says the information is unavailable, or asks a question back, that is ABSTAIN.
+\end{quote}
+
+\paragraph{Judge user message}
+\begin{quote}\small\ttfamily\raggedright
+Question (English): \{q\_en\} \par Question (original): \{q\_L\} \par Gold answers: \{gold\} \par Candidate answer: \{cand\} \par  \par Reply with exactly one word: CORRECT, WRONG, or ABSTAIN (the candidate says it does not know, cannot find the answer, or asks for clarification instead of answering).
+\end{quote}

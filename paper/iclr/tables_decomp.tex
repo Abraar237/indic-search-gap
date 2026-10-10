@@ -1,0 +1,19 @@
+\begin{table}[t]\centering\small
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llrrrrr}
+\toprule
+Model & Language & Cov$_L$ & Indic user, free & Indic user, dual & Indic user, english & English user \\
+\midrule
+Gemini 2.5 Flash-Lite & Hindi & 29.1\% & 66.7 & 67.9 & 70.7 & 75.8 \\
+\quad under BM25 & Hindi & 29.1\% & 45.4 & 58.4 & 62.9 & 71.4 \\
+Gemini 2.5 Flash-Lite & Telugu & 23.6\% & 76.0 & 72.9 & 76.6 & 78.7 \\
+\quad under BM25 & Telugu & 23.6\% & 49.9 & 55.9 & 67.1 & 66.9 \\
+Gemini 3.1 Flash-Lite & Hindi & 29.1\% & 76.4 & 77.4 & 77.0 & 77.0 \\
+Gemini 3.1 Flash-Lite & Telugu & 23.6\% & 78.0 & 75.2 & 78.0 & 80.0 \\
+Gemini 3.6 Flash & Hindi & 29.1\% & 74.0 & 75.4 & 78.6 & 76.0 \\
+Gemini 3.6 Flash & Telugu & 23.6\% & 82.5 & 85.1 & 77.4 & 78.0 \\
+\bottomrule
+\end{tabular}}
+\caption{Expected accuracy for a real user, Eq.~\ref{eq:decomp}: Cov$_L$ is the share of the 539 XorQA questions whose Hindi or Telugu Wikipedia article verifiably states the answer; the Indic user's accuracy weights the both-pools cell by Cov$_L$ and the English-only cell by $1-$Cov$_L$; the English user is the English question on the English-only pool.}
+\label{tab:decomp}
+\end{table}

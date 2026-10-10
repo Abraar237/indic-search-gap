@@ -1,0 +1,864 @@
+[
+ {
+  "key": "2729551277b067d6",
+  "item": "mlqa_hi_cc8967fd6beb",
+  "lang": "hi",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "hi",
+  "policy": "dual",
+  "pool": "hi+en",
+  "question": "नए SAT परीक्षण की आरंभिक पेशकश कब की गई?",
+  "answer": "12 मार्च 2005",
+  "gold_en": [
+   "March 12, 2005"
+  ],
+  "gold_L": [
+   "12 मार्च 2005"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "b73af650f675c33d",
+  "item": "xorqa_hi_461",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "match",
+  "pool": "en",
+  "question": "What is the name of the capital of Assam ?",
+  "answer": "Dispur",
+  "gold_en": [
+   "Dispur"
+  ],
+  "gold_L": [
+   "दिसपुर"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "a5d4e5f5a4fc3249",
+  "item": "xorqa_hi_231",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "free",
+  "pool": "hi+en",
+  "question": "What is the name of the mother of Jesus Chirst?",
+  "answer": "Mary",
+  "gold_en": [
+   "Mary"
+  ],
+  "gold_L": [
+   "मेरी"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "f7984fc732e0a6f4",
+  "item": "mlqa_hi_6ab8386cdd39",
+  "lang": "hi",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "hi",
+  "policy": "dual",
+  "pool": "hi",
+  "question": "वह झिल्ली क्या है जो खोपड़ी के दो क्षेत्रों से जुड़ी होती है?",
+  "answer": "ड्यूरा मेटर",
+  "gold_en": [
+   "dura mater"
+  ],
+  "gold_L": [
+   "ड्यूरा मेटर,"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "3dc05e520cc66d44",
+  "item": "xorqa_hi_153",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "match",
+  "pool": "en",
+  "question": "Which state has the highest crime rate in India?",
+  "answer": "Delhi",
+  "gold_en": [
+   "Delhi"
+  ],
+  "gold_L": [
+   "दिल्ली"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "deb4c9e0ea18e176",
+  "item": "xorqa_hi_414",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "free",
+  "pool": "en",
+  "question": "When was the J. K. Roulings published Harry Porter's first series released ?",
+  "answer": "26 June 1997",
+  "gold_en": [
+   "1997"
+  ],
+  "gold_L": [
+   "1997"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": "answer gives full date, gold the year; containment"
+ },
+ {
+  "key": "e1b91344179e5a05",
+  "item": "mlqa_hi_5b2a63e5449a",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "hi",
+  "policy": "match",
+  "pool": "hi+en",
+  "question": "फेफड़े के कैंसर का खतरा कितने प्रतिशत महिलाओं को होता है?\\n",
+  "answer": "6%",
+  "gold_en": [
+   "6%"
+  ],
+  "gold_L": [
+   "6%"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "75411efed47ff748",
+  "item": "xorqa_hi_498",
+  "lang": "hi",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "en",
+  "policy": "match",
+  "pool": "hi+en",
+  "question": "What is the capital of Uzbekistan ?",
+  "answer": "Tashkent",
+  "gold_en": [
+   "Tashkent"
+  ],
+  "gold_L": [
+   "तशकेंट"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "aabced15a8898034",
+  "item": "mlqa_hi_dcb1132806b6",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "hi",
+  "policy": "english",
+  "pool": "hi",
+  "question": "GDP को कितने अलग-अलग तरीकों से मापा जा सकता है?\\n",
+  "answer": "तीन",
+  "gold_en": [
+   "three"
+  ],
+  "gold_L": [
+   "तीन"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "d87300f0c24316eb",
+  "item": "xorqa_hi_047",
+  "lang": "hi",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "en",
+  "policy": "free",
+  "pool": "hi",
+  "question": "What is the capital of Scotland?",
+  "answer": "Edinburgh",
+  "gold_en": [
+   "Edinburgh"
+  ],
+  "gold_L": [
+   "एडिनबर्ग"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "c16087b1cc0a05b2",
+  "item": "mlqa_hi_fce4d59af827",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "match",
+  "pool": "hi+en",
+  "question": "What is the name of the traditional military dance of Korea?",
+  "answer": "무무",
+  "gold_en": [
+   "mumu"
+  ],
+  "gold_L": [
+   "इल्मु"
+  ],
+  "judge": "llm_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": "Korean-script answer for the romanised gold 'mumu'"
+ },
+ {
+  "key": "a1c86dbf7c18a56f",
+  "item": "mlqa_hi_b160e23536d6",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "hi",
+  "policy": "free",
+  "pool": "hi+en",
+  "question": "रेक्टस एब्डोमिनिस को किस प्रकार के रक्त की आपूर्ति होती है?",
+  "answer": "रेक्टस एब्डोमिनिस को इन्फीरियर एपिगैस्ट्रिक धमनी और शिरा, सुपीरियर एपिगैस्ट्रिक धमनी (जो आंतरिक थोरैसिक धमनी की एक टर्मिनल शाखा है), और निचली छह इंटरकोस्टल धमनियों से रक्त की आपूर्ति होती है।",
+  "gold_en": [
+   "arterial"
+  ],
+  "gold_L": [
+   "अधिजठर"
+  ],
+  "judge": "llm_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": "names the epigastric vessels; gold 'arterial'/'epigastric'"
+ },
+ {
+  "key": "9f93df1864543f16",
+  "item": "mlqa_hi_5d4f96df25a7",
+  "lang": "hi",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "en",
+  "policy": "free",
+  "pool": "hi+en",
+  "question": "Better working conditions are a goal of which movement?",
+  "answer": "Labour movement",
+  "gold_en": [
+   "The trade union movement"
+  ],
+  "gold_L": [
+   "ट्रेड यूनियन"
+  ],
+  "judge": "llm_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": "labour movement vs trade union movement; equivalent"
+ },
+ {
+  "key": "96f1ee069ac87085",
+  "item": "mlqa_hi_31ae1af20870",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "match",
+  "pool": "en",
+  "question": "What are the first symptoms of Ebola?",
+  "answer": "Fever, sore throat, muscle pain, headaches, fatigue, weakness, and decreased appetite.",
+  "gold_en": [
+   "a fever, sore throat, muscular pain, and headaches"
+  ],
+  "gold_L": [
+   "बुखार, गले में खराश, मांसपेशियों में दर्द और सिरदर्दहोता है।"
+  ],
+  "judge": "llm_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "e2e5fcf5872c25da",
+  "item": "mlqa_hi_bc81ece9ca26",
+  "lang": "hi",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "hi",
+  "policy": "match",
+  "pool": "hi+en",
+  "question": "वर्ष 2000 में लिंकिन पार्क ने कौन सा एल्बम जारी किया?\\n",
+  "answer": "हायब्रिड थिअरी",
+  "gold_en": [
+   "Hybrid Theory"
+  ],
+  "gold_L": [
+   "हायब्रिड थीयरी"
+  ],
+  "judge": "llm_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "05b86f9e469fa1e0",
+  "item": "xorqa_hi_195",
+  "lang": "hi",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "hi",
+  "policy": "dual",
+  "pool": "hi",
+  "question": "भारत के किस राज्य में इस्लाम सबसे ज्यादा प्रचलित है?",
+  "answer": "पश्चिम बंगाल",
+  "gold_en": [
+   "Uttar Pradesh, West Bengal, and Bihar"
+  ],
+  "gold_L": [
+   "उत्तर प्रदेश,पश्चिम बंगाल और बिहार"
+  ],
+  "judge": "llm_wrong",
+  "judge_correct": 0,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": "names one of three states in the gold; incomplete, WRONG is defensible"
+ },
+ {
+  "key": "9f68136dfabad596",
+  "item": "xorqa_hi_214",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "free",
+  "pool": "hi+en",
+  "question": "Who was the first Indian to be punished?",
+  "answer": "I cannot find the answer to your question in the provided documents.",
+  "gold_en": [
+   "Nathuram Godse and Narayan Apte"
+  ],
+  "gold_L": [
+   "नाथूराम गोडसे और नारायण आप्टे"
+  ],
+  "judge": "llm_wrong",
+  "judge_correct": 0,
+  "judge_abstain": 1,
+  "manual_label": "agree",
+  "manual_note": "abstention"
+ },
+ {
+  "key": "99e3bbff391d1721",
+  "item": "xorqa_hi_289",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "hi",
+  "policy": "match",
+  "pool": "en",
+  "question": "गिरीशचंद्र सेन कोंसे वर्ष में वर्ष में पवित्र ग्रंथ को बंगाली अनुवाद में किया था?",
+  "answer": "The search results do not contain information about Girish Chandra Sen's translation of the holy scriptures into Bengali. The results are about Krishna, Durga, Purushottam Laxman Deshpande, Devanagari numerals, and Indra. I need to try a different search query or acknowledge that the information is not available in the provided documents. Since I have used two searches already, I should try one more with a more specific query if possible, or state that the information is not found.\n\nLet's try a more direct query in Hindi.",
+  "gold_en": [
+   "1886"
+  ],
+  "gold_L": [
+   "1886"
+  ],
+  "judge": "llm_wrong",
+  "judge_correct": 0,
+  "judge_abstain": 1,
+  "manual_label": "agree",
+  "manual_note": "abstention"
+ },
+ {
+  "key": "68c0e2ebdbc72b5f",
+  "item": "mlqa_hi_cc8967fd6beb",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "dual",
+  "pool": "hi",
+  "question": "When was the new SAT test initially offered?",
+  "answer": "I could not find any information about the new SAT test in the provided search results.",
+  "gold_en": [
+   "March 12, 2005"
+  ],
+  "gold_L": [
+   "12 मार्च 2005"
+  ],
+  "judge": "llm_wrong",
+  "judge_correct": 0,
+  "judge_abstain": 1,
+  "manual_label": "agree",
+  "manual_note": "abstention"
+ },
+ {
+  "key": "d7da01277f32cf69",
+  "item": "xorqa_hi_363",
+  "lang": "hi",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "hi",
+  "policy": "dual",
+  "pool": "en",
+  "question": "पहला इमोजी कब बनाया गया था?",
+  "answer": "1988",
+  "gold_en": [
+   "1997"
+  ],
+  "gold_L": [
+   "1997"
+  ],
+  "judge": "llm_wrong",
+  "judge_correct": 0,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "a1f8f74ab32b79ff",
+  "item": "xorqa_te_271",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "dual",
+  "pool": "en",
+  "question": "చైనా కరెన్సీ ఏమిటి ?",
+  "answer": "రెన్మిన్బి",
+  "gold_en": [
+   "renminbi"
+  ],
+  "gold_L": [
+   "రెన్మిన్బి"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "b322afc8f0f52265",
+  "item": "xorqa_te_289",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "match",
+  "pool": "te+en",
+  "question": "In which year did Girishchandra Sen translate the holy book of Islam into Bengali ?",
+  "answer": "1886",
+  "gold_en": [
+   "1886"
+  ],
+  "gold_L": [
+   "1886"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "5217dca96092420d",
+  "item": "xorqa_te_225",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "match",
+  "pool": "en",
+  "question": "ఇంగ్లీష్ అక్షరాలు ఎన్ని?",
+  "answer": "26",
+  "gold_en": [
+   "26"
+  ],
+  "gold_L": [],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "b64cffdad27631d6",
+  "item": "xorqa_te_289",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "match",
+  "pool": "en",
+  "question": "In which year did Girishchandra Sen translate the holy book of Islam into Bengali ?",
+  "answer": "1886",
+  "gold_en": [
+   "1886"
+  ],
+  "gold_L": [
+   "1886"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "4917dfa528844bc4",
+  "item": "xorqa_te_276",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "match",
+  "pool": "te+en",
+  "question": "Who established Sikh religion ?",
+  "answer": "Guru Nanak",
+  "gold_en": [
+   "Guru Nanak"
+  ],
+  "gold_L": [
+   "గురునానక్"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "4e5b1074c8a68ebd",
+  "item": "xorqa_te_352",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "english",
+  "pool": "te+en",
+  "question": "వందన శివ రాసిన మొదటి పుస్తకO పేరు ఏమిటి ?",
+  "answer": "Staying Alive",
+  "gold_en": [
+   "Staying Alive"
+  ],
+  "gold_L": [
+   "సజీవంగా ఉండడం"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": "English answer to a Telugu question, matches the English gold"
+ },
+ {
+  "key": "6ddabf1c46bd978a",
+  "item": "xorqa_te_235",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "english",
+  "pool": "en",
+  "question": "విమానాన్ని ఏ సంవత్సరంలో కనుగొన్నారు?",
+  "answer": "1903",
+  "gold_en": [
+   "1903"
+  ],
+  "gold_L": [],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "5fbb4f1751313fe6",
+  "item": "xorqa_te_273",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "match",
+  "pool": "te",
+  "question": "భారతదేశంలోని ఆంధ్ర ప్రదేశ్ ప్రకాశం జిల్లాలో ప్రధాన నగరం ఏది ?",
+  "answer": "ఒంగోలు",
+  "gold_en": [
+   "Ongole"
+  ],
+  "gold_L": [
+   "ఒంగోలు"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "e2fc17a0d44f3e6e",
+  "item": "xorqa_te_104",
+  "lang": "te",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "en",
+  "policy": "free",
+  "pool": "te",
+  "question": "What is the capital of Canada?",
+  "answer": "Ottawa",
+  "gold_en": [
+   "Ottawa"
+  ],
+  "gold_L": [],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "7b103115344a31d5",
+  "item": "xorqa_te_289",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "free",
+  "pool": "te+en",
+  "question": "గిరీష్ చంద్ర సేన్ ఏ సంవత్సరంలో ఇస్లాం పవిత్ర గ్రంథాన్ని బెంగాలీలోకి అనువదించారు ?",
+  "answer": "1886",
+  "gold_en": [
+   "1886"
+  ],
+  "gold_L": [
+   "1886"
+  ],
+  "judge": "string_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "0a32c121b9b68af9",
+  "item": "xorqa_te_036",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "english",
+  "pool": "te",
+  "question": "పర్యావరణంలో ఎక్కువగా ఉండే వాయువు ఏది ?",
+  "answer": "నత్రజని",
+  "gold_en": [
+   "nitrogen"
+  ],
+  "gold_L": [],
+  "judge": "llm_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "a79f49f7541db0d8",
+  "item": "xorqa_te_472",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "free",
+  "pool": "te+en",
+  "question": "ప్రస్తుతం (2019) పంజాబ్ రాష్ట్ర ముఖ్యమంత్రి  ఎవరు?",
+  "answer": "అమరీందర్ సింగ్",
+  "gold_en": [
+   "Amarinder Singh"
+  ],
+  "gold_L": [
+   "అమరిందర్ సింగ్"
+  ],
+  "judge": "llm_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "2b0c945cdb090a5b",
+  "item": "xorqa_te_199",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "english",
+  "pool": "en",
+  "question": "ఫ్రాన్స్ దేశ రాజధాని పేరేమిటి?",
+  "answer": "The capital of France is Paris.",
+  "gold_en": [
+   "Paris () is the capital and most populous city of France"
+  ],
+  "gold_L": [],
+  "judge": "llm_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": "full sentence containing the answer"
+ },
+ {
+  "key": "0ba4546e34f946e8",
+  "item": "xorqa_te_022",
+  "lang": "te",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "en",
+  "policy": "match",
+  "pool": "te",
+  "question": "From what period to what period did ancient Greece run?",
+  "answer": "సా.శ.పూ 12వ శతాబ్దం నుంచి సా.శ 6వ శతాబ్దం వరకు",
+  "gold_en": [
+   "Dark Ages of the 12th–9th centuries BC to the end of antiquity ( AD 600)"
+  ],
+  "gold_L": [],
+  "judge": "llm_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": "period stated in Telugu; matches the gold span"
+ },
+ {
+  "key": "538d065b84af3c7e",
+  "item": "xorqa_te_119",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "english",
+  "pool": "te",
+  "question": "పారిస్‌ పట్టణం ఏ రాష్ట్రంలో ఉంది?",
+  "answer": "ఫ్రాన్స్",
+  "gold_en": [
+   "France"
+  ],
+  "gold_L": [],
+  "judge": "llm_correct",
+  "judge_correct": 1,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "318149df60b34137",
+  "item": "xorqa_te_431",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "free",
+  "pool": "te",
+  "question": "బ్యూరో ఆఫ్ ఇండియన్ స్టాండర్డ్స్ ఎప్పుడు ఏర్పాటు చేశారు?",
+  "answer": "బ్యూరో ఆఫ్ ఇండియన్ స్టాండర్డ్స్ (BIS) 2016 నాటి చట్టం ద్వారా స్థాపించబడింది, ఇది అక్టోబర్ 12, 2017 నుండి అమలులోకి వచ్చింది. ఇది అంతకు ముందు ఉన్న ఇండియన్ స్టాండర్డ్స్ ఇన్‌స్టిట్యూషన్ (ISI)ని భర్తీ చేసింది.",
+  "gold_en": [
+   "1986"
+  ],
+  "gold_L": [
+   "1986"
+  ],
+  "judge": "llm_wrong",
+  "judge_correct": 0,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ },
+ {
+  "key": "98b68fb1d1fd5368",
+  "item": "xorqa_te_022",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "te",
+  "policy": "match",
+  "pool": "en",
+  "question": "ప్రాచీన గ్రీకు ఏ కాలం నుండి ఏ కాలం వరకు నడిచింది?",
+  "answer": "thought\nThe search results are consistently irrelevant, showing Telugu years and stories instead of information about Ancient Greek history. I have used 3 searches and none have yielded the correct information. Since I have exhausted my search limit and the provided documents do not contain the answer, I will have to rely on my internal knowledge.\n\nAncient Greek civilization is generally considered to have spanned from the Archaic period (c. 800 BC) to the end of antiquity (c. 600 AD).క్రీ.పూ. 800 నుండి క్రీ.శ. 600 వరకు",
+  "gold_en": [
+   "Dark Ages of the 12th–9th centuries BC to the end of antiquity ( AD 600)"
+  ],
+  "gold_L": [],
+  "judge": "llm_wrong",
+  "judge_correct": 0,
+  "judge_abstain": 1,
+  "manual_label": "agree",
+  "manual_note": "abstention after irrelevant results"
+ },
+ {
+  "key": "482a4243a50a5376",
+  "item": "xorqa_te_210",
+  "lang": "te",
+  "model": "google/gemini-2.5-flash-lite",
+  "qlang": "en",
+  "policy": "free",
+  "pool": "te+en",
+  "question": "Who founded the religion of Confucianism?",
+  "answer": "The provided search results do not directly state who founded Confucianism. However, it mentions \"Disciples of Confucius\" and \"Confucius: The Secular as Sacred,\" suggesting Confucius is a central figure. It also mentions \"New Confucianism\" with founding figures like Ma Yifu and Xiong Shili, but this appears to be a later development.Confucius",
+  "gold_en": [
+   "Confucius"
+  ],
+  "gold_L": [],
+  "judge": "llm_wrong",
+  "judge_correct": 0,
+  "judge_abstain": 1,
+  "manual_label": "agree",
+  "manual_note": "abstention"
+ },
+ {
+  "key": "b5d97fdeccc7cc6b",
+  "item": "xorqa_te_268",
+  "lang": "te",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "en",
+  "policy": "match",
+  "pool": "te+en",
+  "question": "\"Which word is the root of the word \\\"\"Sicology\\\"\" ?\"",
+  "answer": "ology",
+  "gold_en": [
+   "ψυχή \"psychē\", \"breath, spirit, soul\" and -λογία \"-logia\", \"study of\" or \"research\""
+  ],
+  "gold_L": [
+   "quxn\\\\ మానసిక\\\\ \\\\\\స్వస ఆత్మ ఆత్మ\\\\\\ మరియు - Aoyia \\\\\\logical \\\\\\study of\\\\\\లేదా \\\\\\research\\\\\\"
+  ],
+  "judge": "llm_wrong",
+  "judge_correct": 0,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": "'ology' is the wrong root; gold is psyche"
+ },
+ {
+  "key": "41a9cf12f6d80c5b",
+  "item": "xorqa_te_422",
+  "lang": "te",
+  "model": "modal/Qwen3-30B-A3B-Instruct-2507",
+  "qlang": "te",
+  "policy": "english",
+  "pool": "te",
+  "question": "అమితాబ్ బచ్చన్ పోషించిన హిందీ చిత్రం \\\\\\పింక్\\\\\\ లో పాత్ర పేరు ఏమిటి ?",
+  "answer": "పింక్ లో అమితాబ్ బచ్చన్ పోషించిన పాత్ర పేరు కుమార్ సింగ్.",
+  "gold_en": [
+   "Deepak"
+  ],
+  "gold_L": [
+   "దీపక్"
+  ],
+  "judge": "llm_wrong",
+  "judge_correct": 0,
+  "judge_abstain": 0,
+  "manual_label": "agree",
+  "manual_note": ""
+ }
+]

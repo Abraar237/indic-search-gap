@@ -1,0 +1,1152 @@
+[
+ {
+  "item": "xorqa_hi_121",
+  "lang": "hi",
+  "q_en": "When was the first game of cricket played?",
+  "q_L": "क्रिकेट का पहला खेल कब खेला गया था?",
+  "ans_en": [
+   "17 January 1597"
+  ],
+  "ans_L": [
+   "17 जनवरी 1597"
+  ],
+  "L_title": "क्रिकेट का इतिहास",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "इस खेल का प्रथम निश्चित संदर्भ 1597 एक",
+  "verified": true,
+  "gold_L_snippet": "कई पूर्व के सुझाव दिए गए संदर्भों के बावजूद, इस खेल का प्रथम निश्चित संदर्भ 1597 एक अदालत के मामले में स्कूल के एक भूखंड के स्वामित्व पर विवाद के विषय में पाया जाता है। एक 59 वर्षीय कोरोनर, जॉन डेरिक ने गवाही दिया था कि वह और उसके स्कूल के दोस्तों ने इस स्थान पर पचास साल पहले kreckett . को खेला था। रॉयल व्याकरण स्कूल, Guildford (Royal Grammar School, Guildford) और श्री डेरिक के खाते निःसंदेह साबित",
+  "manual_label": "yes",
+  "manual_note": "year 1597 stated; gold has full date",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_521",
+  "lang": "hi",
+  "q_en": "What is the first book written by Bangladeshi Mr, Sallimullah khan ?",
+  "q_L": "बांग्लादेशी श्री सलीमुल्ला खान द्वारा लिखी गई पहली पुस्तक कौन सी है?",
+  "ans_en": [
+   "Bangladesh: Jatiyo Obosthar Chalchitro"
+  ],
+  "ans_L": [
+   "बांग्लादेश: जतिओ ओबोस्टर चलचित्रो"
+  ],
+  "L_title": "सलीमुल्लाह ख़ान",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "बांग्लादेश: जातीय अवस्थार चालचित्र ‌(१९",
+  "verified": true,
+  "gold_L_snippet": "सलीमुल्लाह ख़ान (; जन्म: १८ अगस्त १९५८) एक बांग्लादेशी लेखक, अध्यापक, समालोचक एवं बुद्धिजीवी हैं। उनको बांग्लादेश के अन्यतम आदरणीय और प्रसिद्ध बुद्धिजीवी माना जाता है। ख़ान राष्ट्रीय और अंतर्राष्ट्रीय राजनीति एवं संस्कृति को मार्क्सवादी और लाकानीय सिद्धांतों के अनुसार अन्वेषण करते हैं। वे अहमद सफ़ा के चिंता से अवगत और प्रभावित हैं। बांग्लादेश के युवा प्रजंम के लेखक और चिंतकों में उनके कई अनुगामी ह",
+  "manual_label": "yes",
+  "manual_note": "title transliteration variant",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_229",
+  "lang": "hi",
+  "q_en": "What is the deepest ocean in the world ?",
+  "q_L": "विश्व का सबसे गहरा महासागर कौन सा है?",
+  "ans_en": [
+   "Pacific Ocean approximately east of the Mariana Islands, and has the deepest natural trench in the world"
+  ],
+  "ans_L": [
+   "मारियाना द्वीप समूह के लगभग पूर्व में प्रशांत महासागर, और इसमें दुनिया की सबसे गहरी प्राकृतिक खाई है"
+  ],
+  "L_title": "मारियाना गर्त",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "यह पश्चिमी प्रशांत महासागर में मारियाना",
+  "verified": true,
+  "gold_L_snippet": "मारियाना गर्त (Mariana Trench) विश्व का एक प्रमुख और बहुत ही गहरा महासागरीय गर्त हैं। यह पश्चिमी प्रशांत महासागर में मारियाना द्वीपसमूह से 200 किलोमीटर (124 मील) पूर्व में स्थित है। यदि इसकी गहराई की तुलना के लिए माउंट एवरेस्ट को इस गर्त में डाला जाए तो उस पर्वत की चोटी भी समुद्रतल से 1.6 किलोमीटर (1 मील) पानी के नीचे होगी। मारियाना गर्त का आकार अर्धचंद्र है जो लगभग 2,550 किमी (1,580 मील) लम्बा और",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_510",
+  "lang": "hi",
+  "q_en": "What is the name of the first Novel written by Luis Karler ?",
+  "q_L": "लुइस कार्लर द्वारा लिखित प्रथम उपन्यास का नाम क्या है?",
+  "ans_en": [
+   "Alice's Adventures in Wonderland"
+  ],
+  "ans_L": [
+   "एलिसेज़ एडवेंचर इन वंडरलैंड"
+  ],
+  "L_title": "ऐलिसेज़ एड्वैन्चर्स इन वण्डरलैण्ड",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "एलिसेज़ एडवेंचर्स इन",
+  "verified": true,
+  "gold_L_snippet": "एलिसेज़ एडवेंचर्स इन वंडरलैंड (आमतौर पर एलिस इन वंडरलैंड के रूप में संक्षिप्त) लुईस कैरोल के उपनाम के तहत ब्रिटिश लेखक चार्ल्स लुटविग डॉडसन द्वारा 1865 में लिखित उपन्यास है।BBC की महानतम अंग्रेजी पुस्तकों की सूची इसमें एलिस नाम की एक लड़की की कहानी है जो एक खरगोश की मांद में गिरकर, अजीब और मानव-सदृश जीवों की आबादी वाले एक कल्पना लोक में पहुंच जाती है। यह कहानी, डॉडसन के मित्रों के संकेतों से भरी ह",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_048",
+  "lang": "hi",
+  "q_en": "What is the official language of South Korea?",
+  "q_L": "दक्षिण कोरिया की राजभाषा क्या है?",
+  "ans_en": [
+   "The Korean language ( / \"Hangugeo\"; / \"Chosŏnmal\") is an East Asian language spoken by about 80 million people"
+  ],
+  "ans_L": [
+   "कोरियाई भाषा (\\\\\\ हैंगजिओ\\\\\\ , \\\\\\चौसोंमल\\\\\\) लगभग 80 मिलियन लोगों द्वारा बोली जाने वाली एक पूर्व एशियाई भाषा है"
+  ],
+  "L_title": "कोरियाई भाषा",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "कोरियाई भाषा दक्षिण कोरिया और उत्तर कोरिया की आधिकारिक भाषा है और इसे बोलने वालों की संख्या लगभग ८ करोड़ है।",
+  "verified": true,
+  "gold_L_snippet": "कोरियाई भाषा दक्षिण कोरिया और उत्तर कोरिया की आधिकारिक भाषा है और इसे बोलने वालों की संख्या लगभग ८ करोड़ है। इस भाषा का विकास १४४३ ई\n० में किंगसेजोंग के शासनकाल में हुआ। इस भाषा की लिपि हंगुल (Hangul 한글) है। कोरियन में 한 (हान/Haan) का अर्थ है - कोरिया अथवा महान और 글/गुल/geul का अर्थ है - लिपि। इस प्रकार हंगुल का अर्थ हुआ - \"महान लिपि\" अथवा \"कोरियन लिपि\"।\nकोरियायी भाषा अल्टाइक कुल की भाषा है जो चीन",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": true,
+  "llm2_quote": "कोरियाई भाषा दक्षिण कोरिया और उत्तर कोरिया की आधिकारिक भाषा है और इसे बोलने वालों की संख्या लगभग ८ करोड़ है।",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_hi_497",
+  "lang": "hi",
+  "q_en": "How old Mr, Ramakrishna alived ?",
+  "q_L": "श्री रामकृष्ण कितने वर्ष जीवित रहे?",
+  "ans_en": [
+   "18 February 1836 – 16 August 1886"
+  ],
+  "ans_L": [
+   "18 फरवरी 1836 _ 16 अगस्त 1886"
+  ],
+  "L_title": "रामकृष्ण परमहंस",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "सन् 1886 ई. में श्रावणी",
+  "verified": true,
+  "gold_L_snippet": "सन् 1886 ई. में श्रावणी पूर्णिमा के अगले दिन प्रतिपदा को प्रातःकाल रामकृष्ण परमहंस ने देह त्याग दिया। 16 अगस्त का सवेरा होने के कुछ ही वक्त पहले आनन्दघन विग्रह श्रीरामकृष्ण इस नश्वर देह को त्याग कर महासमाधि द्वारा स्व-स्वरुप में लीन हो गये।\nरामकृष्ण छोटी कहानियों के माध्यम से लोगों को शिक्षा देते थे। कलकत्ता के बुद्धिजीवियों पर उनके विचारों ने ज़बरदस्त प्रभाव छोड़ा था; हांलाकि उनकी शिक्षायें आधुनि",
+  "manual_label": "yes",
+  "manual_note": "death year stated; lifespan gold",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_228",
+  "lang": "hi",
+  "q_en": "How many countries are there in the continent of South America?",
+  "q_L": "दक्षिण अमेरिका महाद्वीप में कुल कितने देश हैं?",
+  "ans_en": [
+   "twelve"
+  ],
+  "ans_L": [
+   "बारह"
+  ],
+  "L_title": "दक्षिण अमेरिका",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "वर्तमान में दक्षिणी अमेरिका में मुख्य भूमि पर १३ देश एवं फा",
+  "verified": true,
+  "gold_L_snippet": "दक्षिण अमेरिका का इतिहास और संस्कृति विश्व की प्राचीनतम संस्कृतियों में से हैं। पेरू की केन्द्रीय पहाड़ियों में लाखों वर्षों पूर्व मानव जीवन की शुरुआत हुई। यहाँ की सर्वप्रमुख सभ्यता इंका की सभ्यता थी जिसका अधिकारक्षेत्र पेरू, ईक्वाडोर, बोलीविया तथा अर्जेंटीना और चिली के उत्तरी भागों में फैला हुआ था। पेरू की राजधानी लीमा के समीपवर्ती क्षेत्रों में इंका सभ्यता की हजारों ममियाँ प्राप्त हुई हैं। पंद्र",
+  "manual_label": "no",
+  "manual_note": "article says 13 mainland countries; gold twelve: editions disagree",
+  "llm2_says_yes": true,
+  "llm2_quote": "वर्तमान में दक्षिणी अमेरिका में मुख्य भूमि पर १३ देश एवं फाकलैण्ड द्वीप समूह है।",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_hi_501",
+  "lang": "hi",
+  "q_en": "In which country was the first birth of wrestling ?",
+  "q_L": "रेसलिंग का पहला जन्म कॉन्स देश से हुआ?",
+  "ans_en": [
+   "Babylonian and Egyptian"
+  ],
+  "ans_L": [
+   "बेबीलोनियन एंड एजिप्शियन"
+  ],
+  "L_title": "कुश्ती",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "बेबीलोनियन और मिस्र की प्राचीन",
+  "verified": true,
+  "gold_L_snippet": "कुश्ती की उत्पत्ति गुफा चित्रों के माध्यम से १५,००० वर्ष पीछे चली जाती है।  बेबीलोनियन और मिस्र की प्राचीन कलाकृतियां वर्तमान खेल में ज्ञात अधिकांश होल्ड का उपयोग करने वाले पहलवानों को दिखाती हैं।  इसका साहित्यिक संदर्भ पुराने नियम और प्राचीन भारतीय शास्त्रों में मिलता है।  उत्पत्ति की पुस्तक में, पितृसत्ता याकूब के बारे में कहा जाता है कि उसने  एक देवदूत के साथ कुश्ती की थी। इलियड, जिसमें होमर 13",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": true,
+  "llm2_quote": "बेबीलोनियन और मिस्र की प्राचीन कलाकृतियां वर्तमान खेल में ज्ञात अधिकांश होल्ड का उपयोग करने वाले पहलवानों को दिखाती हैं।",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_hi_494",
+  "lang": "hi",
+  "q_en": "The Atlantic ocean is situated in which continent of earth ?",
+  "q_L": "अटलांटिक महासागर पृथ्वी के किस महाद्वीप में स्थित है?",
+  "ans_en": [
+   "Europe and Africa to the east, and the Americas to the west"
+  ],
+  "ans_L": [
+   "पूर्व में यूरोप और अफ्रीका तथा पश्चिम में अमेरिका"
+  ],
+  "L_title": "अटलांटिक महासागर",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "अन्ध महासागर या अटलांटिक महासागर उस",
+  "verified": true,
+  "gold_L_snippet": "अन्ध महासागर या अटलांटिक महासागर उस विशाल जलराशि का नाम है जो यूरोप तथा अफ्रीका महाद्वीपों को नई दुनिया के महाद्वीपों से पृथक करती है। क्षेत्रफल और विस्तार में दुनिया का दूसरे नंबर का महासागर है जिसने पृथ्वी का १/५ क्षेत्र घेर रखा है। इस महासागर का नाम ग्रीक संस्कृति से लिया गया है जिसमें इसे नक्शे का समुद्र भी बोला जाता है। इस महासागर का आकार लगभग अंग्रेजी अक्षर 8 के समान है। लंबाई की अपेक्षा इसक",
+  "manual_label": "uncertain",
+  "manual_note": "quote is the article lead; bounding continents not visible in quote",
+  "llm2_says_yes": true,
+  "llm2_quote": "अन्ध महासागर या अटलांटिक महासागर उस विशाल जलराशि का नाम है जो यूरोप तथा अफ्रीका महाद्वीपों को नई दुनिया के महाद्वीपों से पृथक करती है।",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_hi_239",
+  "lang": "hi",
+  "q_en": "Tiger pron belongs from which type of animal?",
+  "q_L": "टाइगर प्रॉन किस पारकर के जानवर से संबंधित है?",
+  "ans_en": [
+   "crustaceans"
+  ],
+  "ans_L": [
+   "क्रस्टेसियंस"
+  ],
+  "L_title": "झींगा मछली (लॉब्स्टर)",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "पंजों वाली झींगा मछल",
+  "verified": true,
+  "gold_L_snippet": "पंजों वाली झींगा मछलियाँ (क्लॉड लॉब्स्टर्स) बड़े समुद्री क्रस्टेशियंस परिवार (नेफ्रोपीडी, कभी-कभी होमारिडी भी) से आती हैं। झींगा मछलियाँ समुद्री भोजन के रूप में आर्थिक दृष्टि से महत्वपूर्ण हैं, जो प्रति वर्ष 1 बिलियन अमेरिकी डॉलर (US$1बिलियन) से अधिक के एक वैश्विक उद्योग को आधार प्रदान करती हैं।\nहालांकि क्रस्टेशियंस के कई समूह \"झींगा मछलियों (लॉब्स्टर्स)\" के रूप में जाने जाते हैं, पंजों वाली झींगा",
+  "manual_label": "uncertain",
+  "manual_note": "quote says clawed shrimp; crustacean not explicit",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_027",
+  "lang": "hi",
+  "q_en": "What ethics is called in English?",
+  "q_L": "अंग्रेजी में नैतिकता को क्या कहते है?",
+  "ans_en": [
+   "ethics"
+  ],
+  "ans_L": [
+   "एथिक्स"
+  ],
+  "L_title": "नीतिशास्त्र",
+  "string_match": true,
+  "llm_says_yes": true,
+  "llm_quote": "कैम्ब्रिज डिक्शनरी ऑफ़ फिलोसिफी",
+  "verified": true,
+  "gold_L_snippet": "मानव का सदैव से एक प्रमुख दृष्टिकोण उपयोगितावाद रहा है। यह विचारधारा मनुष्य के आचरण के उस पक्ष को परिलक्षित करती है, जिसमें कहा गया है कि\nव्यवहारवादी नीतिशास्त्र\nअराजकतावादी नीतिशास्त्र\nउत्तराधुनिक नीतिशास्त्र\nअनुप्रयुक्त नीतिशास्त्र\nअनुप्रयोग के विशिष्ट क्षेत्र\nराजनीतिक नीतिशास्त्र\nराजनीतिक नीतिशास्त्र (जिसे राजनीतिक नैतिकता या सार्वजनिक नैतिकता भी कहते हैं) राजनीतिक कार्रवाई और राजनीतिक एजेंटों ",
+  "manual_label": "yes",
+  "manual_note": "odd item: answer is the English word itself",
+  "llm2_says_yes": true,
+  "llm2_quote": "कैम्ब्रिज डिक्शनरी ऑफ़ फिलोसिफी यह कहती हैं कि नीतिशास्त्र शब्द का \"उपयोग सामान्यतः विनिमियी रूप से 'नैतिकता' के साथ होता हैं' और कभी-कभी किसी विशेष परम्परा, समूह या व्यक्ति के नैतिक सिद्धान्तों के अर्थ हेतु इसका अधिक संकीर्ण उपयोग होता हैं\"।John Deigh in Robert Audi (ed), The Cambridge Dictionary of Philosophy, 1995.",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_hi_059",
+  "lang": "hi",
+  "q_en": "Which countries will fight over Kashmir?",
+  "q_L": "कश्मीर पर कौन से देश लड़ेंगे?",
+  "ans_en": [
+   "India and Pakistan"
+  ],
+  "ans_L": [
+   "भारत और पाकिस्तान"
+  ],
+  "L_title": "कश्मीर विवाद",
+  "string_match": true,
+  "llm_says_yes": true,
+  "llm_quote": "कश्मीर विवाद कश्मीर पर अधिकार को लेकर भारत",
+  "verified": true,
+  "gold_L_snippet": "कश्मीर विवाद कश्मीर पर अधिकार को लेकर भारत और पाकिस्तान के बीच 1947 से जारी है। भारत में विलय के लिए विलय-पत्र पर दस्तखत किए थे। गवर्नर जनरल माउंटबेटन ने 27 अक्टूबर को इसे मंजूरी दी। विलय-पत्र का खाका हूबहू वही था जिसका भारत में शामिल हुए अन्य सैकड़ों रजवाड़ों ने अपनी-अपनी रियासत को भारत में शामिल करने के लिए उपयोग किया था। न इसमें कोई शर्त शुमार थी और न ही रियासत के लिए विशेष दर्जे जैसी कोई मांग।",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": true,
+  "llm2_quote": "कश्मीर विवाद कश्मीर पर अधिकार को लेकर भारत और पाकिस्तान के बीच 1947 से जारी है।",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_hi_213",
+  "lang": "hi",
+  "q_en": "Which is the capital of England ?",
+  "q_L": "इंग्लैड की राजधानी कौन सी है?",
+  "ans_en": [
+   "London"
+  ],
+  "ans_L": [
+   "लंदन"
+  ],
+  "L_title": "लंदन",
+  "string_match": true,
+  "llm_says_yes": true,
+  "llm_quote": "लंदन () यूनाइटेड किंगडम और इंग्लैंड की राजधानी और सबसे अधिक आबादी वाला शहर है।",
+  "verified": true,
+  "gold_L_snippet": "लंदन () यूनाइटेड किंगडम और इंग्लैंड की राजधानी और सबसे अधिक आबादी वाला शहर है। ग्रेट ब्रिटेन द्वीप के दक्षिण पूर्व में थेम्स नदी के किनारे स्थित, लंदन पिछली दो सदियों से एक बड़ा व्यवस्थापन रहा है। लंदन राजनीति, शिक्षा, मनोरंजन, मीडिया, फ़ैशन और शिल्पी के क्षेत्र में वैश्विक शहर की स्थिति रखता है।Inventory of World Cities , GaWC, लोबरो विश्वविद्यालयसैसेन, सैस्किया - The Global City: New York, Londo",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": true,
+  "llm2_quote": "लंदन () यूनाइटेड किंगडम और इंग्लैंड की राजधानी और सबसे अधिक आबादी वाला शहर है।",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_hi_047",
+  "lang": "hi",
+  "q_en": "What is the capital of Scotland?",
+  "q_L": "स्कॉटलैंड की राजधानी क्या है?",
+  "ans_en": [
+   "Edinburgh"
+  ],
+  "ans_L": [
+   "एडिनबर्ग"
+  ],
+  "L_title": "एडिनबर्ग",
+  "string_match": true,
+  "llm_says_yes": true,
+  "llm_quote": "एडिनबरा (,अंग्रेजी उच्चारण: / ए॑डिन्बर / तून एत्यन), स्कॉटलैंड की राजधानी, एवं ग्लासगो के बाद, स्कॉटलैंड का दूसरा सबसे बड़ा शहर है।",
+  "verified": true,
+  "gold_L_snippet": "एडिनबरा (,अंग्रेजी उच्चारण: / ए॑डिन्बर / तून एत्यन), स्कॉटलैंड की राजधानी, एवं ग्लासगो के बाद, स्कॉटलैंड का दूसरा सबसे बड़ा शहर है। यह स्काॅटलैन्ड के लोथियन क्षेत्र में फ़ाॅर्थ के नदमुख के दक्षिणी तट पर स्थित है। वर्ष 2013 के हिसाब से,इस शहर की आबादी 5,00,000 के करीब है।",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": true,
+  "llm2_quote": "एडिनबरा (,अंग्रेजी उच्चारण: / ए॑डिन्बर / तून एत्यन), स्कॉटलैंड की राजधानी, एवं ग्लासगो के बाद, स्कॉटलैंड का दूसरा सबसे बड़ा शहर है।",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_hi_509",
+  "lang": "hi",
+  "q_en": "Mahasthangad situated in which sub district of Bangladesh ?",
+  "q_L": "बांग्लादेश का महास्थानगढ़ किस उप जिले में स्थित है?",
+  "ans_en": [
+   "Mahasthan"
+  ],
+  "ans_L": [
+   "महास्थान"
+  ],
+  "L_title": "महास्थानगढ़",
+  "string_match": true,
+  "llm_says_yes": true,
+  "llm_quote": "बोग्रा जिले के शिवगंज उपजिला में महा",
+  "verified": true,
+  "gold_L_snippet": "महास्थनगढ़ ( ) अब तक बांग्लादेश में खोजे गए स्थलों में सबसे प्राचीन नगरीय पुरातत्विक स्थल है । बोग्रा जिले के शिवगंज उपजिला में महास्थन गाँव में इस प्राचीन नगर (पुण्ड्रनगर) के ध्वंसावशेष मिले हैं। इस नगर को पौण्ड्रवर्धनपुर भी कहते थे और यह पुण्ड्रवर्धन के राज्य में था।",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": true,
+  "llm2_quote": "बोग्रा जिले के शिवगंज उपजिला में महास्थन गाँव में इस प्राचीन नगर (पुण्ड्रनगर) के ध्वंसावशेष मिले हैं।",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_hi_100",
+  "lang": "hi",
+  "q_en": "Which is the first creature created by humans ?",
+  "q_L": "मनुष्य द्वारा बनाया गया पहला जीव कौन-सा है?",
+  "ans_en": [
+   "bacteria"
+  ],
+  "ans_L": [
+   "जीवाणु"
+  ],
+  "L_title": "आनुवंशिक रूप से परिवर्तित जीव",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_002",
+  "lang": "hi",
+  "q_en": "When did the first world war start ?",
+  "q_L": "प्रथम विश्व युद्ध कब आरंभ हुआ था?",
+  "ans_en": [
+   "1914"
+  ],
+  "ans_L": [
+   "1914"
+  ],
+  "L_title": "विश्वयुद्ध",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_154",
+  "lang": "hi",
+  "q_en": "Which was the first labor law issued by the central government?",
+  "q_L": "केंद्र सरकार द्वारा जारी किया गया पहला श्रम कानून कौन-सा था?",
+  "ans_en": [
+   "Factory Acts (first one in 1802, then 1833) and the 1823 Master and Servant Act"
+  ],
+  "ans_L": [
+   "फैक्ट्री अधिनियम (पहले 1802 में, फिर 1833 में) 1823 में मास्टर और नौकर अधिनियम"
+  ],
+  "L_title": "श्रम कानून",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_014",
+  "lang": "hi",
+  "q_en": "As of 2010,which region of India has the largest number of christians?",
+  "q_L": "2010 तक भारत के किस क्षेत्र में ईसाइयों की संख्या सबसे अधिक है?",
+  "ans_en": [
+   "Meghalaya, Mizoram, and Nagaland"
+  ],
+  "ans_L": [
+   "मेघालय, मिजोरम और नागालैंड"
+  ],
+  "L_title": "भारत में ईसाई धर्म",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_221",
+  "lang": "hi",
+  "q_en": "When were jellyfish first discovered?",
+  "q_L": "जेलीफिश की खोज पहेली बार कब हुई थी?",
+  "ans_en": [
+   "1796"
+  ],
+  "ans_L": [
+   "1796"
+  ],
+  "L_title": "जेलीफ़िश",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_287",
+  "lang": "hi",
+  "q_en": "What is the biggest city of Syria ?",
+  "q_L": "सीरिया का सबसे बड़ा नगर कौन-सा है?",
+  "ans_en": [
+   "Damascus"
+  ],
+  "ans_L": [
+   "दमिश्क"
+  ],
+  "L_title": "हलब",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 yes",
+  "llm2_says_yes": true,
+  "llm2_quote": "जनसंख्या के हिसाब (2004 में 21 लाख) से यह सीरिया का सबसे बड़ा नगर है।",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_395",
+  "lang": "hi",
+  "q_en": "What is the nickname of Michel Madhusudhan Datta ?",
+  "q_L": "मिशेल मधुसूदन दत्ता का उपनाम क्या है?",
+  "ans_en": [
+   "Timothy Penpoem"
+  ],
+  "ans_L": [
+   "टिमोथी पेनपोएम"
+  ],
+  "L_title": "माइकल मधुसुदन दत्त",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_109",
+  "lang": "hi",
+  "q_en": "Which Indian Institute of Technology is ranked first in India in 2018?",
+  "q_L": "किस भारतीय प्रौद्योगिकी संस्थान को 2018 में भारत में पहला स्थान प्राप्त हुआ था?",
+  "ans_en": [
+   "IT Delhi"
+  ],
+  "ans_L": [
+   "आईटी दिल्ली"
+  ],
+  "L_title": "भारतीय प्रौद्योगिकी संस्थान दिल्ली",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_489",
+  "lang": "hi",
+  "q_en": "Who was the fourth dalai lama of Tibetian buddhism espesically in espesically in dge lugs religion ?",
+  "q_L": "तिब्ती बुद्धि के चौथे दलाई लामा कोन थे खासकर दगे लग्स धर्म में?",
+  "ans_en": [
+   "Yonten Gyatso"
+  ],
+  "ans_L": [
+   "योतेन ग्यात्सो"
+  ],
+  "L_title": "दलाई लामा",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_hi_314",
+  "lang": "hi",
+  "q_en": "What is the very next era of Ordovician period ?",
+  "q_L": "ऑर्डोविशियन के आने वाला अगला युग क्या है?",
+  "ans_en": [
+   "Silurian Period Mya"
+  ],
+  "ans_L": [
+   "सुनन पीरियड मैया"
+  ],
+  "L_title": "ओर्डोविशी कल्प",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_468",
+  "lang": "te",
+  "q_en": "\" Who gave akhyaa to Mohandas Karamchand Gandhi or Mahtma Gandhi as a \\\"\"father of Nation\\\"\" ?\"",
+  "q_L": "మోహన్ దాస్ కరంచంద్ గాంధీ లేదా మహాత్మా గాంధీని \\\\\\జాతి పితామహుడిగా\\\\\\ ఎవరు ఇచ్చారు ?",
+  "ans_en": [
+   "Subhash Chandra Bose"
+  ],
+  "ans_L": [
+   "సుభాష్ చంద్ర బోస్"
+  ],
+  "L_title": "మహాత్మా గాంధీ",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "ప్రజలు అతన్ని మహాత్ముడని",
+  "verified": true,
+  "gold_L_snippet": "మోహన్ దాస్ కరంచంద్ గాంధీ ( ) (అక్టోబరు 2, 1869 – జనవరి 30, 1948) ఆంగ్లేయుల పాలననుండి భారతదేశానికి స్వాతంత్య్రం సాధించిన నాయకులలో అగ్రగణ్యుడు. ప్రజలు అతన్ని మహాత్ముడని, జాతిపిత అని గౌరవిస్తారు. సత్యము, అహింసలు గాంధీ నమ్మే సిద్ధాంత మూలాలు. సహాయ నిరాకరణ, సత్యాగ్రహము అతని ఆయుధాలు. కొల్లాయి కట్టి, చేత కర్రబట్టి, నూలు వడకి, మురికివాడలు శుభ్రం చేసి అన్ని మతాలూ, కులాలూ ఒకటే అని చాటాడు.\n20వ శతాబ్దిలోని రాజ",
+  "manual_label": "no",
+  "manual_note": "article says people called him Mahatma; Bose not named in quote",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_429",
+  "lang": "te",
+  "q_en": "Manmohan Ghosh was the member of which political party ?",
+  "q_L": "మన్మోహన్ ఘోష్ ఏ రాజకీయ పార్టీ సభ్యుడు ?",
+  "ans_en": [
+   "Indian Association"
+  ],
+  "ans_L": [
+   "భారతీయ సంఘం"
+  ],
+  "L_title": "మోనోమోహున్ ఘోష్",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "1876లో ఇండియన్ అసోసియేషన్",
+  "verified": true,
+  "gold_L_snippet": "1876లో ఇండియన్ అసోసియేషన్ స్థాపించబడినప్పుడు అతను సలహాదారుల్లో ఒకడు. సురేంద్రనాథ్ బెనర్జీ , ఆనంద మోహన్ బోస్ తదితరులతో అనేక సమావేశాలు ఆయన ఇంట్లో జరిగాయి.  అతను 1885లో స్థాపించబడిన భారత జాతీయ కాంగ్రెస్ స్థాపకులలో ఒకడు , 1890లో కోల్‌కతాలో జరిగిన దాని సెషన్‌కు రిసెప్షన్ కమిటీకి ఛైర్మన్‌గా ఉన్నాడు. అతను న్యాయవ్యవస్థను పరిపాలన నుండి వేరుచేయడం కోసం తీవ్రంగా పోరాడాడు , అడ్మినిస్ట్రేషన్ ఆఫ్ పుస్తకాన్ని వ్ర",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_307",
+  "lang": "te",
+  "q_en": "When Mr, Gopal krishna ghokhle was born ?",
+  "q_L": "మిస్టర్ గోపాలకృష్ణ ఘోక్లే ఎప్పుడు జన్మించారు?",
+  "ans_en": [
+   "9 May 1866"
+  ],
+  "ans_L": [
+   "9 మే 1866"
+  ],
+  "L_title": "గోపాలకృష్ణ గోఖలే",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "గోపాలకృష్ణ గోఖలే (మే 9",
+  "verified": true,
+  "gold_L_snippet": "గోపాలకృష్ణ గోఖలే (మే 9, 1866 - ఫిబ్రవరి 19, 1915) భారత స్వాతంత్ర్య సమర యోధుడు, సామాజిక సేవకుడు. భారత జాతీయ కాంగ్రెస్ సీనియర్ నాయకుడు. 1885 నుంచి 1905 వరకు మితవాదులు ప్రాబల్యం వహించిన భారత జాతీయ కాంగ్రెస్లో ప్రముఖపాత్ర వహించాడు. 1902 నుంచి 1915లో మరణించే వరకు భారత శాసనమండలి సభ్యుడిగా ఉన్నాడు. 1905లో సర్వెంట్స్ ఆఫ్ ఇండియా సొసైటీని ఏర్పాటుచేశాడు. బ్రిటీష్ వారి విధానాలను తీవ్రంగా వ్యతిరేకించకున్ననూ భా",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": true,
+  "llm2_quote": "గోపాల కృష్ణ గోఖలే 1866 మే 9 సంవత్సరంలో చెన్నై ప్రెసిడెన్సీ (ప్రస్తుత చెన్నై) లోని వడపళనిలో జన్మించాడు.",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_te_474",
+  "lang": "te",
+  "q_en": "Is the devil mentioned in Islamic Purana ?",
+  "q_L": "ఇస్లామిక్ పురాణంలో  దైయం ప్రస్తావన ఉందా ?",
+  "ans_en": [
+   "(with the more broad meaning of spirits or demons, depending on source), are supernatural creatures in early pre-Islamic Arabian"
+  ],
+  "ans_L": [
+   "(మూలని బట్టి ఆత్మలు లేదా దెయ్యాలు అన్నే విస్తృత అర్థంతో ) ఇస్లామిక్ పూర్వ అరబియన్లో అతీంద్రియ జీవులు"
+  ],
+  "L_title": "జిన్",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "అందువల్ల, జిన్ అన్న పదా",
+  "verified": true,
+  "gold_L_snippet": "ఇస్లామిక్ నేపథ్యంలో, జిన్ అనే పదాన్ని ఏ అతీంద్రియ జీవినైనా సూచించడానికీ, ఒక నిర్దిష్ట రకం అతీంద్రియ జీవిని సూచించడానికీ - రెండిటినీ కలిపి ఉపయోగిస్తారు. అందువల్ల, జిన్ అన్న పదాన్ని తరచు డెవిల్స్/రాక్షసులు (షయాన్) పదంతో కలిపి సూచిస్తారు. జానపద కథలలో డెవిల్స్, జిన్ రెండూ కనిపిస్తాయి. ఆ కథలలో ఇవి దురదృష్టానికీ, దయ్యాలు పట్టడానికీ, వ్యాధులకూ కారణమవుతాయి. మొత్తంగా చూస్తే జిన్లు కొన్నిసార్లు సహాయకరంగానూ,",
+  "manual_label": "uncertain",
+  "manual_note": "jinn passage; gold is a definition",
+  "llm2_says_yes": true,
+  "llm2_quote": "ఈ జిన్ లు అన్నవి విస్తృత అర్థంలో ఆత్మలు అని కానీ, దెయ్యాలు అని కానీ, రాక్షసులు అని కానీ అనుకోవచ్చు, ఏ నేపథ్యంలో ఆ పదాన్ని వాడుతున్నారు అన్నదాన్ని బట్టి అర్థ ఛాయ ఉంటుంది.",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_te_135",
+  "lang": "te",
+  "q_en": "When did Pakistan get independence?",
+  "q_L": "పాకిస్తాన్ కు స్వతంత్రం ఎప్పుడు వచ్చింది?",
+  "ans_en": [
+   "14 August 1947"
+  ],
+  "ans_L": [
+   "అని"
+  ],
+  "L_title": "పాకిస్తాన్ స్వాతంత్ర్య దినోత్సవం",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "1947 ఆగస్టు పద్నాలు",
+  "verified": true,
+  "gold_L_snippet": "ఆగస్టు పద్నాలుగు (August 14) పాకిస్తాన్ దేశపు స్వాతంత్ర్య దినోత్సవం గా జరుపుకోబడుతోంది. 1947 ఆగస్టు పద్నాలుగున పాకిస్తాన్ వందల ఏళ్ళ బానిసత్వాన్నుంచి విడుదలయింది. దానికి గుర్తుగా, స్వాతంత్ర్యానంతర ప్రభుత్వం ఆగస్టు పద్నాలుగుని పాకిస్తాన్ స్వాతంత్ర్య దినోత్సవంగా, జాతీయ శెలవు దినంగా ప్రకటించి అమలు చేస్తోంది. 1947 ఆగస్టు 14 న అప్పటి వరకు పాకిస్తాన్ ను పరిపాలిస్తున్న చివరి బ్రిటిష్ రాజు పాకిస్తాన్ కు స్",
+  "manual_label": "yes",
+  "manual_note": "gold_L is garbage (అని); English gold used",
+  "llm2_says_yes": true,
+  "llm2_quote": "1947 ఆగస్టు పద్నాలుగున పాకిస్తాన్ వందల ఏళ్ళ బానిసత్వాన్నుంచి విడుదలయింది.",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_te_396",
+  "lang": "te",
+  "q_en": "Which is the main hindu Relegious book ?",
+  "q_L": "ప్రధాన హిందూ మత గ్రంథం ఏది?",
+  "ans_en": [
+   "Vedas and the Upanishads"
+  ],
+  "ans_L": [
+   "వేదాలు మరియు ఉపనిషత్తులు"
+  ],
+  "L_title": "హిందూధర్మశాస్త్రాలు",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "చతుర్వేదాలు - అనగా",
+  "verified": true,
+  "gold_L_snippet": "\"శ్రుతి\" అనగా \"వినిపించింది\". అంటే ఈ విధమైన శాస్త్రాలు సామాన్యమైన వ్యక్తులచే రచింపబడలేదు. \"మంత్రద్రష్ట\" లైన ఋషులకు అవి \"వినిపించినవి\". చతుర్వేదాలు - అనగా ఋగ్వేదం, సామవేదం, యజుర్వేదం, అధర్వణవేదం - ఇవన్నీ శ్రుతులు.ఇవి మనుష్యులచే రచింపబడలేదు గనుక వీటిని \"అపౌరుషేయాలు\" లేదా \"నిత్యాలు\" అని కూడా అంటారు. ఇవి హిందూ ధర్మానికి మౌలికమైన ప్రమాణికాలు. ఒక్కొక్క వేదంలో భాగాలైన సంహిత, ఆరణ్యకం, బ్రాహ్మణం, ఉపనిషత్తు",
+  "manual_label": "yes",
+  "manual_note": "Vedas named; Upanishads not in quote",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_507",
+  "lang": "te",
+  "q_en": "How many time Mamta Bandhapadhyay became the chief minister of West Bengal ?",
+  "q_L": "రవీంద్రనాథ్ ఠాగూర్ రాసిన చిన్న కథ పేరు ఏమిటీ?",
+  "ans_en": [
+   "8th"
+  ],
+  "ans_L": [
+   "8వ"
+  ],
+  "L_title": "మమతా బెనర్జీ",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "మమతా బెనర్జీ వరుసగా",
+  "verified": true,
+  "gold_L_snippet": "2011 మే 13 నాడు, 34 ఏళ్ల కమ్యూనిష్ట్ పాలనను, పశ్చిమ బెంగాల్లో కూకటి వేళ్లతో పెకలించి వేసింది. మమతా బెనర్జీ నిరాడంబర మహిళ (పుచ్చలపల్లి సుందరయ్య లాగ). బట్టలు, వస్తువులు, అలంకారాలు ఏమీ వేసుకోకుండా, అతి సామాన్యంగా గడుపుతుంది. చూపుకి అతి బీదరాలులా కనిపిస్తుంది. ఏవిధమైన అలంకరణ చేసుకోదు. భుజానికి ఓ గుడ్డ సంచి (వావిలాల గోపాలకృష్ణయ్య లాగ), గుండెనిండా పట్టుదల, మెదడు నిండా పశ్చిమ బెంగాల్ అభివృద్ధి ఆలోచనలు, మ",
+  "manual_label": "uncertain",
+  "manual_note": "'consecutively' quote; 8th not visible",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_120",
+  "lang": "te",
+  "q_en": "What was the means of travel invented by the Wright brothers?",
+  "q_L": "రైట్ బ్రదర్స్ కనుగొన్న ప్రయాణ సాధనం ఏమిటి?",
+  "ans_en": [
+   "airplane"
+  ],
+  "ans_L": [
+   "అని"
+  ],
+  "L_title": "రైట్ సోదరులు",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "వీరు ప్రపంచపు మొట్టమొ",
+  "verified": true,
+  "gold_L_snippet": "రైట్ సోదరులు ఓర్విల్లే (1871 ఆగస్టు 19 - జనవరి 30, 1948), విల్బర్ (1867 ఏప్రిల్ 16 - మే 30, 1912) ఇద్దరు అమెరికన్ అన్నదమ్ములు, విమాన సృష్టికర్తలు, విమాన చోదక మార్గదర్శకులు. వీరు ప్రపంచపు మొట్టమొదటి భారీ యాంత్రిక విమానాన్ని కనిపెట్టి, నిర్మించి, నియంత్రించి 1903 డిసెంబరు 17 న విజయవంతంగా గాలిలో ఎగిరించారు. 1905 నుండి 1907 వరకు ఈ సోదరులు వారి ప్లయింగ్ యంత్రాన్ని మొదటి ఆచరణాత్మక స్థిర వింగ్ విమానముగా ",
+  "manual_label": "yes",
+  "manual_note": "first aeroplane",
+  "llm2_says_yes": true,
+  "llm2_quote": "రైట్ సోదరులు ఓర్విల్లే (1871 ఆగస్టు 19 - జనవరి 30, 1948), విల్బర్ (1867 ఏప్రిల్ 16 - మే 30, 1912) ఇద్దరు అమెరికన్ అన్నదమ్ములు, విమాన సృష్టికర్తలు, విమాన చోదక మార్గదర్శకులు.",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_te_263",
+  "lang": "te",
+  "q_en": "What is the surface area of Atlantic ocean ?",
+  "q_L": "అట్లాంటిక్ మహాసముద్రం యొక్క ఉపరితల వైశాల్యం ఎంత?",
+  "ans_en": [
+   "106,460,000 km2"
+  ],
+  "ans_L": [
+   "106460000 km2"
+  ],
+  "L_title": "అట్లాంటిక్ మహాసముద్రం",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "పొరుగున ఉన్న సముద్రాలతో కలిప",
+  "verified": true,
+  "gold_L_snippet": "భూవైశాల్యంలో మొత్తం 20 శాతం అట్లాంటిక్ మహాసముద్రమే ఆక్రమిస్తుంది. భూమిపై గల జలభాగాలన్నిటిలోకి ఇది రెండవ అతి పెద్ద జలభాగం. పొరుగున ఉన్న సముద్రాలతో కలిపితే అట్లాంటిక్ మహాసముద్ర వైశాల్యం దాదాపుగా 106,400,000 చదరపు కిలోమీటర్లు. పరిమాణం దాదాపుగా 354,700,000 ఘనపుకిలోమీటర్లు.ఈ మహాసముద్రపు సగటు లోతు 3,338 మీటర్లు. 8,605 మీటర్ల లోతు గల ప్యుఎర్టో రికో అగడ్త ఈ మహాసముద్రపు అత్యంత లోతైన ప్రదేశం. బ్రెజిల్, లైబీ",
+  "manual_label": "uncertain",
+  "manual_note": "quote about neighbouring seas; area not visible",
+  "llm2_says_yes": true,
+  "llm2_quote": "పొరుగున ఉన్న సముద్రాలతో కలిపితే అట్లాంటిక్ మహాసముద్ర వైశాల్యం దాదాపుగా 106,400,000 చదరపు కిలోమీటర్లు.",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_te_510",
+  "lang": "te",
+  "q_en": "What is the name of the first Novel written by Luis Karler ?",
+  "q_L": "లూయిస్ కర్లేర్ రాసిన మొదటి నవల పేరు ఏమిటి ?",
+  "ans_en": [
+   "Alice's Adventures in Wonderland"
+  ],
+  "ans_L": [
+   "వండర్ ల్యాండ్ లో ఆలిస్ సాహసాలు"
+  ],
+  "L_title": "ఆలిస్ అడ్వెంచర్స్ ఇన్ వండర్‌ల్యాండ్",
+  "string_match": false,
+  "llm_says_yes": true,
+  "llm_quote": "ఆలిస్ అడ్వెంచర్స్ ఇన్",
+  "verified": true,
+  "gold_L_snippet": "ఆలిస్ అడ్వెంచర్స్ ఇన్ వండర్‌ల్యాండ్ ( ఆలిస్ ఇన్ వండర్‌ల్యాండ్ అని కూడా పిలుస్తారు) అనేది 1865లో లూయిస్ కారోల్ రచించిన ఒక ఆంగ్ల బాలల నవల . ఆలిస్ అనే ఒక చిన్న అమ్మాయి కుందేలు బొరియలో పడి, మానవరూప జీవులున్న ఒక కల్పనా ప్రపంచంలోకి వెళ్లిన కథను ఇది చెబుతుంది. దీనిని సాహిత్యపరమైన అసంబద్ధ ప్రక్రియకు ఒక ఉదాహరణగా చూస్తారు. కళాకారుడు జాన్ టెన్నియల్ అసలు ఎడిషన్ కోసం 42 చెక్క చెక్కడాల చిత్రాలను అందించారు.",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_136",
+  "lang": "te",
+  "q_en": "Organism growth is caused by which vitamin?",
+  "q_L": "జీవి పెరుగుదల ఏ విటమిన్ వలన జరుగుతుంది?",
+  "ans_en": [
+   "A"
+  ],
+  "ans_L": [
+   "అని"
+  ],
+  "L_title": "విటమిన్",
+  "string_match": true,
+  "llm_says_yes": true,
+  "llm_quote": "విటమిన్లు (ఆంగ్లం: Vitamins) జీవి",
+  "verified": true,
+  "gold_L_snippet": "విటమిన్లు (ఆంగ్లం: Vitamins) జీవి పెరుగుదలకు, ఆరోగ్యవంతంగా ఉండడానికి అత్యంత అవసరమైన అనుబంధ ఆహార కారకాలు. ముందుగా వీటిని వైటల్ - అతిముఖ్యమైన; అమైన్ - అమినో సమ్మేళనాలు అని ఫంక్ 1912లో ప్రతిపాదించాడు. తరువాతి కాలంలో విటమిన్లన్నీ అమైన్లు కాదని గుర్తించారు. కాబట్టి 'vitamines' అనే పదంలోని 'e' ని తొలగించి ప్రస్తుతం వాటిని 'vitamins' అని పేర్కొంటున్నారు. ఇవి స్వయంగా శక్తిని ఉత్పత్తి చేయడంలోగానీ దేహనిర్మా",
+  "manual_label": "uncertain",
+  "manual_note": "gold_L garbage (అని) caused the string match; LLM quote generic",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_517",
+  "lang": "te",
+  "q_en": "From whom Suchitra Mitra was learn Rabindra Sangit ?",
+  "q_L": "సుచిత్ర మిత్ర రవీంద్ర సంగీతాన్ని ఎవరి నుండి నేర్చుకున్నారు ?",
+  "ans_en": [
+   "Pankaj Mullick"
+  ],
+  "ans_L": [
+   "పంకజ్ ముల్లిక్"
+  ],
+  "L_title": "సుచిత్రా మిత్ర",
+  "string_match": true,
+  "llm_says_yes": true,
+  "llm_quote": "సంగీతంలో సుచిత్రా మిత్రకు ఉన్న నైపుణ్యాన్ని పంకజ్ ముల్లిక్ గుర్తించి, ఆమెకు రవీంద్ర సంగీతంలో శిక్షణ అందించాడు.",
+  "verified": true,
+  "gold_L_snippet": "సుచిత్రా మిత్ర (1924, సెప్టెంబరు 19 - 2011 జనవరి 3) బెంగాలీ సినిమా గాయని, స్వరకర్త. రవీంద్రభారతి విశ్వవిద్యాలయంలో ప్రొఫెసర్‌గా, రవీంద్ర సంగీత విభాగానికి అధిపతిగా పనిచేసింది.\nసుచిత్ర 1924, సెప్టెంబరు 19 బిహార్ లోని గుజండీలో జన్మించింది. మిత్రా తండ్రి సౌరీంద్ర మోహన్ ముఖర్జీ ప్రముఖ సాహిత్యవేత్త. సుచిత్ర కలకత్తా విశ్వవిద్యాలయ పరిధిలోని స్కాటిష్ చర్చి కళాశాలలోనూ, పశ్చిమ బెంగాల్‌లోని విశ్వభారతి విశ్వవిద",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": true,
+  "llm2_quote": "సంగీతంలో సుచిత్రా మిత్రకు ఉన్న నైపుణ్యాన్ని పంకజ్ ముల్లిక్ గుర్తించి, ఆమెకు రవీంద్ర సంగీతంలో శిక్షణ అందించాడు.",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_te_527",
+  "lang": "te",
+  "q_en": "In which year was the Pakistani Cricketer Alimuddin born ?",
+  "q_L": "పాకిస్థాన్ క్రికెటర్ అలిముద్దిన్ ఏ సంవత్సరంలో జన్మించారు?",
+  "ans_en": [
+   "1930"
+  ],
+  "ans_L": [
+   "1930"
+  ],
+  "L_title": "అలీముద్దీన్",
+  "string_match": true,
+  "llm_says_yes": true,
+  "llm_quote": "(1930, డిసెంబరు 15 - 2012 జూలై 12) పాకిస్థానీ క్రికెటర్.",
+  "verified": true,
+  "gold_L_snippet": "అలీమ్-ఉద్-దిన్Wisden 1963, Index, page ix, confirms Alim-ud-Din as the correct rendering of the subject's name and this usage is repeated on at least 15 other pages throughout the book. (1930, డిసెంబరు 15 - 2012 జూలై 12) పాకిస్థానీ క్రికెటర్. 1954 - 1962 మధ్యకాలంలో పాకిస్తాన్ తరపున 25 టెస్టులు ఆడాడు. ఇతని పేరు కొన్నిసార్లు అలీముద్దీన్ అని పిలువబడుతుంది. ఫాస్ట్ స్కోరింగ్ గా, కుడిచేతి ఓపెనింగ్ బ్యాట",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": true,
+  "llm2_quote": "అలీమ్-ఉద్-దిన్Wisden 1963, Index, page ix, confirms Alim-ud-Din as the correct rendering of the subject's name and this usage is repeated on at least 15 other pages throughout the book. (1930, డిసెంబరు 15 - 2012 జూలై 12) పాకిస్థానీ క్రికెటర్.",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_te_152",
+  "lang": "te",
+  "q_en": "Which is the largest freshwater lake in the world?",
+  "q_L": "ప్రపంచంలో అతిపెద్ద మంచినీటి సరస్సు ఏది ?",
+  "ans_en": [
+   "Lake Baikal"
+  ],
+  "ans_L": [
+   "అని"
+  ],
+  "L_title": "బైకల్ సరస్సు",
+  "string_match": true,
+  "llm_says_yes": true,
+  "llm_quote": "బైకాల్ సరస్సు ప్రపంచంలో వాల్యూ",
+  "verified": true,
+  "gold_L_snippet": "బైకల్ సరస్సు (Lake Baikal - లేక్ బైకల్) రష్యాలో ఉన్న ఒక లోతైన సరస్సు, ఇది దక్షిణ సైబీరియా ప్రాంతంలో ఉన్నది. బైకాల్ సరస్సు ప్రపంచంలో వాల్యూమ్‌ ద్వారా అతిపెద్ద మంచినీటి సరస్సు, ఇది ప్రపంచంలోని ఘనీభవించని ఉపరితల తాజా నీటి లో సుమారు 20% కలిగివున్నది. ప్రపంచంలోనే మంచినీటి సరస్సుల యొక్క అతి పెద్ద సమూహముగా ఉన్న ఉత్తర అమెరికాలో ఉన్న ఐదు పెద్ద సరస్సులైన మహా సరస్సులు లోని నీటి కంటే ఎక్కువగా మంచినీరును ఈ బైక",
+  "manual_label": "yes",
+  "manual_note": "",
+  "llm2_says_yes": true,
+  "llm2_quote": "బైకాల్ సరస్సు ప్రపంచంలో వాల్యూమ్‌ ద్వారా అతిపెద్ద మంచినీటి సరస్సు, ఇది ప్రపంచంలోని ఘనీభవించని ఉపరితల తాజా నీటి లో సుమారు 20% కలిగివున్నది.",
+  "final_verified": true
+ },
+ {
+  "item": "xorqa_te_188",
+  "lang": "te",
+  "q_en": "Which country first traded with India?",
+  "q_L": "భారత్ తో మొదటి ఏ దేశం వ్యాపారం చేసింది?",
+  "ans_en": [
+   "Israel"
+  ],
+  "ans_L": [
+   "అని"
+  ],
+  "L_title": "భారత ఇజ్రాయిల్ సంబంధాలు",
+  "string_match": true,
+  "llm_says_yes": true,
+  "llm_quote": "టెల్ మెగిద్దో వద్ద జ",
+  "verified": true,
+  "gold_L_snippet": "ఇజ్రాయెల్ రాష్ట్ర స్థాపనపై భారతదేశ వైఖరిని అనేక అంశాలు ప్రభావితం చేశాయి, వాటిలో భారతదేశం యొక్క మతపరమైన విభజన, ఇతర దేశాలతో భారతదేశం సంబంధాలు ఉన్నాయి. భారత స్వాతంత్ర్య నాయకుడు మహాత్మా గాంధీ యూదులకు ఇజ్రాయెల్ పట్ల మంచి వాదన, ముందస్తు హక్కు ఉందని నమ్మాడు. కానీ మతపరమైన లేదా తప్పనిసరి నిబంధనలపై ఇజ్రాయెల్ సృష్టిని వ్యతిరేకించాడు. అరబ్బులు పాలస్తీనా యొక్క \"సరైన నివాసులు\" అని గాంధీ విశ్వసించాడు. యూదులు వార",
+  "manual_label": "uncertain",
+  "manual_note": "Tel Megiddo quote; Israel-India trade claim not visible",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_203",
+  "lang": "te",
+  "q_en": "Which country has the largest number of Buddhists as of 2017?",
+  "q_L": "2017 నాటికి బౌద్ధులు ఎక్కువగా ఉన్న దేశం ఏది?",
+  "ans_en": [
+   "China"
+  ],
+  "ans_L": [
+   "అని"
+  ],
+  "L_title": "దేశాల వారీగా బౌద్ధమతం",
+  "string_match": true,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "ఈ జాబితా సుమారు 320 మిలియన్ల మంది ఆచరించే బౌద్ధ మత వ్యాప్తిని చూపుతుంది, ఇది 2020 నాటికి ప్రపంచ మొత్తం జనాభాలో 4.1% ప్రాతినిధ్యం వహిస్తుంది. సంఖ్యల పరంగా చూస్తే ప్రపంచ బౌద్ధ జనాభాలో థాయిలాండ్ అత్యధిక వాటాను కలిగి ఉంది. ఇది కంబోడియా, మయన్మార్, భూటాన్, శ్రీలంక వంటి నాలుగు దేశాలలో అధికారిక మతం.Mitchell, T. (2022, April 26). Many countries favor specific religions. Pew Research Center's Religion & Pub",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_469",
+  "lang": "te",
+  "q_en": "At present which is the latest android operating system used in mobile ?",
+  "q_L": "ప్రస్తుతం మొబైల్లో ఉపయోగిస్తున్న తాజా ఆండ్రాయిడ్ ఆపరేటింగ్ సిస్టమ్ ఏది ?",
+  "ans_en": [
+   "9 \"Pie\""
+  ],
+  "ans_L": [
+   "9\\\\\\ పై\\\\\\"
+  ],
+  "L_title": "ఆండ్రాయిడ్",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_447",
+  "lang": "te",
+  "q_en": "\"What is the actual name of porn star \\\"\"Sunny leone\\\"\" ?\"",
+  "q_L": "ఫోర్న్ స్టార్ \\\\\\సన్నీ లియోన్\\\\\\ అసలు పేరు ఏమిటి ?",
+  "ans_en": [
+   "Karenjit Kaur Vohra"
+  ],
+  "ans_L": [
+   "కరెంజిత్ కౌర్ వోహ్రా"
+  ],
+  "L_title": "సన్నీ లియోన్",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_375",
+  "lang": "te",
+  "q_en": "who is the present Chief minster of Gujrat ?",
+  "q_L": "గుజరాత్ ప్రస్తుత ముఖ్యమంత్రి ఎవరు ?",
+  "ans_en": [
+   "Vijay Ramniklal Rupan"
+  ],
+  "ans_L": [
+   "విజయ్ రామ్నిక్లాల్ రూపన్"
+  ],
+  "L_title": "విజయ్ రూపానీ",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_395",
+  "lang": "te",
+  "q_en": "What is the nickname of Michel Madhusudhan Datta ?",
+  "q_L": "మిచెల్ మధుసూధన్ దత్తా ముద్దుపేరు ఏమిటీ?",
+  "ans_en": [
+   "Timothy Penpoem"
+  ],
+  "ans_L": [
+   "తిమోతీ పెన్పొం"
+  ],
+  "L_title": "మైఖేల్ మధుసూదన్ దత్",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_040",
+  "lang": "te",
+  "q_en": "What is the population of Guntur town according to the 2011 India census?",
+  "q_L": "2011 భారత జనగణన గణాంకాల ప్రకారం గుంటూరు పట్టణ జనాభా ఎంత ?",
+  "ans_en": [
+   "743,654"
+  ],
+  "ans_L": [
+   "అని"
+  ],
+  "L_title": "గుంటూరు",
+  "string_match": true,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "ప్రస్తుత పేరుకి సంబంధించిన తొలి వాడుక అమ్మరాజ I (922-929 CE), వేంగీ తూర్పు చాళుక్య రాజు శాసనాలలో ఉంది. ఇంకా సా.శ.1147, సా.శ.1158 సంవత్సరపు శాసనాలలో కూడా ఉంది. సంస్కృతంలో గుంటూరుని గర్తపురి అనే వారు. దీని అర్థం నీటికొలనుల మధ్యనున్న ప్రదేశం. ఈ ప్రదేశం నీటి కొలను అనగా గుంట దగ్గరలో వుంది కాబట్టి, గుంట ఊరు అని కాలక్రమేణా గుంటూరు అయివుండవచ్చు. ఇంకొక తెలుగు పదం కుంట (భూమికొలత ప్రమాణం) ను బట్టి కూడా కుంట ",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 yes",
+  "llm2_says_yes": true,
+  "llm2_quote": "గుంటూరు, దక్షిణ భారతదేశం, ఆంధ్రప్రదేశ్ రాష్ట్రం, గుంటూరు జిల్లా లోని ఒక ముఖ్య నగరం, ఈ నగరం 7,43,354 జనాభాతో (2011 జనగణన) రాష్ట్రం లోని మూడవ పెద్ద నగరంగా రికార్టులకెక్కింది.",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_078",
+  "lang": "te",
+  "q_en": "In which year did the East India Company come to India?",
+  "q_L": "ఈస్టిండియా కంపెనీ భారతదేశానికి ఏ సంవత్సరంలో వచ్చింది ?",
+  "ans_en": [
+   "1608"
+  ],
+  "ans_L": [
+   "అని"
+  ],
+  "L_title": "ఈస్టిండియా కంపెనీ",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_446",
+  "lang": "te",
+  "q_en": "When did Actress Vidya Balan born ?",
+  "q_L": "నటి విద్యాబాలన్ ఎప్పుడు జన్మించారు ?",
+  "ans_en": [
+   "1 January 1979"
+  ],
+  "ans_L": [
+   "1 జనవరి 1979"
+  ],
+  "L_title": "విద్యా బాలన్",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 yes",
+  "llm2_says_yes": true,
+  "llm2_quote": "విద్య 1978 జనవరి 1న కేరళలో జన్మించింది.",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_189",
+  "lang": "te",
+  "q_en": "Who invented the steam engine ?",
+  "q_L": "స్టీమ్  ఇంజిన్ ని కనుగొన్నది ఎవరు ?",
+  "ans_en": [
+   "Thomas Newcomen"
+  ],
+  "ans_L": [
+   "అని"
+  ],
+  "L_title": "ఆవిరి యంత్రం",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ },
+ {
+  "item": "xorqa_te_080",
+  "lang": "te",
+  "q_en": "In 2017, which year has more people died due to mosquitoes?",
+  "q_L": "2017నాటికి దోమ వల్ల ఎక్కువ జనం చనిపోయిన సంవత్సరంలో ఏది?",
+  "ans_en": [
+   "Togo"
+  ],
+  "ans_L": [
+   "అని"
+  ],
+  "L_title": "పసుపు జ్వరం",
+  "string_match": false,
+  "llm_says_yes": false,
+  "llm_quote": "NONE",
+  "verified": false,
+  "gold_L_snippet": "",
+  "manual_label": "not_checked_manually",
+  "manual_note": "pass-1 NONE; pass-2 NONE",
+  "llm2_says_yes": false,
+  "llm2_quote": "NONE",
+  "final_verified": false
+ }
+]

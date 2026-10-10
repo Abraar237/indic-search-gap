@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search in Whose Language? · Experiment Plan (frozen 2026-10-10)</title>
+<style>
+  :root { --slate:#155e8c; --hot:#b3006b; --shelf:#c0641a; --good:#1c7a55; --ink:#1a1a1a; --mut:#666; }
+  body { font-family: Helvetica, Arial, sans-serif; color: var(--ink); background:#fff;
+         max-width: 880px; margin: 0 auto; padding: 40px 24px 80px; line-height: 1.55; }
+  .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: 12px; color: var(--hot); font-weight: 700; }
+  h1 { font-size: 30px; margin: 6px 0 4px; line-height: 1.2; }
+  .sub { color: var(--mut); margin-bottom: 28px; }
+  h2 { font-size: 19px; color: var(--slate); margin-top: 36px; border-bottom: 2px solid #eee; padding-bottom: 6px; }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 14px; }
+  th { text-align: left; border-bottom: 2px solid var(--ink); padding: 6px 8px; }
+  td { border-bottom: 1px solid #e5e5e5; padding: 6px 8px; vertical-align: top; }
+  code { font-family: "SF Mono", Menlo, monospace; font-size: 13px; background:#f5f5f5; padding: 1px 4px; border-radius: 3px; }
+  .pill { display:inline-block; font-size:12px; font-weight:700; padding:2px 10px; border-radius:12px; color:#fff; }
+  .frozen { background: var(--good); }
+  .formula { font-family: Menlo, monospace; background:#f7f7f7; padding:10px 14px; border-left: 4px solid var(--slate); margin: 12px 0; font-size: 14px; }
+  .note { color: var(--mut); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="eyebrow">Vizuara Research · experiment plan</div>
+<h1>Search in Whose Language?</h1>
+<div class="sub">Separating the query-side gap from the evidence-side gap for search agents in Indic languages ·
+<span class="pill frozen">FROZEN 2026-10-10</span></div>
+
+<h2>Question</h2>
+<p>When a user asks an LLM search agent a question in Hindi or Telugu, how much of the accuracy loss relative to the same question in English comes from the agent's own query behaviour (<b>query-side gap</b>), how much from the evidence not existing in that language (<b>evidence-side gap</b>), and how much from reading the evidence (<b>integration gap</b>)? In what language do agents search when left free, and does forcing the query language recover the loss?</p>
+<div class="formula">Acc<sub>L</sub> = Cov<sub>L</sub> · Acc(L | evidence in L) + (1 − Cov<sub>L</sub>) · Acc(L | evidence only in English)</div>
+<p class="note">Cov<sub>L</sub> is measured on the live Indic Wikipedia snapshot; the conditional accuracies come from the controlled grid below.</p>
+
+<h2>Pre-registered directions (recorded 2026-10-10 16:10, before any grid call)</h2>
+<table><tr><th>Id</th><th>Direction</th></tr>
+<tr><td>D1</td><td>Under a free policy with an Indic question, agents issue English queries in more than half of search calls; more for Telugu than Hindi.</td></tr>
+<tr><td>D2</td><td>The query-side gap exists; the dual policy recovers at least half; English-only recovers less than dual.</td></tr>
+<tr><td>D3</td><td>Forcing English queries helps when evidence is English-only and hurts when it is Indic-only (policy × evidence interaction).</td></tr>
+<tr><td>D4</td><td>Cov<sub>te</sub> &lt; 0.5 and Cov<sub>hi</sub> &gt; Cov<sub>te</sub>; the coverage term exceeds the agent term for Telugu but not Hindi.</td></tr>
+<tr><td>D5</td><td>The Indic deficit in the symmetric monolingual check is larger under BM25 than under bge-m3 and shrinks under oracle passages.</td></tr>
+<tr><td>D6</td><td>Under oracle evidence the Indic question is within 5 points of the English question for closed models.</td></tr>
+</table>
+
+<h2>Question bank (frozen, SHA-256 in <code>corpus/FROZEN.json</code>)</h2>
+<table><tr><th>Source</th><th>Items</th><th>Parallel</th><th>Gold evidence</th><th>Role</th></tr>
+<tr><td>IndicGenBench XorQA-In test</td><td>539 hi, 539 te (same English questions)</td><td>yes, human translations</td><td>English paragraph given; Indic article via Wikidata sitelink</td><td>factorial where the Indic article states the answer: <b>203 hi, 179 te</b> (string match + LLM verification); coverage population otherwise</td></tr>
+<tr><td>MLQA hi test</td><td>130 sampled</td><td>yes, natively parallel paragraphs</td><td>both paragraphs</td><td>factorial (evidence in both by construction)</td></tr>
+<tr><td>TyDi XOR te</td><td>120 sampled</td><td>no, natively written Telugu</td><td>English passage</td><td>translation-artefact check (Q=te only)</td></tr>
+</table>
+<p>Coverage on the 20261001 snapshot (XorQA population, n=539 per language): Hindi article exists 67.5%, answer verified 37.7%; Telugu article exists 52.5%, answer verified 33.2%. String matching alone found 23.4% / 28.6%; the LLM pass added inflected and respelled answers and removed 21 / 40 false positives. A 50-item manual audit ships with the results.</p>
+
+<h2>Evidence pools</h2>
+<table><tr><th>Pool</th><th>Content</th><th>Chunks</th></tr>
+<tr><td>hi</td><td>all 169,949 Hindi articles</td><td>353,331</td></tr>
+<tr><td>te</td><td>all 145,514 Telugu articles</td><td>518,678</td></tr>
+<tr><td>en</td><td>129,646 English articles (1.8% sample) + the full English article behind every item + injected gold paragraphs</td><td>1,066,102</td></tr>
+<tr><td>hi+en, te+en</td><td>unions</td><td>1,419,433 / 1,584,780</td></tr>
+</table>
+<p>Chunks of ~900 characters, title-prefixed. Retriever: BM25 (bm25s, Unicode tokeniser, no stemming); second retriever bge-m3 on the headline cells. One tool: <code>search(query) → top-5 passages</code>.</p>
+
+<h2>Agent and factors</h2>
+<p>ReAct loop over OpenRouter tool calling; at most 3 searches, then a short answer in the question's language; temperature 0; reasoning effort minimal. The policy sentence is the only prompt difference between cells.</p>
+<table><tr><th>Factor</th><th>Levels</th></tr>
+<tr><td>Q question language</td><td>en, L (hi or te)</td></tr>
+<tr><td>P query policy</td><td>free (logged), match, english, dual</td></tr>
+<tr><td>E evidence pool served</td><td>en-only, L-only, both</td></tr>
+</table>
+<p>Core grid: Q=L × 4 policies × 3 pools (12) + Q=en × {free, match} × 3 pools (6) + Q=en × dual × L-only (1) = <b>19 cells</b>, up to 150 items per language.</p>
+<table><tr><th>Model</th><th>Grid</th></tr>
+<tr><td>google/gemini-2.5-flash-lite</td><td>full core + all batteries</td></tr>
+<tr><td>google/gemini-3.1-flash-lite</td><td>full core</td></tr>
+<tr><td>google/gemini-3.6-flash</td><td>headline slice (8 cells, 80 items per language)</td></tr>
+<tr><td>Qwen3-30B-A3B-Instruct-2507 (vLLM on Modal)</td><td>open-weight arm; headline slice, full core if time allows</td></tr>
+</table>
+<p class="note">The OpenRouter workspace guardrail allowed only Google models on 2026-10-10; other closed families join if it is lifted.</p>
+
+<h2>Controls and batteries</h2>
+<table><tr><th>Battery</th><th>Purpose</th></tr>
+<tr><td>Closed-book, Q ∈ {en, L}</td><td>parametric leakage; attribution rate</td></tr>
+<tr><td>Oracle passage (en passage with Q=L and Q=en; L passage where it exists)</td><td>integration gap</td></tr>
+<tr><td>Symmetric monolingual (en/en vs L/L, BM25 and bge-m3)</td><td>Indic-script retrieval + reading cost</td></tr>
+<tr><td>NONE (gold hidden), 50 per language</td><td>hallucination / abstention floor</td></tr>
+<tr><td>Repeat battery, 30 items × 5 runs</td><td>noise floor</td></tr>
+<tr><td>Native Telugu subset (120 TyDi XOR)</td><td>translation-artefact check</td></tr>
+</table>
+
+<h2>Scoring and statistics</h2>
+<p>Alias-aware string rule in both scripts (digit normalisation for Devanagari and Telugu numerals), then an LLM judge (gemini-2.5-flash, not in the grid) only where the rule says wrong; 40 judged items hand-audited. Unit = item; paired contrasts; sign-flip permutation (20k); item bootstrap CIs (10k); interactions by label permutation (5k); Benjamini-Hochberg over the full family; noise floor beside every headline.</p>
+
+<h2>Budget</h2>
+<table><tr><th>Item</th><th>Estimate</th></tr>
+<tr><td>flash-lite 2.5: core + batteries (~7,400 episodes)</td><td>$3.5</td></tr>
+<tr><td>flash-lite 3.1: core (~5,300)</td><td>$6.4</td></tr>
+<tr><td>gemini-3.6-flash: headline (~1,300)</td><td>$5.2</td></tr>
+<tr><td>Judge + coverage pass</td><td>$1.2</td></tr>
+<tr><td>Contingency</td><td>$2</td></tr>
+<tr><td><b>OpenRouter total</b> (cap $30, hard stop $24, shared key)</td><td><b>~$18</b></td></tr>
+<tr><td>Modal GPU (open-weight arm + bge-m3)</td><td>$4-7 of Modal credit</td></tr>
+</table>
+</body>
+</html>

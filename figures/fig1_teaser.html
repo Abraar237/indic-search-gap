@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;background:#fff;font-family:Helvetica,Arial,sans-serif;color:#16130d;width:2400px}
+.wrap{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:48px;padding:48px 56px}
+.eyebrow{font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:#6d665a;font-weight:700;margin-bottom:10px}
+h2{font-size:38px;margin:0 0 22px;line-height:1.2}
+.design{font-size:27px;line-height:1.5}
+.design b{color:#155e8c}
+.box{border:2px solid #e7e2d5;border-radius:12px;padding:18px 22px;margin:12px 0;font-size:26px}
+.row{display:grid;grid-template-columns:330px 1fr 90px;align-items:center;gap:16px;margin:14px 0;font-size:25px}
+.track{position:relative;height:36px;background:#f3f0e8;border-radius:6px;overflow:visible;display:flex}
+.fill{height:100%} .hot{background:#b3006b} .slate{background:#155e8c} .shelf{background:#c0641a}
+.tick{position:absolute;top:-8px;width:4px;height:52px;background:#16130d}
+.num{font-family:Menlo,monospace;font-size:26px;text-align:right}
+.mono{font-family:Menlo,monospace;font-size:23px}
+.legend{font-size:22px;color:#6d665a;margin-top:14px;line-height:1.5}
+.sw{display:inline-block;width:22px;height:22px;vertical-align:middle;border-radius:4px;margin-right:6px}
+</style></head><body><div class="wrap">
+<div><div class="eyebrow">a · the instrument</div><h2>Same question, two languages; same web, served three ways</h2>
+<div class="design">Parallel <b>Hindi/English</b> and <b>Telugu/English</b> questions whose answer is verifiably in both Wikipedias.
+A search agent (3 searches, then answer) over a frozen pool served <b>English-only</b>, <b>Indic-only</b>, or <b>both</b>.
+The script of every query is logged under a <b>free</b> policy, then the policy is forced: <b>match</b>, <b>english</b>, <b>dual</b>.</div>
+<div class="box">query-side gap = what the agent's queries lose · evidence-side gap = what the web lacks · integration gap = what reading loses</div></div>
+<div><div class="eyebrow">b · whose language does the agent search in?</div><h2>Share of queries written in English, free policy</h2><div class="row"><div class="lab">Hindi question, English-only pool</div><div class="track"><div class="fill hot" style="width:33.1%"></div></div><div class="num">33%</div></div>
+<div class="row"><div class="lab">Hindi question, Hindi-only pool</div><div class="track"><div class="fill hot" style="width:32.1%"></div></div><div class="num">32%</div></div>
+<div class="row"><div class="lab">Hindi question, both</div><div class="track"><div class="fill hot" style="width:30.0%"></div></div><div class="num">30%</div></div>
+<div class="row"><div class="lab">Telugu question, English-only pool</div><div class="track"><div class="fill hot" style="width:47.3%"></div></div><div class="num">47%</div></div>
+<div class="row"><div class="lab">Telugu question, Telugu-only pool</div><div class="track"><div class="fill hot" style="width:45.2%"></div></div><div class="num">45%</div></div>
+<div class="row"><div class="lab">Telugu question, both</div><div class="track"><div class="fill hot" style="width:44.3%"></div></div><div class="num">44%</div></div>
+<div class="legend">Indic question; the agent chose the query language itself. 539 items per language.</div></div>
+<div><div class="eyebrow">c · the real-world gap, decomposed</div><h2>Expected accuracy for a real Indic user</h2><div class="row"><div class="lab">Hindi user, <span class="mono">free</span></div><div class="track"><div class="fill slate" style="width:19.3%"></div><div class="fill shelf" style="width:47.4%"></div><div class="tick" style="left:75.8%"></div></div><div class="num">67</div></div>
+<div class="row"><div class="lab">Hindi user, <span class="mono">dual</span></div><div class="track"><div class="fill slate" style="width:19.8%"></div><div class="fill shelf" style="width:48.1%"></div><div class="tick" style="left:75.8%"></div></div><div class="num">68</div></div>
+<div class="row"><div class="lab">Telugu user, <span class="mono">free</span></div><div class="track"><div class="fill slate" style="width:17.6%"></div><div class="fill shelf" style="width:58.4%"></div><div class="tick" style="left:78.7%"></div></div><div class="num">76</div></div>
+<div class="row"><div class="lab">Telugu user, <span class="mono">dual</span></div><div class="track"><div class="fill slate" style="width:17.6%"></div><div class="fill shelf" style="width:55.2%"></div><div class="tick" style="left:78.7%"></div></div><div class="num">73</div></div>
+<div class="legend"><span class="sw" style="background:#155e8c"></span>facts the Indic Wikipedia has (Cov × Acc) &nbsp; <span class="sw" style="background:#c0641a"></span>facts only English has ((1−Cov) × Acc) &nbsp; <span class="sw" style="background:#16130d"></span>English user's accuracy.
+Coverage measured on 539 questions per language: Hindi 29%, Telugu 24%.</div></div>
+</div></body></html>

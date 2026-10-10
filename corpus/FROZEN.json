@@ -1,0 +1,82 @@
+{
+ "frozen_at": "2026-10-10T16:46:04",
+ "snapshot": "omarkamali/wikipedia-monthly 20261001",
+ "items_json_sha256": "5451aea43d7dc7d9422428f76367b919c44afa8d9c93187737488a9ce18dcdab",
+ "n_items": 1328,
+ "factorial_eligible": {
+  "hi:xorqa_in": 157,
+  "te:xorqa_in": 127,
+  "hi:mlqa": 130
+ },
+ "coverage_xorqa": {
+  "hi": {
+   "n": 539,
+   "article": 364,
+   "string": 119,
+   "llm1_yes": 205,
+   "llm2_yes": 158,
+   "verified_both": 157,
+   "cov_verified": 0.2913
+  },
+  "te": {
+   "n": 539,
+   "article": 283,
+   "string": 94,
+   "llm1_yes": 179,
+   "llm2_yes": 129,
+   "verified_both": 127,
+   "cov_verified": 0.2356
+  }
+ },
+ "pools": {
+  "en.jsonl": {
+   "bytes": 902435431,
+   "lines": 1058175
+  },
+  "en_extra.jsonl": {
+   "bytes": 6170203,
+   "lines": 7310
+  },
+  "gold_en.jsonl": {
+   "bytes": 543728,
+   "lines": 666
+  },
+  "gold_hi.jsonl": {
+   "bytes": 718370,
+   "lines": 340
+  },
+  "gold_te.jsonl": {
+   "bytes": 422792,
+   "lines": 204
+  },
+  "hi.jsonl": {
+   "bytes": 620955532,
+   "lines": 353075
+  },
+  "te.jsonl": {
+   "bytes": 1048020525,
+   "lines": 518524
+  }
+ },
+ "indexes": {
+  "en": {
+   "docs": 1066151
+  },
+  "hi": {
+   "docs": 353415
+  },
+  "te": {
+   "docs": 518728
+  },
+  "hi+en": {
+   "docs": 1419566
+  },
+  "te+en": {
+   "docs": 1584857
+  }
+ },
+ "v1_note": "v1 frozen 16:46 before the pilot; v2 re-frozen after the CP2 amendments (MLQA self-contained filter, garbage Telugu answers dropped, two-pass coverage verification). No grid record was collected under v1.",
+ "frozen_at_v2": "2026-10-10T17:58:41",
+ "items_json_sha256_v2": "dbc4b945437402dc1ad3b4f43e972777f047989f163dd3eb15712dcb2fc1228d",
+ "retriever": "hybrid RRF(BM25 top-50, bge-m3 dense top-50), k=60; bm25-only and dense-only as the retriever factor"
+}

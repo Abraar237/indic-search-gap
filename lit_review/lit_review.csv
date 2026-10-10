@@ -1,0 +1,146 @@
+arxiv_id,title,first_authors,year_month,category,angle,nickname_in_sweep,verified
+2210.09984,Making a MIRACL: Multilingual Information Retrieval Across a Continuum of Languages,Xinyu Zhang; Nandan Thakur; Odunayo Ogundepo et al.,2022-10,cs.IR,benchmark-indic,MIRACL,OK
+2108.13897,mMARCO: A Multilingual Version of the MS MARCO Passage Ranking Dataset,Luiz Bonifacio; Vitor Jeronymo; Hugo Queiroz Abonizio et al.,2021-08,cs.CL,benchmark-indic,mMARCO,OK
+2312.09508,IndicIRSuite: Multilingual Dataset and Neural Information Models for Indian Languages,Saiful Haq; Ashutosh Sharma; Pushpak Bhattacharyya,2023-12,cs.IR,benchmark-indic,IndicIRSuite / INDIC-MARCO,OK
+2408.09437,Hindi-BEIR : A Large Scale Retrieval Benchmark in Hindi,Arkadeep Acharya; Rudra Murthy; Vishwajeet Kumar et al.,2024-08,cs.IR,benchmark-indic,Hindi-BEIR,OK
+2409.05401,Benchmarking and Building Zero-Shot Hindi Retrieval Model with Hindi-BEIR and NLLB-E5,Arkadeep Acharya; Rudra Murthy; Vishwajeet Kumar et al.,2024-09,cs.IR,benchmark-indic,Hindi-BEIR (companion),OK
+2402.03216,"M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation",Jianlv Chen; Shitao Xiao; Peitian Zhang et al.,2024-02,cs.CL,benchmark-indic,MLDR / BGE-M3,OK
+2502.13595,MMTEB: Massive Multilingual Text Embedding Benchmark,Kenneth Enevoldsen; Isaac Chung; Imene Kerboua et al.,2025-02,cs.CL,benchmark-multilingual,MMTEB / MTEB(Indic),OK
+2506.01615,IndicRAGSuite: Large-Scale Datasets and a Benchmark for Indian Language RAG Systems,Pasunuti Prasanjith; Prathmesh B More; Anoop Kunchukuttan et al.,2025-06,cs.CL,benchmark-indic,IndicRAGSuite / IndicMSMarco,OK
+2501.19264,mFollowIR: a Multilingual Benchmark for Instruction Following in Retrieval,Orion Weller; Benjamin Chang; Eugene Yang et al.,2025-01,cs.IR,benchmark-multilingual,mFollowIR,OK
+2304.12367,Overview of the TREC 2022 NeuCLIR Track,Dawn Lawrie; Sean MacAvaney; James Mayfield et al.,2023-04,cs.IR,benchmark-multilingual,NeuCLIR 2022,OK
+2404.08071,Overview of the TREC 2023 NeuCLIR Track,Dawn Lawrie; Sean MacAvaney; James Mayfield et al.,2024-04,cs.IR,benchmark-multilingual,NeuCLIR 2023,OK
+2509.14355,Overview of the TREC 2024 NeuCLIR Track,Dawn Lawrie; Sean MacAvaney; James Mayfield et al.,2025-09,cs.IR,benchmark-multilingual,NeuCLIR 2024,OK
+2010.11856,XOR QA: Cross-lingual Open-Retrieval Question Answering,Akari Asai; Jungo Kasai; Jonathan H. Clark et al.,2020-10,cs.CL,benchmark-indic,XOR-TyDi QA,OK
+2007.15207,MKQA: A Linguistically Diverse Benchmark for Multilingual Open Domain Question Answering,Shayne Longpre; Yi Lu; Joachim Daiber,2020-07,cs.CL,benchmark-multilingual,MKQA,OK
+1910.07475,MLQA: Evaluating Cross-lingual Extractive Question Answering,Patrick Lewis; Barlas Oğuz; Ruty Rinott et al.,2019-10,cs.CL,benchmark-indic,MLQA,OK
+1910.11856,On the Cross-lingual Transferability of Monolingual Representations,Mikel Artetxe; Sebastian Ruder; Dani Yogatama,2019-10,cs.CL,benchmark-indic,XQuAD,OK
+2308.16884,The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants,Lucas Bandarkar; Davis Liang; Benjamin Muller et al.,2023-08,cs.CL,benchmark-indic,Belebele,OK
+2305.11938,XTREME-UP: A User-Centric Scarce-Data Benchmark for Under-Represented Languages,Sebastian Ruder; Jonathan H. Clark; Alexander Gutkin et al.,2023-05,cs.CL,benchmark-indic,XTREME-UP,OK
+2305.06897,AfriQA: Cross-lingual Open-Retrieval Question Answering for African Languages,Odunayo Ogundepo; Tajuddeen R. Gwadabe; Clara E. Rivera et al.,2023-05,cs.CL,benchmark-multilingual,AfriQA,OK
+2410.13716,MIRAGE-Bench: Automatic Multilingual Benchmark Arena for Retrieval-Augmented Generation Systems,Nandan Thakur; Suleman Kazi; Ge Luo et al.,2024-10,cs.CL,benchmark-indic,MIRAGE-Bench,OK
+2410.01171,Multilingual Retrieval Augmented Generation for Culturally-Sensitive Tasks: A Benchmark for Cross-lingual Robustness,Bryan Li; Fiona Luo; Samar Haider et al.,2024-10,cs.CL,benchmark-multilingual,BordIRlines,OK
+2408.10151,Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models,Amey Hengle; Prasoon Bajpai; Soham Dan et al.,2024-08,cs.CL,benchmark-indic,MLNeedle,OK
+2505.10089,XRAG: Cross-lingual Retrieval-Augmented Generation,Wei Liu; Sony Trenous; Leonardo F. R. Ribeiro et al.,2025-05,cs.CL,query-language,XRAG,OK
+2212.05409,"Towards Leaving No Indic Language Behind: Building Monolingual Corpora, Benchmark and Models for Indic Languages",Sumanth Doddapaneni; Rahul Aralikatte; Gowtham Ramesh et al.,2022-12,cs.CL,benchmark-indic,IndicXTREME / IndicQA / IndicCorp v2,OK
+2404.16816,IndicGenBench: A Multilingual Benchmark to Evaluate Generation Capabilities of LLMs on Indic Languages,Harman Singh; Nitish Gupta; Shikhar Bharadwaj et al.,2024-04,cs.CL,benchmark-indic,IndicGenBench,OK
+2407.13522,INDIC QA BENCHMARK: A Multilingual Benchmark to Evaluate Question Answering capability of LLMs for Indic Languages,Abhishek Kumar Singh; Vishwajeet kumar; Rudra Murthy et al.,2024-07,cs.LG,benchmark-indic,Indic QA Benchmark,OK
+2411.02538,MILU: A Multi-task Indic Language Understanding Benchmark,Sshubam Verma; Mohammed Safi Ur Rahman Khan; Vishwajeet Kumar et al.,2024-11,cs.CL,benchmark-indic,MILU,OK
+2501.15747,IndicMMLU-Pro: Benchmarking Indic Large Language Models on Multi-Task Language Understanding,Sankalp KJ; Ashutosh Kumar; Laxmaan Balaji et al.,2025-01,cs.CL,benchmark-indic,IndicMMLU-Pro,OK
+2406.15053,PARIKSHA: A Large-Scale Investigation of Human-LLM Evaluator Agreement on Multilingual and Multi-Cultural Data,Ishaan Watts; Varun Gumma; Aditya Yadavalli et al.,2024-06,cs.CL,benchmark-indic,Pariksha,OK
+2409.08706,L3Cube-IndicQuest: A Benchmark Question Answering Dataset for Evaluating Knowledge of LLMs in Indic Context,Pritika Rohera; Chaitrali Ginimav; Akanksha Salunke et al.,2024-09,cs.CL,benchmark-indic,L3Cube-IndicQuest v1,OK
+2608.15535,L3Cube-IndicQuest v2: A Large-Scale Multilingual Benchmark for Evaluating Factual Knowledge of Large Language Models Across Indic Languages,Rinit Jain; Tirthraj Mahajan; Advait Joshi et al.,2026-08,cs.CL,knowledge-gap,L3Cube-IndicQuest v2,OK
+2505.03688,IndicSQuAD: A Comprehensive Multilingual Question Answering Dataset for Indic Languages,Sharvi Endait; Ruturaj Ghatage; Aditya Kulkarni et al.,2025-05,cs.CL,benchmark-indic,IndicSQuAD,OK
+2412.03304,Global MMLU: Understanding and Addressing Cultural and Linguistic Biases in Multilingual Evaluation,Shivalika Singh; Angelika Romanou; Clémentine Fourrier et al.,2024-12,cs.CL,benchmark-multilingual,Global-MMLU,OK
+2411.19799,INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge,Angelika Romanou; Negar Foroutan; Anna Sotnikova et al.,2024-11,cs.CL,benchmark-multilingual,INCLUDE,OK
+2504.10356,MultiLoKo: a multilingual local knowledge benchmark for LLMs spanning 31 languages,Dieuwke Hupkes; Nikolay Bogoychev,2025-04,cs.CL,knowledge-gap,MultiLoKo,OK
+2502.21228,ECLeKTic: a Novel Challenge Set for Evaluation of Cross-Lingual Knowledge Transfer,Omer Goldman; Uri Shaham; Dan Malkin et al.,2025-02,cs.CL,knowledge-gap,ECLeKTic,OK
+2502.09642,Krutrim LLM: Multilingual Foundational Model for over a Billion People,Aditya Kallappa; Palash Kamble; Abhinav Ravi et al.,2025-02,cs.CL,benchmark-indic,Krutrim-2 (BharatBench ref),OK
+2410.13671,HEALTH-PARIKSHA: Assessing RAG Models for Health Chatbots in Real-World Multilingual Settings,Varun Gumma; Ananditha Raghunath; Mohit Jain et al.,2024-10,cs.CL,benchmark-indic,Health-Pariksha,OK
+2510.25409,BhashaBench V1: A Comprehensive Benchmark for the Quadrant of Indic Domains,Vijay Devane; Mohd Nauman; Bhargav Patel et al.,2025-10,cs.CL,benchmark-indic,BhashaBench V1,OK
+2508.16185,ParamBench: A Graduate-Level Benchmark for Evaluating LLM Understanding on Indic Subjects,Ayush Maheshwari; Kaushal Sharma; Vivek Patel et al.,2025-08,cs.CL,benchmark-indic,ParamBench,OK
+2512.00333,IndicParam: Benchmark to evaluate LLMs on low-resource Indic Languages,Ayush Maheshwari; Kaushal Sharma; Vivek Patel et al.,2025-11,cs.CL,benchmark-indic,IndicParam,OK
+2602.22125,IndicIFEval: A Benchmark for Verifiable Instruction-Following Evaluation in 14 Indic Languages,Thanmay Jayakumar; Mohammed Safi Ur Rahman Khan; Raj Dabre et al.,2026-02,cs.CL,benchmark-indic,IndicIFEval,OK
+2512.01852,BHRAM-IL: A Benchmark for Hallucination Recognition and Assessment in Multiple Indian Languages,Hrishikesh Terdalkar; Kirtan Bhojani; Aryan Dongare et al.,2025-12,cs.CL,benchmark-indic,BHRAM-IL,OK
+2605.29637,Evaluating Cross-lingual Knowledge Consistency in Code-Mixed vis-a-vis Indian Languages using IndicKLAR,Debajyoti Mazumder; Divyansh Pathak; Prashant Kodali et al.,2026-05,cs.CL,knowledge-gap,IndicKLAR,OK
+2509.21294,UPDESH: Synthesizing Grounded Instruction Tuning Data for 13 Indic Languages,Pranjal A. Chitale; Varun Gumma; Sanchit Ahuja et al.,2025-09,cs.CL,corpus-coverage,Updesh,OK
+2403.06350,IndicLLMSuite: A Blueprint for Creating Pre-training and Fine-Tuning Datasets for Indian Languages,Mohammed Safi Ur Rahman Khan; Priyam Mehta; Ananth Sankar et al.,2024-03,cs.CL,corpus-coverage,Sangraha / IndicLLMSuite,OK
+2508.19831,Benchmarking Hindi LLMs: A New Suite of Datasets and a Comparative Analysis,Anusha Kamath; Kanishk Singla; Rakesh Paul et al.,2025-08,cs.CL,benchmark-indic,ChatRAG-Hi,OK
+2608.14886,Where Does Retrieval Fail? Evaluating RAG Architectures for Agricultural Advisory,Khan Raiyan Ibne Reza; Sanjana Aktar Maria; Sumaiya Tabassum Nimi,2026-08,cs.CL,benchmark-indic,AgriTrust-RAG,OK
+2608.28645,Cross Lingual Transfer in Tulu Legal Comprehension: Script-Dependent Improvement and RAG-Induced Knowledge Conflict,Sindhu Shetty; Spurthi Setty; Natan Vidra,2026-08,cs.CL,benchmark-indic,Tulu legal RAG,OK
+2601.10205,One Instruction Does Not Fit All: How Well Do Embeddings Align Personas and Instructions in Low-Resource Indian Languages?,Arya Shah; Himanshu beniwal; Mayank Singh,2026-01,cs.CL,benchmark-indic,Persona-instruction retrieval (12 Indian langs),OK
+2502.17163,MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for Retrieval Augmented Generation,María Andrea Cruz Blandón; Jayasimha Talur; Bruno Charron et al.,2025-02,cs.CL,benchmark-multilingual,MEMERAG,OK
+2512.05959,M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG,David Anugraha; Patrick Amadeus Irawan; Anshul Singh et al.,2025-12,cs.CL,benchmark-multilingual,M4-RAG,OK
+2502.11175,Investigating Language Preference of Multilingual RAG Systems,Jeonghyun Park; Hwanhee Lee,2025-02,cs.CL,multilingual-rag,Park & Lee MLRS / DKM-RAG,OK
+2601.02956,Enhancing Multilingual RAG Systems with Debiased Language Preference-Guided Query Fusion,Jeonghyun Park; Byeongjeong Kim; Seojin Hwang et al.,2026-01,cs.CL,multilingual-rag,DeLP / DELTA,OK
+2604.20199,All Languages Matter: Understanding and Mitigating Language Bias in Multilingual RAG,Dan Wang; Guozhao Mo; Yafei Shi et al.,2026-04,cs.CL,multilingual-rag,LAURA,OK
+2410.21970,Not All Languages are Equal: Insights into Multilingual Retrieval-Augmented Generation,Suhang Wu; Jialong Tang; Baosong Yang et al.,2024-10,cs.CL,multilingual-rag,Futurepedia,OK
+2504.03616,Multilingual Retrieval-Augmented Generation for Knowledge-Intensive Task,Leonardo Ranaldi; Barry Haddow; Alexandra Birch,2025-04,cs.CL,multilingual-rag,tRAG / MultiRAG / CrossRAG,OK
+2504.00597,On the Consistency of Multilingual Context Utilization in Retrieval-Augmented Generation,Jirui Qi; Raquel Fernández; Arianna Bisazza,2025-04,cs.CL,multilingual-rag,Qi et al. consistency of context utilization,OK
+2507.07543,The Cross-Lingual Cost: Retrieval Biases in RAG over Arabic-English Corpora,Chen Amiraz; Yaroslav Fyodorov; Elad Haramaty et al.,2025-07,cs.CL,multilingual-rag,Cross-Lingual Cost (Amiraz),OK
+2510.23070,Quality-Aware Translation Tagging in Multilingual RAG system,Hoyeon Moon; Byeolhee Kim; Nikhil Verma,2025-10,cs.CL,multilingual-rag,QTT-RAG,OK
+2511.09984,Language Drift in Multilingual Retrieval-Augmented Generation: Characterization and Decoding-Time Mitigation,Bo Li; Zhenghua Xu; Rui Xie,2025-11,cs.CL,multilingual-rag,Language Drift / SCD,OK
+2604.25676,CORAL: Adaptive Retrieval Loop for Culturally-Aligned Multilingual RAG,Nayeon Lee; Jiwoo Song; Byeongcheol Kang,2026-04,cs.CL,multilingual-rag,CORAL,OK
+2507.22923,How and Where to Translate? The Impact of Translation Strategies in Cross-lingual LLM Prompting,Aman Gupta; Yingying Zhuang; Zhou Yu et al.,2025-07,cs.CL,query-language,How and Where to Translate? (Gupta),OK
+2510.00908,Bridging Language Gaps: Advances in Cross-Lingual Information Retrieval with Multilingual LLMs,Roksana Goworek; Olivia Macmillan-Scott; Eda B. Özyiğit,2025-10,cs.IR,multilingual-rag,CLIR survey (Goworek),OK
+2511.19324,What Drives Cross-lingual Ranking? Retrieval Approaches with Multilingual Language Models,Roksana Goworek; Olivia Macmillan-Scott; Eda B. Özyiğit,2025-11,cs.IR,multilingual-rag,What Drives Cross-lingual Ranking?,OK
+2603.04238,Retrieval or Representation? Reassessing Benchmark Gaps in Multilingual and Visually Rich RAG,Martin Asenov; Kenza Benkirane; Dan Goldwater et al.,2026-03,cs.CL,multilingual-rag,Retrieval or Representation? (Asenov),OK
+2408.11942,What are the limits of cross-lingual dense passage retrieval for low-resource languages?,Jie Wu; Zhaochun Ren; Suzan Verberne,2024-08,cs.IR,multilingual-rag,"Wu, Ren, Verberne limits of CL-DPR",OK
+2305.14332,Evaluating and Modeling Attribution for Cross-Lingual Question Answering,Benjamin Muller; John Wieting; Jonathan H. Clark et al.,2023-05,cs.CL,multilingual-rag,Muller et al. attribution,OK
+2608.05163,Where Privacy Risk Lives in English-Source Multilingual RAG: A Stage-Decomposed Audit Across Five Query Languages,Yanhang Li; Zhichao Fan; Zexin Zhuang,2026-05,cs.CL,multilingual-rag,"Privacy stage-decomposed audit (Li, Fan, Zhuang)",OK
+2604.14896,Toward Agentic RAG for Ukrainian,Marta Sumyk; Oleksandr Kosovan,2026-04,cs.AI,multilingual-rag,Agentic RAG for Ukrainian,OK
+2509.13930,Linguistic Nepotism: Trading-off Quality for Language Preference in Multilingual RAG,Dayeon Ki; Marine Carpuat; Paul McNamee et al.,2025-09,cs.CL,multilingual-rag,Linguistic Nepotism,OK
+2407.05502,Faux Polyglot: A Study on Information Disparity in Multilingual Large Language Models,Nikhil Sharma; Kenton Murray; Ziang Xiao,2024-07,cs.CL,multilingual-rag,Faux Polyglot,OK
+2407.01463,Retrieval-augmented generation in multilingual settings,Nadezhda Chirkova; David Rau; Hervé Déjean et al.,2024-07,cs.CL,multilingual-rag,Chirkova et al. RAG in multilingual settings,OK
+2605.07249,MLAIRE: Multilingual Language-Aware Information Retrieval Evaluation Protocal,Youngjoon Jang; Seongtae Hong; Hyeonseok Moon et al.,2026-05,cs.IR,multilingual-rag,MLAIRE,OK
+2511.19325,Generative Query Expansion with Multilingual LLMs for Cross-Lingual Information Retrieval,Olivia Macmillan-Scott; Roksana Goworek; Eda B. Özyiğit,2025-11,cs.IR,multilingual-rag,Generative Query Expansion for CLIR,OK
+2601.04768,LANGSAE EDITING: Improving Multilingual Information Retrieval via Post-hoc Language Identity Removal,Dongjun Kim; Jeongho Yoon; Chanjun Park et al.,2026-01,cs.CL,multilingual-rag,LangSAE Editing,OK
+2601.14896,Language-Coupled Reinforcement Learning for Multilingual Retrieval-Augmented Generation,Rui Qi; Fengran Mo; Yufeng Chen et al.,2026-01,cs.CL,multilingual-rag,LcRL,OK
+2604.25182,CroSearch-R1: Better Leveraging Cross-lingual Knowledge for Retrieval-Augmented Generation,Rui Qi; Fengran Mo; Sijin Lu et al.,2026-04,cs.CL,multilingual-rag,CroSearch-R1,OK
+2607.02966,Distill Where the Student Goes: Teacher-Regularized RL for English-Evidence Cross-Lingual RAG,Haotian Zhou; Weiran Huang; Siqi Liu et al.,2026-07,cs.CL,multilingual-rag,TR-RAG,OK
+2608.27481,XHotpotQA: A Benchmark for Cross-Lingual Knowledge Composition in Multi-Hop Question Answering,Iman Barati; Arash Ghafouri; Behrouz Minaei-Bidgoli,2026-08,cs.CL,multilingual-rag,XHotpotQA,OK
+2504.19314,BrowseComp-ZH: Benchmarking Web Browsing Ability of Large Language Models in Chinese,Peilin Zhou; Bruce Leon; Xiang Ying et al.,2025-04,cs.CL,agentic-search,BrowseComp-ZH,OK
+2606.02404,K-BrowseComp: A Web Browsing Agent Benchmark Grounded in Korean Contexts,Nahyun Lee; Dongkeun Yoon; Guijin Son et al.,2026-06,cs.CL,agentic-search,K-BrowseComp,OK
+2606.27595,Ko-WideSearch: A Korean Breadth-Search Benchmark for Exhaustive Set Enumeration by Web Agents,Minbyul Jeong,2026-06,cs.CL,agentic-search,Ko-WideSearch,OK
+2508.07999,WideSearch: Benchmarking Agentic Broad Info-Seeking,Ryan Wong; Jiawei Wang; Junjie Zhao et al.,2025-08,cs.CL,agentic-search,WideSearch,OK
+2501.07572,WebWalker: Benchmarking LLMs in Web Traversal,Jialong Wu; Wenbiao Yin; Yong Jiang et al.,2025-01,cs.CL,agentic-search,WebWalkerQA,OK
+2510.24701,Tongyi DeepResearch Technical Report, Tongyi DeepResearch Team; Baixuan Li; Bo Zhang et al.,2025-10,cs.CL,agentic-search,Tongyi DeepResearch,OK
+2610.03574,HyperBrowseComp: A Multilingual and Multimodal Stress Test for Web-Browsing Agents,Alham Fikri Aji; Faiz Rizki Ramadhan; Zayd M. K. Zuhri et al.,2026-10,cs.AI,agentic-search,HyperBrowseComp,OK
+2606.15345,Beyond Monolingual Deep Research: Evaluating Agents and Retrievers with Cross-Lingual BrowseComp-Plus,Yuheng Lu; Qingcheng Zeng; Heli Qi et al.,2026-06,cs.CL,agentic-search,XBCP,OK
+2508.06600,BrowseComp-Plus: A More Fair and Transparent Evaluation Benchmark of Deep-Research Agent,Zijian Chen; Xueguang Ma; Shengyao Zhuang et al.,2025-08,cs.CL,agentic-search,BrowseComp-Plus,OK
+2505.15935,MAPS: A Multilingual Benchmark for Agent Performance and Security,Omer Hofman; Jonathan Brokman; Oren Rachmil et al.,2025-05,cs.DB,agentic-search,MAPS,OK
+2604.24929,GAIA-v2-LILT: Multilingual Adaptation of Agent Benchmark beyond Translation,Yunsu Kim; Kaden Uhlig; Joern Wuebker,2026-04,cs.CL,agentic-search,GAIA-v2-LILT,OK
+2608.08775,OmnilingualGAIA2: Evaluating the Multilingual Gap in Frontier AI Agents,Andrea Caciolai; Pere-Lluís Huguet Cabot; Chierh Cheng et al.,2026-08,cs.CL,agentic-search,OmnilingualGAIA2,OK
+2608.03735,"An Actionable Diagnosis of Multilingual, Multi-Agent Planning Failures",Vikas Pahuja; Jonathan Brokman; Omer Hofman et al.,2026-08,cs.MA,agentic-search,TART (Pahuja),OK
+2609.23490,BabelArena: A Large-Scale Multilingual Benchmark for LLM Agents,Peng Kuang; Yuchun Fan; Jiangnan Li et al.,2026-09,cs.CL,agentic-search,BabelArena,OK
+2607.06008,PolyWorkBench: Benchmarking LLM Agents for Cross-Lingual Long-Horizon Workflows,Hongliang Li; Yijin Liu; Zhiwei Zhang et al.,2026-07,cs.AI,agentic-search,PolyWorkBench,OK
+2506.05334,Search Arena: Analyzing Search-Augmented LLMs,Mihran Miroyan; Tsung-Han Wu; Logan King et al.,2025-06,cs.CL,agentic-search,Search Arena,OK
+2609.19244,Characterizing Web Search by Conversational LLM Agents: From Search Decisions and Strategies to Results and Responses,Mahsa Amani; Seungeon Lee; Abhisek Dash et al.,2026-09,cs.AI,agentic-search,Characterizing Web Search by Conversational LLM Agents (Amani),OK
+2609.00319,"Sources of Truth: A Multi-Platform, Multilingual Audit of Citations in AI Mental Health Information Queries",Phuong Anh Nguyen; Jill Noorily; Matthew Flathers et al.,2026-08,cs.CY,agentic-search,Sources of Truth,OK
+2608.30052,The Language of the Question Selects the Market: Query Language and Exit IP as Separable Factors in Commercial Recommendations from a Generative Search Interface,Dmitrij Żatuchin,2026-08,cs.IR,agentic-search,Query language selects the market (Zatuchin),OK
+2608.01913,Diagnosing Search Behavior and Failure Modes in Long-Horizon Search Agents,Qi Liu; Jiaxin Mao; Fengbin Zhu et al.,2026-08,cs.AI,agentic-search,"Diagnosing Search Behavior and Failure Modes (Liu, Mao, Zhu, Chua)",OK
+2608.05212,SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents,Zhixiang Liang; Yifei Liu; Yidan Huang et al.,2026-08,cs.AI,agentic-search,SearchAuditor,OK
+2609.08094,CIVI: A Framework for Diagnosing Search Agent Failures in Civic Information,Dingying Liu; Yunshun Zhong; Wentao Zhang et al.,2026-09,cs.AI,agentic-search,CIVI / ARISE,OK
+2505.19253,"DeepResearchGym: A Free, Transparent, and Reproducible Evaluation Sandbox for Deep Research",João Coelho; Jingjie Ning; Jingyuan He et al.,2025-05,cs.IR,agentic-search,DeepResearchGym,OK
+2604.17632,"Code-Switching Information Retrieval: Benchmarks, Analysis, and the Limits of Current Retrievers",Qingcheng Zeng; Yuheng Lu; Zeqi Zhou et al.,2026-04,cs.IR,agentic-search,"Code-Switching IR (Zeng, Lu)",OK
+2606.30790,Indi-RomCoM: Code-Mixed Benchmark for Evaluating LLMs on Romanized Indic-English Instructions,Avisha Das; Mihir Parmar; Mohana Ramnath et al.,2026-06,cs.CL,agentic-search,Indi-RomCoM,OK
+2510.07978,VoiceAgentBench: Are Voice Assistants ready for agentic tasks?,Dhruv Jain; Harshit Shukla; Gautam Rajeev et al.,2025-10,cs.AI,agentic-search,VoiceAgentBench,OK
+2603.05515,Enhancing Tool Calling in LLMs with the International Tool Calling Dataset,Zuoyu Zhang; Yancheng Zhu,2026-01,cs.HC,agentic-search,Lost in Execution / MLCL,TITLE_MISMATCH
+2601.05366,Lost in Execution: On the Multilingual Robustness of Tool Calling in Large Language Models,Zheng Luo; T Pranav Kutralingam; Ogochukwu N Okoani et al.,2026-01,cs.CL,agentic-search,ITC,TITLE_MISMATCH
+2506.23394,Teaching a Language Model to Speak the Language of Tools,Simeon Emanuilov,2025-06,cs.IR,agentic-search,TUCAN,OK
+2404.09992,MMInA: Benchmarking Multihop Multimodal Internet Agents,Shulin Tian; Ziniu Zhang; Liangyu Chen et al.,2024-04,cs.CV,agentic-search,MMInA,OK
+2409.12959,MMSearch: Benchmarking the Potential of Large Models as Multi-modal Search Engines,Dongzhi Jiang; Renrui Zhang; Ziyu Guo et al.,2024-09,cs.CV,agentic-search,MMSearch,OK
+2506.20670,MMSearch-R1: Incentivizing LMMs to Search,Jinming Wu; Zihao Deng; Wei Li et al.,2025-06,cs.CV,agentic-search,MMSearch-R1,OK
+2403.10258,Is Translation All You Need? A Study on Solving Multilingual Tasks with Large Language Models,Chaoqun Liu; Wenxuan Zhang; Yiran Zhao et al.,2024-03,cs.CL,query-language,Is Translation All You Need? (Liu),OK
+2308.01223,Do Multilingual Language Models Think Better in English?,Julen Etxaniz; Gorka Azkune; Aitor Soroa et al.,2023-08,cs.CL,query-language,self-translate (Etxaniz),OK
+2402.10588,Do Llamas Work in English? On the Latent Language of Multilingual Transformers,Chris Wendler; Veniamin Veselovsky; Giovanni Monea et al.,2024-02,cs.CL,query-language,Do Llamas Work in English? (Wendler),OK
+2502.15603,Do Multilingual LLMs Think In English?,Lisa Schut; Yarin Gal; Sebastian Farquhar,2025-02,cs.CL,query-language,Do Multilingual LLMs Think in English? (Schut),OK
+2406.20052,Understanding and Mitigating Language Confusion in LLMs,Kelly Marchisio; Wei-Yin Ko; Alexandre Bérard et al.,2024-06,cs.CL,query-language,Language Confusion (Marchisio),OK
+2510.07300,Think Natively: Unlocking Multilingual Reasoning with Consistency-Enhanced Reinforcement Learning,Xue Zhang; Yunlong Liang; Fandong Meng et al.,2025-10,cs.CL,query-language,M-Thinker,OK
+2606.01464,Cross-lingual Self-Consistency for Multilingual Reasoning with Language Models,Ahmed Elhady; Eneko Agirre; Mikel Artetxe,2026-05,cs.CL,query-language,Cross-lingual self-consistency (Elhady),OK
+2509.23659,Aligning LLMs for Multilingual Consistency in Enterprise Applications,Amit Agarwal; Hansa Meghwani; Hitesh Laxmichand Patel et al.,2025-09,cs.CL,query-language,Agarwal et al. enterprise consistency,OK
+2506.20920,FineWeb2: One Pipeline to Scale Them All -- Adapting Pre-Training Data Processing to Every Language,Guilherme Penedo; Hynek Kydlíček; Vinko Sabolčec et al.,2025-06,cs.CL,corpus-coverage,FineWeb-2,OK
+2010.06189,X-FACTR: Multilingual Factual Knowledge Retrieval from Pretrained Language Models,Zhengbao Jiang; Antonios Anastasopoulos; Jun Araki et al.,2020-10,cs.CL,knowledge-gap,X-FACTR,OK
+2102.00894,Multilingual LAMA: Investigating Knowledge in Multilingual Pretrained Language Models,Nora Kassner; Philipp Dufter; Hinrich Schütze,2021-02,cs.CL,knowledge-gap,mLAMA,OK
+2203.11552,Factual Consistency of Multilingual Pretrained Language Models,Constanza Fierro; Anders Søgaard,2022-03,cs.CL,knowledge-gap,mParaRel,OK
+2310.10378,Cross-Lingual Consistency of Factual Knowledge in Multilingual Language Models,Jirui Qi; Raquel Fernández; Arianna Bisazza,2023-10,cs.CL,knowledge-gap,RankC / BMLAMA,OK
+2305.13675,Polyglot or Not? Measuring Multilingual Encyclopedic Knowledge in Foundation Models,Tim Schott; Daniel Furman; Shreshta Bhat,2023-05,cs.CL,knowledge-gap,Polyglot or Not?,OK
+2406.16135,Crosslingual Capabilities and Knowledge Barriers in Multilingual Large Language Models,Lynn Chua; Badih Ghazi; Yangsibo Huang et al.,2024-06,cs.CL,knowledge-gap,Crosslingual Capabilities and Knowledge Barriers (Chua),OK
+2404.11553,Language Ranker: A Metric for Quantifying LLM Performance Across High and Low-Resource Languages,Zihao Li; Yucheng Shi; Zirui Liu et al.,2024-04,cs.CL,knowledge-gap,Language Ranker,OK
+2404.04990,MLaKE: Multilingual Knowledge Editing Benchmark for Large Language Models,Zihao Wei; Jingcheng Deng; Liang Pang et al.,2024-04,cs.CL,knowledge-gap,MLaKE,OK
+2410.14387,How Do Multilingual Language Models Remember Facts?,Constanza Fierro; Negar Foroutan; Desmond Elliott et al.,2024-10,cs.CL,knowledge-gap,How Do Multilingual LMs Remember Facts? (Fierro),OK
+2504.04264,Lost in Multilinguality: Dissecting Cross-lingual Factual Inconsistency in Transformer Language Models,Mingyang Wang; Heike Adel; Lukas Lange et al.,2025-04,cs.CL,knowledge-gap,Lost in Multilinguality / KLAR,OK
+2504.20022,Better To Ask in English? Evaluating Factual Accuracy of Multilingual LLMs in English and Low-Resource Languages,Pritika Rohera; Chaitrali Ginimav; Gayatri Sawant et al.,2025-04,cs.CL,knowledge-gap,Better To Ask in English? (Rohera),OK
+2505.14824,Tracing Multilingual Factual Knowledge Acquisition in Pretraining,Yihong Liu; Mingyang Wang; Amir Hossein Kargaran et al.,2025-05,cs.CL,knowledge-gap,Tracing Multilingual Factual Knowledge Acquisition (Liu),OK
+2505.20546,Paths Not Taken: Understanding and Mending the Multilingual Factual Recall Pipeline,Meng Lu; Ruochen Zhang; Carsten Eickhoff et al.,2025-05,cs.CL,knowledge-gap,Paths Not Taken,OK
+2510.10280,On the Entity-Level Alignment in Crosslingual Consistency,Yihong Liu; Mingyang Wang; François Yvon et al.,2025-10,cs.CL,knowledge-gap,"Entity-Level Alignment (Liu, Wang, Yvon, Schuetze)",OK
+2510.15551,Rethinking Cross-lingual Gaps from a Statistical Viewpoint,Vihari Piratla; Purvam Jain; Darshan Singh et al.,2025-10,cs.CL,knowledge-gap,"Rethinking Cross-lingual Gaps, Statistical Viewpoint (Piratla)",OK
+2603.17070,Large Reasoning Models Struggle to Transfer Parametric Knowledge Across Scripts,Lucas Bandarkar; Alan Ansell; Trevor Cohn,2026-03,cs.CL,knowledge-gap,LRMs Struggle to Transfer Parametric Knowledge Across Scripts (Bandarkar),OK
+2606.06586,PolyFact: Comparing Consistency-Driven Post-training Methods for Cross-Lingual Factual Recall,Jonathan von Rad; Louis Arts; George Burgess et al.,2026-06,cs.CL,knowledge-gap,PolyFact,OK
+2606.24579,Cross-Lingual Exploration for Parametric Knowledge,Elisha Diskind; Itamar Trainin; Uri Shaham et al.,2026-06,cs.CL,knowledge-gap,Cross-Lingual Exploration for Parametric Knowledge (Diskind),OK
+2609.09349,SWORD: Wikidata-based Distortions Reveal Hidden Cross-Lingual Inconsistencies in LLM Factual Error Rejection,Sanghyeok Park; Minji Kang; Hosung Kwak et al.,2026-09,cs.CL,knowledge-gap,SWORD,OK
+2505.24195,WikiGap: Promoting Epistemic Equity by Surfacing Knowledge Gaps Between English Wikipedia and other Language Editions,Zining Wang; Yuxuan Zhang; Dongwook Yoon et al.,2025-05,cs.HC,knowledge-gap,WikiGap,OK
+2609.22375,Initial Evaluation of Potential Bias in Coverage of Humans in Wikidata,Clair Kronk,2026-09,cs.CY,knowledge-gap,"Kronk, Bias in Coverage of Humans in Wikidata",OK
+2406.09948,BLEnD: A Benchmark for LLMs on Everyday Knowledge in Diverse Cultures and Languages,Junho Myung; Nayeon Lee; Yi Zhou et al.,2024-06,cs.CL,knowledge-gap,BLEnD,OK
+2508.16139,XLQA: A Benchmark for Locale-Aware Multilingual Open-Domain Question Answering,Keon-Woo Roh; Yeong-Joon Ju; Seong-Whan Lee,2025-08,cs.CL,knowledge-gap,XLQA,OK
+2604.00019,The Chronicles of RiDiC: Generating Datasets with Controlled Popularity Distribution for Long-form Factuality Evaluation,Pavel Braslavski; Dmitrii Iarosh; Nikita Sushko et al.,2026-03,cs.CL,knowledge-gap,RiDiC,OK
