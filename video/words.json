@@ -2286,9 +2286,9 @@
   },
   {
    "id": "p9",
-   "text": "Put that into the decomposition. With keyword search, a real Hindi user gets forty-five percent against seventy-one for an English user, and most of that loss is the seventy-one percent of facts that only English holds. Telling the agent to search in English lifts the Hindi user to sixty-three. With cross-lingual search, the pool language costs nothing; the Hindi user gets sixty-seven against seventy-six.",
+   "text": "Put that into the decomposition. With keyword search, a real Hindi user gets forty-five percent against seventy-one for an English user, and most of that loss is the seventy-one percent of facts that only English holds. Telling the agent to search in English lifts the Hindi user to sixty-three. With cross-lingual search, the pool language costs nothing. Then we measured the uncovered questions directly, and they are harder for everyone: the Hindi user gets 51 against 60 for the English user. The same nine-point gap.",
    "start": 166.300313,
-   "dur": 24.810542,
+   "dur": 31.834563,
    "words": [
     {
      "w": "Put",
@@ -2303,36 +2303,36 @@
     {
      "w": "into",
      "s": 0.34,
-     "e": 0.58
+     "e": 0.6
     },
     {
      "w": "the",
-     "s": 0.58,
-     "e": 0.76
+     "s": 0.6,
+     "e": 0.78
     },
     {
      "w": "decomposition.",
-     "s": 0.76,
+     "s": 0.78,
      "e": 1.62
     },
     {
      "w": "With",
-     "s": 2.04,
+     "s": 2.02,
      "e": 2.16
     },
     {
      "w": "keyword",
      "s": 2.16,
-     "e": 2.54
+     "e": 2.56
     },
     {
      "w": "search,",
-     "s": 2.54,
+     "s": 2.56,
      "e": 3.0
     },
     {
      "w": "a",
-     "s": 3.5,
+     "s": 3.52,
      "e": 3.6
     },
     {
@@ -2343,11 +2343,11 @@
     {
      "w": "Hindi",
      "s": 3.84,
-     "e": 4.1
+     "e": 4.12
     },
     {
      "w": "user",
-     "s": 4.1,
+     "s": 4.12,
      "e": 4.52
     },
     {
@@ -2373,26 +2373,26 @@
     {
      "w": "against",
      "s": 5.96,
-     "e": 6.34
+     "e": 6.36
     },
     {
      "w": "seventy",
-     "s": 6.34,
-     "e": 6.9
+     "s": 6.36,
+     "e": 6.92
     },
     {
      "w": "-one",
-     "s": 6.9,
+     "s": 6.92,
      "e": 7.22
     },
     {
      "w": "for",
      "s": 7.22,
-     "e": 7.44
+     "e": 7.46
     },
     {
      "w": "an",
-     "s": 7.44,
+     "s": 7.46,
      "e": 7.58
     },
     {
@@ -2407,7 +2407,7 @@
     },
     {
      "w": "and",
-     "s": 8.58,
+     "s": 8.6,
      "e": 8.76
     },
     {
@@ -2423,11 +2423,11 @@
     {
      "w": "that",
      "s": 9.24,
-     "e": 9.4
+     "e": 9.42
     },
     {
      "w": "loss",
-     "s": 9.4,
+     "s": 9.42,
      "e": 9.62
     },
     {
@@ -2438,11 +2438,11 @@
     {
      "w": "the",
      "s": 9.82,
-     "e": 9.98
+     "e": 10.0
     },
     {
      "w": "seventy",
-     "s": 9.98,
+     "s": 10.0,
      "e": 10.3
     },
     {
@@ -2473,26 +2473,26 @@
     {
      "w": "only",
      "s": 11.82,
-     "e": 12.1
+     "e": 12.12
     },
     {
      "w": "English",
-     "s": 12.1,
+     "s": 12.12,
      "e": 12.44
     },
     {
      "w": "holds.",
      "s": 12.44,
-     "e": 12.94
+     "e": 13.0
     },
     {
      "w": "Telling",
-     "s": 13.48,
-     "e": 13.62
+     "s": 13.36,
+     "e": 13.6
     },
     {
      "w": "the",
-     "s": 13.62,
+     "s": 13.6,
      "e": 13.84
     },
     {
@@ -2503,11 +2503,11 @@
     {
      "w": "to",
      "s": 14.12,
-     "e": 14.34
+     "e": 14.36
     },
     {
      "w": "search",
-     "s": 14.34,
+     "s": 14.36,
      "e": 14.6
     },
     {
@@ -2543,11 +2543,11 @@
     {
      "w": "to",
      "s": 16.2,
-     "e": 16.44
+     "e": 16.46
     },
     {
      "w": "sixty",
-     "s": 16.44,
+     "s": 16.46,
      "e": 16.74
     },
     {
@@ -2557,7 +2557,7 @@
     },
     {
      "w": "With",
-     "s": 17.62,
+     "s": 17.58,
      "e": 17.82
     },
     {
@@ -2573,84 +2573,184 @@
     {
      "w": "search,",
      "s": 18.48,
-     "e": 18.94
+     "e": 18.98
     },
     {
      "w": "the",
-     "s": 19.38,
-     "e": 19.48
+     "s": 19.36,
+     "e": 19.5
     },
     {
      "w": "pool",
-     "s": 19.48,
+     "s": 19.5,
      "e": 19.72
     },
     {
      "w": "language",
      "s": 19.72,
-     "e": 20.1
+     "e": 20.12
     },
     {
      "w": "costs",
-     "s": 20.1,
-     "e": 20.46
+     "s": 20.12,
+     "e": 20.44
     },
     {
      "w": "nothing.",
-     "s": 20.46,
+     "s": 20.44,
      "e": 21.0
     },
     {
+     "w": "Then",
+     "s": 21.42,
+     "e": 21.58
+    },
+    {
+     "w": "we",
+     "s": 21.58,
+     "e": 21.76
+    },
+    {
+     "w": "measured",
+     "s": 21.76,
+     "e": 22.06
+    },
+    {
+     "w": "the",
+     "s": 22.06,
+     "e": 22.26
+    },
+    {
+     "w": "uncovered",
+     "s": 22.26,
+     "e": 22.68
+    },
+    {
+     "w": "questions",
+     "s": 22.68,
+     "e": 23.28
+    },
+    {
+     "w": "directly,",
+     "s": 23.28,
+     "e": 23.9
+    },
+    {
+     "w": "and",
+     "s": 24.32,
+     "e": 24.5
+    },
+    {
+     "w": "they",
+     "s": 24.5,
+     "e": 24.68
+    },
+    {
+     "w": "are",
+     "s": 24.68,
+     "e": 24.82
+    },
+    {
+     "w": "harder",
+     "s": 24.82,
+     "e": 25.08
+    },
+    {
+     "w": "for",
+     "s": 25.08,
+     "e": 25.32
+    },
+    {
+     "w": "everyone.",
+     "s": 25.32,
+     "e": 25.96
+    },
+    {
      "w": "The",
-     "s": 21.4,
-     "e": 21.5
+     "s": 26.36,
+     "e": 26.46
     },
     {
      "w": "Hindi",
-     "s": 21.5,
-     "e": 21.78
+     "s": 26.46,
+     "e": 26.76
     },
     {
      "w": "user",
-     "s": 21.78,
-     "e": 22.14
+     "s": 26.76,
+     "e": 27.1
     },
     {
      "w": "gets",
-     "s": 22.14,
-     "e": 22.42
+     "s": 27.1,
+     "e": 27.44
     },
     {
-     "w": "sixty",
-     "s": 22.42,
-     "e": 22.84
-    },
-    {
-     "w": "-seven",
-     "s": 22.84,
-     "e": 23.24
+     "w": "51",
+     "s": 27.44,
+     "e": 28.04
     },
     {
      "w": "against",
-     "s": 23.24,
-     "e": 23.56
+     "s": 28.04,
+     "e": 28.4
     },
     {
-     "w": "seventy",
-     "s": 23.56,
-     "e": 24.12
+     "w": "60",
+     "s": 28.4,
+     "e": 28.94
     },
     {
-     "w": "-six.",
-     "s": 24.12,
-     "e": 24.58
+     "w": "for",
+     "s": 28.94,
+     "e": 29.14
+    },
+    {
+     "w": "the",
+     "s": 29.14,
+     "e": 29.28
+    },
+    {
+     "w": "English",
+     "s": 29.28,
+     "e": 29.52
+    },
+    {
+     "w": "user.",
+     "s": 29.52,
+     "e": 30.06
+    },
+    {
+     "w": "The",
+     "s": 30.38,
+     "e": 30.48
+    },
+    {
+     "w": "same",
+     "s": 30.48,
+     "e": 30.76
+    },
+    {
+     "w": "nine",
+     "s": 30.76,
+     "e": 31.06
+    },
+    {
+     "w": "-point",
+     "s": 31.06,
+     "e": 31.36
+    },
+    {
+     "w": "gap.",
+     "s": 31.36,
+     "e": 31.68
     }
    ]
   },
   {
    "id": "p10",
    "text": "So what is the remaining nine points? Reading. Give the model the correct English passage directly: the English question is answered eighty-seven percent of the time, the Hindi question eighty-one. Six points, with nothing left to retrieve. And given a Hindi passage, the Hindi question does worse still, seventy-three. The cheap model reads English better than Hindi.",
-   "start": 192.010855,
+   "start": 199.034876,
    "dur": 22.17525,
    "words": [
     {
@@ -2958,7 +3058,7 @@
   {
    "id": "p11",
    "text": "Six directions were written down before any data. Three held, two failed, one split. The honest summary: with a cross-lingual search engine, the Indic user's deficit is the model's reading, not the web and not the query; with a keyword engine, it is the query, and the fix is to search in English. Search in whose language? It depends on who is doing the searching.",
-   "start": 215.08610499999998,
+   "start": 222.11012599999998,
    "dur": 22.697792,
    "words": [
     {
@@ -3295,5 +3395,5 @@
   }
  ],
  "voice": "macos-say-Daniel",
- "total": 241.78389699999997
+ "total": 248.80791799999997
 }

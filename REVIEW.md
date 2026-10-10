@@ -183,7 +183,11 @@ is the whole story." Easy to restate; a colleague would repeat it.
 
 1. **Run the uncovered items directly** (Indic question, English-only and both pools, free
    and dual): replaces the extrapolation in Eq. 1 with a measurement. About 2,000 episodes,
-   under $2, half a day.
+   under $2, half a day. **DONE after this review (5,558 episodes, $1.55):** the uncovered facts
+   are harder for both users (measured Hindi user 51.4 vs English user 60.5; the extrapolation
+   had said 66.7 vs 75.8), the gap is unchanged, and serving the Hindi pool costs 5.8 points on
+   these items. The paper now reports both figures; W2 is resolved and W1 is sharpened (the
+   evidence-side term is a distractor effect, not a recall effect, on this pool).
 2. **A retriever-recall sweep**: dense retrieval over the full English Wikipedia (or top-k
    reduced to 1 and 2) to show the evidence-side term as a function of recall. The embedding
    job is the cost (about 7M articles, roughly 20 GPU-hours), the runs are cheap.

@@ -95,6 +95,13 @@ OpenRouter calls so far are 14 one-line key checks ($0.00017). Verbatim from INS
   items (Indic article does not verifiably state the answer; 382 hi, 412 te) are run directly on the Indic
   question (free/dual, English-only and both pools) plus the English question and closed-book, so the
   real-user estimate can be measured rather than extrapolated through Eq. 1. Gemini 2.5 Flash-Lite only.
+  RESULT (2026-10-11 00:00): the review was right. Uncovered facts are harder for everyone (English question
+  53.4 vs 75.8 on covered items; closed-book 29.6/34.6 vs 57.8/61.0). Measured Hindi user 51.4 vs
+  English user 60.5 (extrapolation said 66.7 vs 75.8: 15-19 points too optimistic for both; the gap is
+  unchanged). New survivor: serving the Hindi pool alongside English COSTS the Hindi question 5.8 points on
+  uncovered items (Hindi articles that lack the fact displace the English passage). Telugu measured 56.8
+  vs 60.1. Paper (abstract, findings, §4.4, Table 3, Limitations), site, README, teaser and film p9 updated
+  in one pass. Global BH family now 144 tests.
 
 ## CP4 · Paper
 - [x] ICLR dual build compiles with tectonic (XeTeX; Devanagari MT / Telugu MN for the Indic glyphs); 23 pages with appendix; 61 cited keys, all verified (paper/refs_verification.md; 143 CSV ids via the arXiv API + 7 manual non-arXiv entries + Where's Waldo added from the recency sweep); figures: HTML->Chrome teaser + 4 matplotlib (house style) + 3 tables generated from analysis.json
@@ -104,7 +111,7 @@ OpenRouter calls so far are 14 one-line key checks ($0.00017). Verbatim from INS
 ## CP5 · Publish
 - [x] Repo public: https://github.com/Abraar237/indic-search-gap (pools, indexes and embeddings regenerate; raw logs, judged labels, analysis.json, audits and spend log shipped)
 - [x] Pages: https://abraar237.github.io/indic-search-gap/ (story-driven sections, both PDFs, film, 3 GIFs; built by figures/build_site.py from analysis.json)
-- [x] Film: 4:02, 1080p60, -14.3 LUFS, phrase-anchored to the narration (video/build_film.py, words.json); contact-sheet QA (60 frames) passed after two fixes (arrow glyph, overflowing end line). NARRATION VOICE: macOS `say` (Daniel) with faster-whisper word timings, because every ELEVENLABS_API_KEY on this machine returns 401; `video/tts.py` switches to Matilda automatically when a working key is placed in .env (re-run tts.py, build_film.py, encode.sh).
+- [x] Film: 4:09, 1080p60, -14.3 LUFS, phrase-anchored to the narration (video/build_film.py, words.json); contact-sheet QA (60 frames) passed after two fixes (arrow glyph, overflowing end line). NARRATION VOICE: macOS `say` (Daniel) with faster-whisper word timings, because every ELEVENLABS_API_KEY on this machine returns 401; `video/tts.py` switches to Matilda automatically when a working key is placed in .env (re-run tts.py, build_film.py, encode.sh).
 - [x] GIFs: whose-language, engine-not-query, reading-not-web (clean flat chart style, 840x840, + MP4)
 - **CP5 DONE 2026-10-10 23:15.**
 
@@ -123,4 +130,4 @@ OpenRouter calls so far are 14 one-line key checks ($0.00017). Verbatim from INS
 | 2026-10-10 | Closed-book, oracle, noise, none, native batteries | $0.63 | $10.70 |
 | 2026-10-10 | Judge (gemini-2.5-flash, ~22k disagreement calls) | $0.79 | $11.49 |
 | 2026-10-10 | Qwen3-30B-A3B on Modal (vLLM, A100-40GB, ~2.5 GPU-h) + bge-m3 embeddings (~0.5 GPU-h) | Modal credit | $11.49 |
-| 2026-10-10 | Post-review uncovered-items grid (in progress) | ~$2.5 | ~$14 |
+| 2026-10-10 | Post-review uncovered-items grid (5,558 episodes incl. closed-book) + judge | $1.55 | $13.04 |

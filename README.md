@@ -28,7 +28,7 @@ decomposition of the real-world gap.
 | recovered by dual-language queries (BM25) | **+9.3** | **+13.6** | – |
 | share of English queries, free policy | 30% | 18% | 31% / 45% |
 
-Percentage points with 95% item-bootstrap intervals; bold survives Benjamini-Hochberg over all 134 tests. Coverage: the Hindi Wikipedia article states the answer for 29.1% of the 539 XorQA questions, the Telugu one for 23.6%. Coverage-weighted, a Hindi user of Gemini 2.5 Flash-Lite expects 45.4 (BM25) or 66.7 (dense) against 71.4 / 75.8 for an English user; telling the BM25 agent to search in English lifts the Hindi user to 62.9.
+Percentage points with 95% item-bootstrap intervals; bold survives Benjamini-Hochberg over all 134 tests. Coverage: the Hindi Wikipedia article states the answer for 29.1% of the 539 XorQA questions, the Telugu one for 23.6%. Coverage-weighted, a Hindi user of Gemini 2.5 Flash-Lite expects 45.4 (BM25) or 66.7 (dense) against 71.4 / 75.8 for an English user; telling the BM25 agent to search in English lifts the Hindi user to 62.9. Measured directly on the 382 uncovered Hindi questions (added after the self-review), the cross-lingual figures are 51.4 against 60.5: the uncovered facts are harder for both users, the gap is unchanged, and Hindi articles that lack the fact distract (serving the Hindi pool costs 5.8 points, survives).
 
 1. **Agents search in a mix of languages and do not adapt** when a pool returns no Indic text.
 2. **With a cross-lingual retriever, the query language is not the cause**: forcing it recovers at most a few points and the served pool makes no difference; what remains is the model's reading (4–6 points with the passage given).

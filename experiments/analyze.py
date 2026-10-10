@@ -49,14 +49,14 @@ def load():
                 continue
             s = r.get("searches") or []
             it = ITEMS.get(r["item"], {})
-            if r.get("grid") != "native_te" and not it.get("factorial"):
+            if r.get("grid") not in ("native_te", "uncovered") and not it.get("factorial"):
                 continue  # only items whose evidence exists in both languages enter the controlled analysis
             rows.append({
                 "retriever": r.get("retriever") or "dense", "abstain": int(j.get("abstain", 0)),
                 "key": r["key"], "model": r["model"], "item": r["item"], "lang": r["lang"], "source": r["source"],
                 "qlang": "L" if r["qlang"] != "en" else "en", "policy": r["policy"], "pool": r["pool"],
                 "E": ("closed" if r["policy"] == "closed" else pool_to_E(r["pool"], r["lang"])), "rep": r.get("rep", 0), "grid": r.get("grid"),
-                "native": int(r.get("grid") == "native_te"),
+                "native": int(r.get("grid") == "native_te"), "uncovered": int(r.get("grid") == "uncovered"),
                 "correct": int(j["correct"]), "how": j["how"], "n_searches": len(s),
                 "latin_q": sum(1 for x in s if x["script"] in LATIN), "mixed_q": sum(1 for x in s if x["script"] == "Mixed"),
                 "any_gold": int(any(x["gold_hit"] for x in s)) if s else 0,
@@ -147,8 +147,41 @@ def cell_map(df, qlang, policy, E, retriever="dense"):
 
 def analyse_model(df, model):
     d_all = df[df.model == model]
-    d = d_all[d_all.native == 0]
+    d = d_all[(d_all.native == 0) & (d_all.uncovered == 0)]
     out = {"n_records": int(len(d_all)), "spend_usd": float(d_all.cost.sum())}
+    tests = {}
+    unc = d_all[d_all.uncovered == 1]
+    if len(unc):
+        out["uncovered"] = {}
+        for lang in sorted(unc.lang.unique()):
+            u = unc[(unc.lang == lang) & (unc.rep == 0)]
+            cells = {}
+            for (q, p, E), g in u.groupby(["qlang", "policy", "E"]):
+                m, lo, hi = boot_mean(g.correct.values)
+                cells[f"{q}|{p}|{E}"] = {"n": int(len(g)), "acc": m, "ci": [lo, hi], "latin_share": float(g.latin_q.sum() / max(1, g.n_searches.sum())), "any_gold": float(g.any_gold.mean()), "abstain": float(g.abstain.mean())}
+            cm = lambda q, p, E: dict(zip(u[(u.qlang == q) & (u.policy == p) & (u.E == E)].item, u[(u.qlang == q) & (u.policy == p) & (u.E == E)].correct))
+            con = {"total_gap_free_both": paired(cm("en", "free", "both"), cm("L", "free", "both")),
+                   "total_gap_free_en": paired(cm("en", "free", "en"), cm("L", "free", "en")),
+                   "QG_recover_dual": paired(cm("L", "dual", "both"), cm("L", "free", "both")),
+                   "EG_both_minus_ENonly": paired(cm("L", "free", "both"), cm("L", "free", "en")),
+                   "closed_gap": paired(cm("en", "closed", "closed"), cm("L", "closed", "closed"))}
+            # measured real-user accuracy: covered items (factorial, both pools) weighted by Cov, uncovered items (English-only pool) by 1-Cov
+            cov = coverage(lang)["cov_verified"]
+            covered = d[(d.lang == lang) & (d.source == "xorqa_in") & (d.rep == 0) & (d.retriever == "dense")]
+            meas = {}
+            for p_ in ("free", "dual"):
+                a_cov = covered[(covered.qlang == "L") & (covered.policy == p_) & (covered.E == "both")].correct.mean()
+                a_unc = u[(u.qlang == "L") & (u.policy == p_) & (u.E == "both" if p_ == "dual" else "en")].correct.mean() if p_ == "dual" else u[(u.qlang == "L") & (u.policy == "free") & (u.E == "en")].correct.mean()
+                pooled_n = int(((covered.qlang == "L") & (covered.policy == p_) & (covered.E == "both")).sum() + ((u.qlang == "L") & (u.policy == p_)).sum())
+                meas[p_] = {"acc_covered_both": float(a_cov), "acc_uncovered_en": float(a_unc), "measured_wild": float(cov * a_cov + (1 - cov) * a_unc),
+                            "extrapolated_wild": float(cov * a_cov + (1 - cov) * covered[(covered.qlang == "L") & (covered.policy == p_) & (covered.E == "en")].correct.mean())}
+            en_ref_cov = covered[(covered.qlang == "en") & (covered.policy == "free") & (covered.E == "en")].correct.mean()
+            en_ref_unc = u[(u.qlang == "en") & (u.policy == "free") & (u.E == "en")].correct.mean()
+            meas["english_user_measured"] = float(cov * en_ref_cov + (1 - cov) * en_ref_unc)
+            # whole-population plain accuracy (all 539 XorQA items, Indic question, English-only pool = what the live Hindi Wikipedia lacks is unavailable anyway)
+            out["uncovered"][lang] = {"cells": cells, "contrasts": con, "measured_decomposition": meas, "n_items": int(u.item.nunique())}
+            for k, v in con.items():
+                tests[f"{lang}:uncovered:{k}"] = v.get("p")
     nat = d_all[d_all.native == 1]
     if len(nat):
         out["native_te"] = {}
@@ -166,7 +199,6 @@ def analyse_model(df, model):
                 m, lo, hi = boot_mean(g.correct.values)
                 out["native_te_vs_translated"][k] = {"translated_acc": m, "translated_ci": [lo, hi], "translated_n": int(len(g)),
                                                      "translated_latin_share": float(g.latin_q.sum() / max(1, g.n_searches.sum()))}
-    tests = {}
     for lang in sorted(d.lang.unique()):
         dl = d[(d.lang == lang)]
         L = {}

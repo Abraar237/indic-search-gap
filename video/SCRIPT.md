@@ -20,7 +20,7 @@ p7. Swap the retriever for classic keyword search, and everything changes. The s
 
 p8. Third, coverage. We checked, for five hundred and thirty-nine questions per language, whether the Hindi or Telugu Wikipedia article actually states the answer. Hindi: twenty-nine percent. Telugu: twenty-four percent. Most of the evidence an Indian user needs exists only in English.
 
-p9. Put that into the decomposition. With keyword search, a real Hindi user gets forty-five percent against seventy-one for an English user, and most of that loss is the seventy-one percent of facts that only English holds. Telling the agent to search in English lifts the Hindi user to sixty-three. With cross-lingual search, the pool language costs nothing; the Hindi user gets sixty-seven against seventy-six.
+p9. Put that into the decomposition. With keyword search, a real Hindi user gets forty-five percent against seventy-one for an English user, and most of that loss is the seventy-one percent of facts that only English holds. Telling the agent to search in English lifts the Hindi user to sixty-three. With cross-lingual search, the pool language costs nothing. Then we measured the uncovered questions directly, and they are harder for everyone: the Hindi user gets 51 against 60 for the English user. The same nine-point gap.
 
 p10. So what is the remaining nine points? Reading. Give the model the correct English passage directly: the English question is answered eighty-seven percent of the time, the Hindi question eighty-one. Six points, with nothing left to retrieve. And given a Hindi passage, the Hindi question does worse still, seventy-three. The cheap model reads English better than Hindi.
 

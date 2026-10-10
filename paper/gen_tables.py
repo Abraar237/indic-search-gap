@@ -95,13 +95,16 @@ def decomp_table():
             ref = L["cells"].get("en|free|en", {}).get("acc", float("nan"))
             g = lambda p: f"{100 * d[p]['acc_wild']:.1f}" if p in d else "--"
             lines.append(f"{LABEL[m]} & {LN[lang]} & {100 * cov:.1f}\\% & {g('free')} & {g('dual')} & {g('english')} & {100 * ref:.1f} \\\\")
+            mu = A["models"][m].get("uncovered", {}).get(lang, {}).get("measured_decomposition")
+            if mu:
+                lines.append(f"\\quad measured on the uncovered items & {LN[lang]} & {100 * cov:.1f}\\% & {100 * mu['free']['measured_wild']:.1f} & {100 * mu['dual']['measured_wild']:.1f} & -- & {100 * mu['english_user_measured']:.1f} \\\\")
             db = L.get("decomposition_wild_bm25", {})
             if db:
                 refb = L["cells"].get("en|free|en|bm25", {}).get("acc", float("nan"))
                 gb = lambda p: f"{100 * db[p]['acc_wild']:.1f}" if p in db else "--"
                 lines.append(f"\\quad under BM25 & {LN[lang]} & {100 * cov:.1f}\\% & {gb('free')} & {gb('dual')} & {gb('english')} & {100 * refb:.1f} \\\\")
     lines += ["\\bottomrule", "\\end{tabular}}",
-              "\\caption{Expected accuracy for a real user, Eq.~\\ref{eq:decomp}: Cov$_L$ is the share of the 539 XorQA questions whose Hindi or Telugu Wikipedia article verifiably states the answer; the Indic user's accuracy weights the both-pools cell by Cov$_L$ and the English-only cell by $1-$Cov$_L$; the English user is the English question on the English-only pool.}",
+              "\\caption{Expected accuracy for a real user, Eq.~\\ref{eq:decomp}: Cov$_L$ is the share of the 539 XorQA questions whose Hindi or Telugu Wikipedia article verifiably states the answer; the Indic user's accuracy weights the both-pools cell by Cov$_L$ and the English-only cell by $1-$Cov$_L$; the English user is the English question on the English-only pool. `Measured' rows replace the extrapolated uncovered term by the direct run on the uncovered items (Section~\\ref{sec:results-decomp}).}",
               "\\label{tab:decomp}", "\\end{table}"]
     (OUT / "tables_decomp.tex").write_text("\n".join(lines))
 

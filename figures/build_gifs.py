@@ -118,7 +118,7 @@ def gif2():
             hbar(d, x, 475 + r * 60, w, 40, vd * td, SLATE if r else INK, lab, f"{100 * vd:.0f}", td)
         d.text((W // 2, 740), "with lexical search the Hindi user loses 26 points and English queries win 18 back;", font=f_note, fill=MUTED, anchor="mm")
         d.text((W // 2, 760), "with cross-lingual search the query language stops mattering", font=f_note, fill=MUTED, anchor="mm")
-        footer(d, "Gemini 2.5 Flash-Lite · coverage-weighted over 539 questions · Hindi")
+        footer(d, "Gemini 2.5 Flash-Lite · coverage-weighted extrapolation from the covered items · Hindi")
         replay(d, t); frames.append(im)
     save(frames, "engine-not-query")
 

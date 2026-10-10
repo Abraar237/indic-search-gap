@@ -257,12 +257,12 @@ def s9(d, t):  # decomposition
     rows = [("keyword search · English user", cell("hi", "en|free|en|bm25"), INK, at("p9", "seventy-one")),
             ("keyword search · Hindi user", db["free"]["acc_wild"], SHELF, at("p9", "forty-five percent")),
             ("keyword search · Hindi user, English queries", db["english"]["acc_wild"], GOOD, at("p9", "sixty-three")),
-            ("cross-lingual search · English user", cell("hi", "en|free|en"), INK, at("p9", "seventy-six")),
-            ("cross-lingual search · Hindi user", dd["free"]["acc_wild"], SLATE, at("p9", "sixty-seven"))]
+            ("cross-lingual search, measured · English user", FL["uncovered"]["hi"]["measured_decomposition"]["english_user_measured"], INK, at("p9", "for the English user")),
+            ("cross-lingual search, measured · Hindi user", FL["uncovered"]["hi"]["measured_decomposition"]["free"]["measured_wild"], SLATE, at("p9", "the Hindi user gets"))]
     bars(d, t, rows, y0=300, step=125, w=1000)
-    g = seg(t, at("p9", "most of that loss"), at("p9", "most of that loss") + 0.8)
+    g = seg(t, at("p9", "harder for everyone"), at("p9", "harder for everyone") + 0.8)
     if g > 0:
-        d.text((W // 2, 940), "71% of the facts exist only in English; a keyword engine cannot reach them from Hindi", font=f_lab, fill=mix(BG, SHELF, g), anchor="mm")
+        d.text((W // 2, 940), "the facts the Hindi Wikipedia lacks are harder for everyone; the gap stays nine points", font=f_lab, fill=mix(BG, SHELF, g), anchor="mm")
 
 
 def s10(d, t):  # reading

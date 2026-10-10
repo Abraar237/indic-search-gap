@@ -5,8 +5,10 @@
 Model & Language & Cov$_L$ & Indic user, free & Indic user, dual & Indic user, english & English user \\
 \midrule
 Gemini 2.5 Flash-Lite & Hindi & 29.1\% & 66.7 & 67.9 & 70.7 & 75.8 \\
+\quad measured on the uncovered items & Hindi & 29.1\% & 51.4 & 50.4 & -- & 60.5 \\
 \quad under BM25 & Hindi & 29.1\% & 45.4 & 58.4 & 62.9 & 71.4 \\
 Gemini 2.5 Flash-Lite & Telugu & 23.6\% & 76.0 & 72.9 & 76.6 & 78.7 \\
+\quad measured on the uncovered items & Telugu & 23.6\% & 56.8 & 52.7 & -- & 60.1 \\
 \quad under BM25 & Telugu & 23.6\% & 49.9 & 55.9 & 67.1 & 66.9 \\
 Gemini 3.1 Flash-Lite & Hindi & 29.1\% & 76.4 & 77.4 & 77.0 & 77.0 \\
 Gemini 3.1 Flash-Lite & Telugu & 23.6\% & 78.0 & 75.2 & 78.0 & 80.0 \\
@@ -18,6 +20,6 @@ Qwen3-30B-A3B & Telugu & 23.6\% & 70.6 & 74.0 & 71.5 & 74.0 \\
 \quad under BM25 & Telugu & 23.6\% & 56.6 & 64.8 & -- & 68.5 \\
 \bottomrule
 \end{tabular}}
-\caption{Expected accuracy for a real user, Eq.~\ref{eq:decomp}: Cov$_L$ is the share of the 539 XorQA questions whose Hindi or Telugu Wikipedia article verifiably states the answer; the Indic user's accuracy weights the both-pools cell by Cov$_L$ and the English-only cell by $1-$Cov$_L$; the English user is the English question on the English-only pool.}
+\caption{Expected accuracy for a real user, Eq.~\ref{eq:decomp}: Cov$_L$ is the share of the 539 XorQA questions whose Hindi or Telugu Wikipedia article verifiably states the answer; the Indic user's accuracy weights the both-pools cell by Cov$_L$ and the English-only cell by $1-$Cov$_L$; the English user is the English question on the English-only pool. `Measured' rows replace the extrapolated uncovered term by the direct run on the uncovered items (Section~\ref{sec:results-decomp}).}
 \label{tab:decomp}
 \end{table}

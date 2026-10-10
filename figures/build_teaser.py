@@ -31,8 +31,12 @@ for lang, name in (("hi", "Hindi"), ("te", "Telugu")):
     dec = R.get("decomposition_wild", {})
     cov = R.get("coverage", {}).get("cov_verified", float("nan"))
     ref = cell(lang, "en|free|en").get("acc", float("nan"))
+    mu = M.get("uncovered", {}).get(lang, {}).get("measured_decomposition")
     for p in ("free", "dual"):
-        if p in dec:
+        if mu and p in mu:
+            d = mu[p]
+            rows_c.append((name, p + " (measured)", cov * d["acc_covered_both"], (1 - cov) * d["acc_uncovered_en"], d["measured_wild"], mu["english_user_measured"], cov))
+        elif p in dec:
             d = dec[p]
             rows_c.append((name, p, d["term_covered"], d["term_uncovered"], d["acc_wild"], ref, cov))
 
@@ -78,7 +82,7 @@ The script of every query is logged under a <b>free</b> policy, then the policy 
 <div><div class="eyebrow">b · whose language does the agent search in?</div><h2>Share of queries written in English, free policy</h2>{bars_b()}
 <div class="legend">Indic question; the agent chose the query language itself. {A['models'][MODEL].get('hi', {}).get('coverage', {}).get('n', '')} items per language.</div></div>
 <div><div class="eyebrow">c · the real-world gap, decomposed</div><h2>Expected accuracy for a real Indic user</h2>{bars_c()}
-<div class="legend"><span class="sw" style="background:#155e8c"></span>facts the Indic Wikipedia has (Cov × Acc) &nbsp; <span class="sw" style="background:#c0641a"></span>facts only English has ((1−Cov) × Acc) &nbsp; <span class="sw" style="background:#16130d"></span>English user's accuracy.
+<div class="legend"><span class="sw" style="background:#155e8c"></span>facts the Indic Wikipedia has (Cov × Acc) &nbsp; <span class="sw" style="background:#c0641a"></span>facts only English has ((1−Cov) × Acc, measured on those items) &nbsp; <span class="sw" style="background:#16130d"></span>English user's accuracy on the same mix.
 Coverage measured on 539 questions per language: Hindi {pct(M.get('hi', {}).get('coverage', {}).get('cov_verified', 0))}%, Telugu {pct(M.get('te', {}).get('coverage', {}).get('cov_verified', 0))}%.</div></div>
 </div></body></html>"""
 (HERE / "fig1_teaser.html").write_text(html)
