@@ -1,0 +1,24 @@
+\appendix
+\section{Comparison with the closest prior work}
+\label{app:delineation}
+Table~\ref{tab:delineation} lists what each close neighbour established and what our design adds.
+\input{tables_delineation.tex}
+\section{All paired contrasts}
+\label{app:contrasts}
+Table~\ref{tab:fullcontrasts} lists every paired contrast for both languages and all four models.
+\input{tables_full.tex}
+\section{Additional figures}
+\begin{figure*}[h]\centering\includegraphics[width=0.8\textwidth]{assets/fig2_query_language.pdf}
+\caption{Share of search queries written in Latin script when the question is in Hindi (magenta) or Telugu (orange), free policy, by served pool (EN = English-only, IND = Indic-only). Dashed line: one half.}\label{fig:fig2}\end{figure*}
+\begin{figure*}[h]\centering\includegraphics[width=0.85\textwidth]{assets/fig4_decomposition.pdf}
+\caption{Expected accuracy of a real Indic user from Eq.~\ref{eq:decomp}: the slate part is coverage times accuracy with evidence in both languages; the orange part is the remaining share times accuracy on the English-only pool; black is the English user. Hatched bars use BM25.}\label{fig:fig4}\end{figure*}
+\begin{figure}[h]\centering\includegraphics[width=\columnwidth]{assets/fig5_retriever_oracle.pdf}
+\caption{Indic question, free policy, both pools: closed-book, BM25 search, dense search, gold passage in the prompt, and the English question with dense search, per model.}\label{fig:fig5}\end{figure}
+\input{appendix_prompts.tex}
+\input{app_text.tex}
+\section{Per-cell tables}
+\label{app:cells}
+\input{tables_cells.tex}
+\section{Cost}
+\label{app:cost}
+\input{tables_cost.tex}

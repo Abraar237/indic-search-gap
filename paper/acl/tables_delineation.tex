@@ -1,0 +1,19 @@
+\begin{table*}[h]
+\small
+\centering
+\begin{tabular}{p{3.6cm}p{9.6cm}}
+\toprule
+\textbf{Closest neighbour} & \textbf{What it established / what it does not cover} \\
+\midrule
+XBCP \citep{a2606_15345} & Deep-research agents on BrowseComp-Plus with the corpus translated into 12 languages; oracle decomposition into retrieval vs integration. Question always English; query language never logged or forced; no Indic language; translated rather than native evidence. \\
+MarathiWeb \citep{kale2026marathiweb} & Two web-search LLMs on native Marathi queries; failures attributed to integration by inspection. One language; evidence availability observed, not manipulated; no parallel English arm. \\
+MAST Indic track \citep{mast2026} & Nine Indic query languages over the English BrowseComp-Plus corpus. English-only corpus, so the evidence-side gap is zero by construction; a systems shared task. \\
+DELTA \citep{a2601_02956} & Names the gold-availability prior and regresses it out of single-shot RAG. No agent, no Indic, statistical rather than experimental control. \\
+Where's Waldo \citep{a2610_00606} & Query-language preference with fixed paired context when a fact exists in one edition only; Bengali worst. No retrieval, no agent, no search-query language. \\
+Diagnosing search failures \citep{a2608_01913} & Retrieval gap vs utilisation gap with oracle evidence. English only; the retrieval gap is not split into query formulation vs corpus coverage. \\
+Cross-Lingual Cost \citep{a2507_07543}; XRAG \citep{a2505_10089}; tRAG/CrossRAG \citep{a2504_03616}; CORAL \citep{a2604_25676} & Query-language vs document-language effects in RAG; one controlled Google ablation; an agent that picks the corpus language. Non-agentic or end-accuracy only; no Indic; no decomposition. \\
+\bottomrule
+\end{tabular}
+\caption{Novelty delineation. Comparison with the closest prior work.}
+\label{tab:delineation}
+\end{table*}

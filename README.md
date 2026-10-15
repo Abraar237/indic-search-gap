@@ -5,7 +5,7 @@
 Mohammed Abraar · Vizuara Research · 2026
 
 - **Website:** https://abraar237.github.io/indic-search-gap/
-- **Paper:** [`docs/paper_iclr_preprint.pdf`](docs/paper_iclr_preprint.pdf) (named preprint) · [`docs/paper_iclr_submission.pdf`](docs/paper_iclr_submission.pdf) (anonymous build)
+- **Paper (ACL format):** [`docs/paper_acl_preprint.pdf`](docs/paper_acl_preprint.pdf) (named preprint) · [`docs/paper_acl_submission.pdf`](docs/paper_acl_submission.pdf) (anonymous build). Sources in `paper/acl/`; the earlier ICLR-format sources are in `paper/iclr/`.
 
 When a user asks an LLM search agent a question in Hindi or Telugu, the answer is right less often
 than for the same question in English. Two causes produce that drop and need different fixes: the

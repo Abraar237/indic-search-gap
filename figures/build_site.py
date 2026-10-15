@@ -73,8 +73,8 @@ html = f"""<!DOCTYPE html>
 <div class="byline">Mohammed Abraar · Vizuara Research · abraar@vizz.vizuara.ai</div>
 <div class="pills">
   <a class="solid" href="#film">Film</a>
-  <a href="paper_iclr_preprint.pdf">Paper (PDF)</a>
-  <a href="paper_iclr_submission.pdf">Anonymous build</a>
+  <a href="paper_acl_preprint.pdf">Paper (PDF)</a>
+  <a href="paper_acl_submission.pdf">Anonymous build</a>
   <a href="{REPO}">Code + data</a>
 </div>
 
