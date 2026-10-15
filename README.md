@@ -41,7 +41,7 @@ Six directions were pre-registered; three held, two failed, one split (see `MILE
 
 ```bash
 pip install -r requirements.txt            # bm25s, datasets, sentence-transformers, torch, pandas, numpy, pymupdf
-cp .env.example .env                        # OPENROUTER_API_KEY; Modal token (optional open-weight arm); ELEVENLABS_API_KEY (film only)
+cp .env.example .env                        # OPENROUTER_API_KEY; Modal token (optional open-weight arm); GEMINI_API_KEY (film narration, Gemini expressive TTS; ELEVENLABS_API_KEY or macOS `say` as fallbacks)
 cd experiments
 python3 build_corpus.py pools hi te en      # downloads wikipedia-monthly 20261001 (hi, te, en parts 000-025) and chunks it
 python3 wikidata_sitelinks.py ../corpus/meta/xorqa_en_titles.json

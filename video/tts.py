@@ -1,15 +1,33 @@
 #!/usr/bin/env python3
-"""Narration for the film. ElevenLabs (Matilda, with-timestamps) when ELEVENLABS_API_KEY works; otherwise the
+"""Narration for the film. Gemini expressive TTS (gemini-2.5-pro-preview-tts, voice Sulafat, a per-cue emotion
+direction in EMOTION) when GEMINI_API_KEY works, with word timings from faster-whisper; else ElevenLabs (Matilda, with-timestamps) when ELEVENLABS_API_KEY works; otherwise the
 macOS `say` voice as a fallback with word timings from faster-whisper. Builds video/audio/narration.wav and
 video/words.json ({cues:[{id,text,start,dur,words:[{w,s,e}]}], total, voice}). Cue texts come from SCRIPT.md."""
 import base64, json, os, re, subprocess, sys, urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 AUDIO = os.path.join(HERE, "audio"); os.makedirs(AUDIO, exist_ok=True)
-KEY = None
+KEY = GKEY = None
 with open(os.path.join(HERE, "..", ".env")) as f:
     for line in f:
         if line.startswith("ELEVENLABS_API_KEY="):
             KEY = line.split("=", 1)[1].strip()
+        if line.startswith("GEMINI_API_KEY="):
+            GKEY = line.split("=", 1)[1].strip()
+GEMINI_TTS = "gemini-2.5-pro-preview-tts"
+GEMINI_VOICE = "Sulafat"
+EMOTION = {
+    "p1": "warm and curious, drawing the listener in, with genuine concern on the last two sentences",
+    "p2": "clear and engaged, like a teacher who loves this puzzle; a little grave on the evidence-side gap",
+    "p3": "enthusiastic and proud, like showing off a clever experiment you built",
+    "p4": "intrigued, with real surprise on the last sentence",
+    "p5": "serious and emphatic, landing the numbers firmly",
+    "p6": "playful surprise, slightly amused that the lever barely moves anything",
+    "p7": "dramatic and excited, revealing a twist; hit the numbers hard",
+    "p8": "sober and a little sad, letting the coverage numbers sink in",
+    "p9": "thoughtful, building tension, then a firm emphatic finish on the same nine-point gap",
+    "p10": "intrigued, like revealing the answer to a mystery",
+    "p11": "reflective and warm, confident and uplifting at the end",
+}
 VOICE = "XrExE9yKIg1WjnnlVkGX"  # Matilda
 SAY_VOICE = "Daniel"
 CUES = []
@@ -63,6 +81,32 @@ def tts_eleven(cue_id, text):
 _WHISPER = None
 
 
+def whisper_words(wav, text):
+    global _WHISPER
+    if _WHISPER is None:
+        from faster_whisper import WhisperModel
+        _WHISPER = WhisperModel("small.en", device="cpu", compute_type="int8")
+    segs, _ = _WHISPER.transcribe(wav, word_timestamps=True, language="en", beam_size=5, initial_prompt=text)
+    return [{"w": w.word.strip(), "s": float(w.start), "e": float(w.end)} for s in segs for w in s.words]
+
+
+def tts_gemini(cue_id, text):
+    wav = os.path.join(AUDIO, f"{cue_id}.wav"); pcm = os.path.join(AUDIO, f"{cue_id}.gemini.pcm")
+    if not os.path.exists(pcm):
+        prompt = f"Read the following aloud as a documentary narrator. Delivery: {EMOTION[cue_id]}.\n\n{text}"
+        body = {"contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {"responseModalities": ["AUDIO"],
+                                     "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GEMINI_VOICE}}}}}
+        req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_TTS}:generateContent?key={GKEY}",
+                                     data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
+        out = json.load(urllib.request.urlopen(req, timeout=300))
+        open(pcm, "wb").write(base64.b64decode(out["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]))
+    subprocess.run(["ffmpeg", "-y", "-v", "quiet", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", pcm,
+                    "-af", "silenceremove=start_periods=1:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse",
+                    "-ar", "48000", "-ac", "2", wav], check=True)
+    return wav, whisper_words(wav, text)
+
+
 def tts_say(cue_id, text):
     wav = os.path.join(AUDIO, f"{cue_id}.wav"); aiff = os.path.join(AUDIO, f"{cue_id}.aiff")
     if not os.path.exists(wav):
@@ -82,13 +126,16 @@ def dur_of(path):
 
 
 def main():
-    use_eleven = eleven_ok()
-    print("narration voice:", "ElevenLabs Matilda" if use_eleven else f"macOS say ({SAY_VOICE}) fallback with faster-whisper timings", flush=True)
-    db = {"cues": [], "voice": "elevenlabs-matilda" if use_eleven else f"macos-say-{SAY_VOICE}"}
+    use_gemini = bool(GKEY)
+    use_eleven = not use_gemini and eleven_ok()
+    tts = tts_gemini if use_gemini else tts_eleven if use_eleven else tts_say
+    voice = f"gemini-{GEMINI_TTS}-{GEMINI_VOICE}" if use_gemini else "elevenlabs-matilda" if use_eleven else f"macos-say-{SAY_VOICE}"
+    print("narration voice:", voice, flush=True)
+    db = {"cues": [], "voice": voice}
     clock = LEAD_IN
     parts = [("silence", LEAD_IN)]
     for cue_id, text in CUES:
-        wav, words = (tts_eleven if use_eleven else tts_say)(cue_id, text)
+        wav, words = tts(cue_id, text)
         d = dur_of(wav)
         db["cues"].append({"id": cue_id, "text": text, "start": clock, "dur": d, "words": words})
         parts.append(("file", wav)); parts.append(("silence", GAPS[cue_id]))
