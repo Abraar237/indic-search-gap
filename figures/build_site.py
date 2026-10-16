@@ -75,6 +75,8 @@ html = f"""<!DOCTYPE html>
   <a class="solid" href="#film">Film</a>
   <a href="paper_acl_preprint.pdf">Paper (PDF)</a>
   <a href="paper_acl_submission.pdf">Anonymous build</a>
+  <a href="paper_aaai_preprint.pdf">AAAI-27 workshop version</a>
+  <a href="supplementary_aaai.pdf">AAAI supplement</a>
   <a href="{REPO}">Code + data</a>
 </div>
 

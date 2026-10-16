@@ -1,0 +1,297 @@
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lllrrrrr}
+\toprule
+Question & Policy & Pool & n & Acc & 95\% CI & English queries & gold in top-5 \\
+\midrule
+Hindi & closed & (no tool) & 287 & 57.8 & [51.9, 63.4] & 0\% & 0\% \\
+Hindi & dual & Indic-only & 281 & 61.9 & [56.2, 67.6] & 50\% & 79\% \\
+Hindi & dual & Indic-only [bm25] & 280 & 34.3 & [28.6, 39.6] & 52\% & 20\% \\
+Hindi & dual & both & 280 & 67.9 & [62.5, 73.6] & 50\% & 87\% \\
+Hindi & dual & both [bm25] & 281 & 58.7 & [53.0, 64.4] & 51\% & 67\% \\
+Hindi & dual & English-only & 280 & 67.9 & [62.1, 73.2] & 50\% & 83\% \\
+Hindi & dual & English-only [bm25] & 280 & 58.2 & [52.5, 63.9] & 51\% & 61\% \\
+Hindi & english & Indic-only & 287 & 61.3 & [55.7, 66.9] & 100\% & 68\% \\
+Hindi & english & Indic-only [bm25] & 285 & 32.3 & [27.0, 37.9] & 100\% & 8\% \\
+Hindi & english & both & 287 & 70.7 & [65.5, 76.0] & 100\% & 80\% \\
+Hindi & english & both [bm25] & 287 & 63.4 & [57.8, 69.0] & 100\% & 63\% \\
+Hindi & english & English-only & 287 & 70.7 & [65.5, 76.0] & 100\% & 80\% \\
+Hindi & english & English-only [bm25] & 287 & 62.7 & [57.1, 68.3] & 100\% & 59\% \\
+Hindi & free & Indic-only & 287 & 65.9 & [60.3, 71.4] & 32\% & 74\% \\
+Hindi & free & Indic-only [bm25] & 287 & 40.1 & [34.5, 45.6] & 38\% & 17\% \\
+Hindi & free & both & 287 & 66.2 & [60.6, 71.4] & 30\% & 79\% \\
+Hindi & free & both [bm25] & 286 & 50.3 & [44.7, 56.3] & 28\% & 40\% \\
+Hindi & free & English-only & 287 & 66.9 & [61.3, 72.5] & 33\% & 72\% \\
+Hindi & free & English-only [bm25] & 286 & 43.4 & [37.8, 49.3] & 35\% & 38\% \\
+Hindi & free & (gold hidden) & 49 & 55.1 & [40.8, 69.4] & 27\% & 0\% \\
+Hindi & match & Indic-only & 286 & 66.4 & [60.8, 71.7] & 1\% & 74\% \\
+Hindi & match & Indic-only [bm25] & 286 & 35.3 & [29.7, 40.9] & 1\% & 16\% \\
+Hindi & match & both & 287 & 66.9 & [61.7, 72.5] & 1\% & 78\% \\
+Hindi & match & both [bm25] & 287 & 43.6 & [38.0, 49.5] & 2\% & 23\% \\
+Hindi & match & English-only & 286 & 64.3 & [58.7, 69.9] & 1\% & 66\% \\
+Hindi & match & English-only [bm25] & 286 & 19.6 & [15.0, 24.5] & 2\% & 3\% \\
+Hindi & oracle L & (gold passage) & 287 & 72.8 & [67.6, 78.0] & 0\% & 0\% \\
+Hindi & oracle en & (gold passage) & 287 & 80.5 & [76.0, 85.0] & 0\% & 0\% \\
+English & closed & (no tool) & 287 & 61.0 & [55.4, 66.6] & 0\% & 0\% \\
+English & dual & Indic-only & 287 & 64.5 & [58.9, 70.0] & 97\% & 72\% \\
+English & dual & Indic-only [bm25] & 287 & 25.8 & [20.9, 31.0] & 97\% & 8\% \\
+English & free & Indic-only & 287 & 65.9 & [60.3, 71.1] & 100\% & 70\% \\
+English & free & Indic-only [bm25] & 286 & 32.2 & [26.6, 37.8] & 100\% & 8\% \\
+English & free & both & 286 & 75.9 & [71.0, 80.8] & 100\% & 83\% \\
+English & free & both [bm25] & 287 & 69.0 & [63.4, 74.2] & 100\% & 65\% \\
+English & free & English-only & 285 & 75.8 & [70.9, 80.7] & 100\% & 82\% \\
+English & free & English-only [bm25] & 287 & 71.4 & [66.2, 76.7] & 100\% & 65\% \\
+English & match & Indic-only & 287 & 64.8 & [59.2, 70.4] & 100\% & 70\% \\
+English & match & Indic-only [bm25] & 287 & 38.3 & [32.8, 43.9] & 100\% & 8\% \\
+English & match & both & 287 & 74.9 & [70.0, 79.8] & 100\% & 82\% \\
+English & match & both [bm25] & 287 & 71.4 & [66.2, 76.7] & 100\% & 65\% \\
+English & match & English-only & 287 & 76.3 & [71.4, 81.2] & 100\% & 82\% \\
+English & match & English-only [bm25] & 287 & 70.7 & [65.5, 76.0] & 100\% & 64\% \\
+English & oracle en & (gold passage) & 287 & 86.8 & [82.9, 90.6] & 0\% & 0\% \\
+\bottomrule
+\end{tabular}
+\caption{All cells, Gemini 2.5 Flash-Lite, Hindi items (n = items; `English queries' = share of search calls written in Latin script; `gold in top-5' = share of episodes in which a gold chunk was retrieved).}
+\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lllrrrrr}
+\toprule
+Question & Policy & Pool & n & Acc & 95\% CI & English queries & gold in top-5 \\
+\midrule
+Telugu & closed & (no tool) & 127 & 64.6 & [55.9, 72.4] & 0\% & 0\% \\
+Telugu & dual & Indic-only & 118 & 71.2 & [62.7, 78.8] & 50\% & 81\% \\
+Telugu & dual & Indic-only [bm25] & 118 & 44.9 & [35.6, 54.2] & 51\% & 13\% \\
+Telugu & dual & both & 119 & 74.8 & [66.4, 82.4] & 50\% & 89\% \\
+Telugu & dual & both [bm25] & 119 & 61.3 & [52.9, 69.7] & 50\% & 60\% \\
+Telugu & dual & English-only & 119 & 72.3 & [63.9, 79.8] & 50\% & 89\% \\
+Telugu & dual & English-only [bm25] & 118 & 54.2 & [44.9, 62.7] & 51\% & 55\% \\
+Telugu & english & Indic-only & 127 & 67.7 & [59.1, 75.6] & 100\% & 65\% \\
+Telugu & english & Indic-only [bm25] & 127 & 44.1 & [35.4, 52.8] & 100\% & 5\% \\
+Telugu & english & both & 127 & 74.8 & [66.9, 82.7] & 100\% & 87\% \\
+Telugu & english & both [bm25] & 127 & 67.7 & [59.8, 75.6] & 100\% & 62\% \\
+Telugu & english & English-only & 127 & 77.2 & [70.1, 84.3] & 100\% & 87\% \\
+Telugu & english & English-only [bm25] & 127 & 66.9 & [58.3, 74.8] & 100\% & 61\% \\
+Telugu & free & Indic-only & 127 & 71.7 & [63.8, 79.5] & 45\% & 72\% \\
+Telugu & free & Indic-only [bm25] & 127 & 43.3 & [34.6, 52.0] & 51\% & 11\% \\
+Telugu & free & both & 127 & 74.8 & [66.9, 81.9] & 44\% & 81\% \\
+Telugu & free & both [bm25] & 127 & 53.5 & [44.9, 62.2] & 43\% & 40\% \\
+Telugu & free & English-only & 127 & 76.4 & [68.5, 83.5] & 47\% & 86\% \\
+Telugu & free & English-only [bm25] & 127 & 48.8 & [40.2, 57.5] & 46\% & 43\% \\
+Telugu & free & (gold hidden) & 50 & 72.0 & [60.0, 84.0] & 40\% & 0\% \\
+Telugu & match & Indic-only & 127 & 66.9 & [58.3, 75.6] & 0\% & 74\% \\
+Telugu & match & Indic-only [bm25] & 127 & 37.8 & [29.1, 46.5] & 2\% & 11\% \\
+Telugu & match & both & 127 & 66.9 & [59.1, 74.8] & 0\% & 76\% \\
+Telugu & match & both [bm25] & 127 & 35.4 & [27.6, 44.1] & 2\% & 14\% \\
+Telugu & match & English-only & 127 & 74.8 & [66.9, 81.9] & 3\% & 80\% \\
+Telugu & match & English-only [bm25] & 127 & 15.0 & [9.4, 21.3] & 2\% & 4\% \\
+Telugu & oracle L & (gold passage) & 127 & 70.9 & [63.0, 78.7] & 0\% & 0\% \\
+Telugu & oracle en & (gold passage) & 127 & 78.7 & [71.7, 85.8] & 0\% & 0\% \\
+English & closed & (no tool) & 127 & 68.5 & [60.6, 76.4] & 0\% & 0\% \\
+English & dual & Indic-only & 127 & 64.6 & [55.9, 72.4] & 96\% & 66\% \\
+English & dual & Indic-only [bm25] & 127 & 32.3 & [24.4, 40.2] & 96\% & 9\% \\
+English & free & Indic-only & 127 & 70.1 & [62.2, 78.0] & 100\% & 65\% \\
+English & free & Indic-only [bm25] & 126 & 43.7 & [34.9, 52.4] & 100\% & 7\% \\
+English & free & both & 127 & 79.5 & [72.4, 86.6] & 100\% & 88\% \\
+English & free & both [bm25] & 127 & 64.6 & [55.9, 72.4] & 100\% & 58\% \\
+English & free & English-only & 127 & 78.7 & [71.7, 85.8] & 100\% & 88\% \\
+English & free & English-only [bm25] & 127 & 66.9 & [58.3, 74.8] & 100\% & 59\% \\
+English & match & Indic-only & 127 & 70.1 & [62.2, 78.0] & 100\% & 60\% \\
+English & match & Indic-only [bm25] & 126 & 46.0 & [37.3, 54.8] & 100\% & 6\% \\
+English & match & both & 127 & 80.3 & [73.2, 87.4] & 100\% & 87\% \\
+English & match & both [bm25] & 127 & 68.5 & [60.6, 76.4] & 100\% & 61\% \\
+English & match & English-only & 127 & 79.5 & [72.4, 86.6] & 100\% & 87\% \\
+English & match & English-only [bm25] & 126 & 69.0 & [61.1, 77.0] & 100\% & 60\% \\
+English & oracle en & (gold passage) & 127 & 85.0 & [78.7, 91.3] & 0\% & 0\% \\
+\bottomrule
+\end{tabular}
+\caption{All cells, Gemini 2.5 Flash-Lite, Telugu items (n = items; `English queries' = share of search calls written in Latin script; `gold in top-5' = share of episodes in which a gold chunk was retrieved).}
+\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lllrrrrr}
+\toprule
+Question & Policy & Pool & n & Acc & 95\% CI & English queries & gold in top-5 \\
+\midrule
+Hindi & closed & (no tool) & 100 & 67.0 & [58.0, 76.0] & 0\% & 0\% \\
+Hindi & dual & Indic-only & 100 & 73.0 & [64.0, 81.0] & 51\% & 86\% \\
+Hindi & dual & both & 100 & 76.0 & [67.0, 84.0] & 50\% & 90\% \\
+Hindi & dual & English-only & 100 & 78.0 & [70.0, 86.0] & 50\% & 90\% \\
+Hindi & english & Indic-only & 100 & 75.0 & [67.0, 83.0] & 100\% & 75\% \\
+Hindi & english & both & 100 & 77.0 & [69.0, 85.0] & 100\% & 86\% \\
+Hindi & english & English-only & 100 & 77.0 & [68.0, 85.0] & 100\% & 86\% \\
+Hindi & free & Indic-only & 99 & 70.7 & [61.6, 79.8] & 34\% & 79\% \\
+Hindi & free & both & 100 & 75.0 & [66.0, 83.0] & 31\% & 83\% \\
+Hindi & free & English-only & 100 & 77.0 & [68.0, 85.0] & 38\% & 83\% \\
+Hindi & match & Indic-only & 100 & 75.0 & [66.0, 83.0] & 5\% & 79\% \\
+Hindi & match & both & 99 & 75.8 & [66.7, 83.8] & 7\% & 82\% \\
+Hindi & match & English-only & 100 & 74.0 & [65.0, 82.0] & 11\% & 81\% \\
+Hindi & oracle L & (gold passage) & 100 & 84.0 & [76.0, 91.0] & 0\% & 0\% \\
+Hindi & oracle en & (gold passage) & 100 & 89.0 & [83.0, 95.0] & 0\% & 0\% \\
+English & closed & (no tool) & 100 & 70.0 & [61.0, 79.0] & 0\% & 0\% \\
+English & free & Indic-only & 100 & 78.0 & [69.0, 86.0] & 100\% & 76\% \\
+English & free & both & 100 & 78.0 & [70.0, 86.0] & 100\% & 86\% \\
+English & free & English-only & 100 & 77.0 & [68.0, 85.0] & 97\% & 84\% \\
+English & oracle en & (gold passage) & 100 & 87.0 & [80.0, 93.0] & 0\% & 0\% \\
+\bottomrule
+\end{tabular}
+\caption{All cells, Gemini 3.1 Flash-Lite, Hindi items (n = items; `English queries' = share of search calls written in Latin script; `gold in top-5' = share of episodes in which a gold chunk was retrieved).}
+\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lllrrrrr}
+\toprule
+Question & Policy & Pool & n & Acc & 95\% CI & English queries & gold in top-5 \\
+\midrule
+Telugu & closed & (no tool) & 100 & 80.0 & [72.0, 87.0] & 0\% & 0\% \\
+Telugu & dual & Indic-only & 100 & 76.0 & [67.0, 84.0] & 51\% & 78\% \\
+Telugu & dual & both & 100 & 76.0 & [67.0, 84.0] & 50\% & 92\% \\
+Telugu & dual & English-only & 100 & 75.0 & [66.0, 83.0] & 50\% & 90\% \\
+Telugu & english & Indic-only & 100 & 80.0 & [72.0, 87.0] & 100\% & 67\% \\
+Telugu & english & both & 100 & 78.0 & [69.0, 86.0] & 100\% & 87\% \\
+Telugu & english & English-only & 100 & 78.0 & [70.0, 86.0] & 100\% & 87\% \\
+Telugu & free & Indic-only & 100 & 79.0 & [71.0, 86.0] & 48\% & 76\% \\
+Telugu & free & both & 99 & 78.8 & [70.7, 86.9] & 45\% & 85\% \\
+Telugu & free & English-only & 99 & 77.8 & [69.7, 85.9] & 48\% & 84\% \\
+Telugu & match & Indic-only & 100 & 79.0 & [71.0, 87.0] & 4\% & 74\% \\
+Telugu & match & both & 100 & 77.0 & [69.0, 85.0] & 4\% & 76\% \\
+Telugu & match & English-only & 100 & 75.0 & [66.0, 83.0] & 6\% & 83\% \\
+Telugu & oracle L & (gold passage) & 100 & 86.0 & [79.0, 92.0] & 0\% & 0\% \\
+Telugu & oracle en & (gold passage) & 100 & 90.0 & [84.0, 95.0] & 0\% & 0\% \\
+English & closed & (no tool) & 100 & 79.0 & [71.0, 87.0] & 0\% & 0\% \\
+English & free & Indic-only & 100 & 79.0 & [71.0, 86.0] & 100\% & 68\% \\
+English & free & both & 100 & 80.0 & [72.0, 87.0] & 100\% & 91\% \\
+English & free & English-only & 100 & 80.0 & [72.0, 88.0] & 100\% & 91\% \\
+English & oracle en & (gold passage) & 100 & 89.0 & [83.0, 95.0] & 0\% & 0\% \\
+\bottomrule
+\end{tabular}
+\caption{All cells, Gemini 3.1 Flash-Lite, Telugu items (n = items; `English queries' = share of search calls written in Latin script; `gold in top-5' = share of episodes in which a gold chunk was retrieved).}
+\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lllrrrrr}
+\toprule
+Question & Policy & Pool & n & Acc & 95\% CI & English queries & gold in top-5 \\
+\midrule
+Hindi & closed & (no tool) & 50 & 70.0 & [58.0, 82.0] & 0\% & 0\% \\
+Hindi & dual & both & 50 & 74.0 & [62.0, 86.0] & 50\% & 88\% \\
+Hindi & dual & English-only & 50 & 76.0 & [64.0, 88.0] & 53\% & 94\% \\
+Hindi & english & both & 50 & 80.0 & [68.0, 90.0] & 98\% & 90\% \\
+Hindi & english & English-only & 50 & 78.0 & [66.0, 88.0] & 100\% & 90\% \\
+Hindi & free & both & 50 & 74.0 & [62.0, 86.0] & 45\% & 80\% \\
+Hindi & free & English-only & 50 & 74.0 & [62.0, 86.0] & 57\% & 84\% \\
+Hindi & oracle L & (gold passage) & 50 & 78.0 & [66.0, 88.0] & 0\% & 0\% \\
+Hindi & oracle en & (gold passage) & 50 & 88.0 & [78.0, 96.0] & 0\% & 0\% \\
+English & closed & (no tool) & 50 & 72.0 & [60.0, 84.0] & 0\% & 0\% \\
+English & free & both & 50 & 76.0 & [64.0, 88.0] & 100\% & 90\% \\
+English & free & English-only & 50 & 76.0 & [64.0, 88.0] & 100\% & 84\% \\
+English & oracle en & (gold passage) & 50 & 86.0 & [76.0, 94.0] & 0\% & 0\% \\
+\bottomrule
+\end{tabular}
+\caption{All cells, Gemini 3.6 Flash, Hindi items (n = items; `English queries' = share of search calls written in Latin script; `gold in top-5' = share of episodes in which a gold chunk was retrieved).}
+\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lllrrrrr}
+\toprule
+Question & Policy & Pool & n & Acc & 95\% CI & English queries & gold in top-5 \\
+\midrule
+Telugu & closed & (no tool) & 50 & 84.0 & [74.0, 94.0] & 0\% & 0\% \\
+Telugu & dual & both & 50 & 82.0 & [70.0, 92.0] & 50\% & 94\% \\
+Telugu & dual & English-only & 50 & 86.0 & [76.0, 94.0] & 51\% & 94\% \\
+Telugu & english & both & 50 & 82.0 & [70.0, 92.0] & 98\% & 94\% \\
+Telugu & english & English-only & 50 & 76.0 & [64.0, 88.0] & 100\% & 88\% \\
+Telugu & free & both & 50 & 84.0 & [74.0, 94.0] & 45\% & 80\% \\
+Telugu & free & English-only & 50 & 82.0 & [70.0, 92.0] & 44\% & 92\% \\
+Telugu & oracle L & (gold passage) & 50 & 86.0 & [76.0, 94.0] & 0\% & 0\% \\
+Telugu & oracle en & (gold passage) & 50 & 96.0 & [90.0, 100.0] & 0\% & 0\% \\
+English & closed & (no tool) & 50 & 84.0 & [74.0, 94.0] & 0\% & 0\% \\
+English & free & both & 50 & 78.0 & [66.0, 88.0] & 100\% & 84\% \\
+English & free & English-only & 50 & 78.0 & [66.0, 88.0] & 100\% & 88\% \\
+English & oracle en & (gold passage) & 50 & 94.0 & [86.0, 100.0] & 0\% & 0\% \\
+\bottomrule
+\end{tabular}
+\caption{All cells, Gemini 3.6 Flash, Telugu items (n = items; `English queries' = share of search calls written in Latin script; `gold in top-5' = share of episodes in which a gold chunk was retrieved).}
+\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lllrrrrr}
+\toprule
+Question & Policy & Pool & n & Acc & 95\% CI & English queries & gold in top-5 \\
+\midrule
+Hindi & closed & (no tool) & 287 & 39.4 & [33.8, 44.9] & 0\% & 0\% \\
+Hindi & dual & Indic-only & 287 & 65.2 & [59.6, 70.7] & 50\% & 79\% \\
+Hindi & dual & both & 287 & 70.0 & [64.5, 75.3] & 50\% & 87\% \\
+Hindi & dual & both [bm25] & 287 & 63.1 & [57.5, 68.6] & 50\% & 62\% \\
+Hindi & dual & English-only & 287 & 67.6 & [62.0, 72.8] & 50\% & 85\% \\
+Hindi & dual & English-only [bm25] & 287 & 58.5 & [53.0, 64.5] & 50\% & 57\% \\
+Hindi & english & Indic-only & 287 & 59.6 & [54.0, 65.2] & 100\% & 64\% \\
+Hindi & english & both & 287 & 64.1 & [58.5, 69.7] & 100\% & 79\% \\
+Hindi & english & English-only & 287 & 63.1 & [57.5, 68.6] & 100\% & 78\% \\
+Hindi & free & Indic-only & 287 & 64.1 & [58.5, 69.3] & 19\% & 65\% \\
+Hindi & free & both & 287 & 65.5 & [59.9, 71.1] & 18\% & 69\% \\
+Hindi & free & both [bm25] & 287 & 49.5 & [43.9, 55.4] & 19\% & 23\% \\
+Hindi & free & English-only & 287 & 59.9 & [54.4, 65.5] & 19\% & 59\% \\
+Hindi & free & English-only [bm25] & 287 & 40.8 & [35.2, 46.3] & 19\% & 11\% \\
+Hindi & match & Indic-only & 287 & 63.8 & [58.2, 69.3] & 1\% & 72\% \\
+Hindi & match & both & 287 & 65.9 & [60.3, 71.4] & 0\% & 74\% \\
+Hindi & match & both [bm25] & 287 & 43.2 & [37.6, 49.1] & 0\% & 15\% \\
+Hindi & match & English-only & 287 & 59.2 & [53.7, 64.8] & 0\% & 65\% \\
+Hindi & match & English-only [bm25] & 287 & 37.3 & [31.7, 42.9] & 0\% & 0\% \\
+Hindi & oracle L & (gold passage) & 287 & 81.9 & [77.4, 86.1] & 0\% & 0\% \\
+Hindi & oracle en & (gold passage) & 287 & 86.4 & [82.2, 90.2] & 0\% & 0\% \\
+English & closed & (no tool) & 287 & 52.3 & [46.3, 58.2] & 0\% & 0\% \\
+English & dual & Indic-only & 287 & 70.7 & [65.2, 76.0] & 100\% & 74\% \\
+English & free & Indic-only & 287 & 64.8 & [59.2, 70.4] & 100\% & 55\% \\
+English & free & both & 287 & 74.6 & [69.3, 79.4] & 100\% & 71\% \\
+English & free & both [bm25] & 287 & 69.0 & [63.4, 74.2] & 100\% & 53\% \\
+English & free & English-only & 287 & 74.6 & [69.7, 79.4] & 100\% & 71\% \\
+English & free & English-only [bm25] & 287 & 69.7 & [64.5, 74.9] & 100\% & 52\% \\
+English & match & Indic-only & 287 & 67.9 & [62.4, 73.2] & 100\% & 64\% \\
+English & match & both & 287 & 75.6 & [70.7, 80.5] & 100\% & 80\% \\
+English & match & English-only & 287 & 77.0 & [72.1, 81.9] & 100\% & 80\% \\
+English & oracle en & (gold passage) & 287 & 90.6 & [87.1, 93.7] & 0\% & 0\% \\
+\bottomrule
+\end{tabular}
+\caption{All cells, Qwen3-30B-A3B, Hindi items (n = items; `English queries' = share of search calls written in Latin script; `gold in top-5' = share of episodes in which a gold chunk was retrieved).}
+\end{table}
+
+\begin{table}[htbp]\centering\scriptsize
+\begin{tabular}{lllrrrrr}
+\toprule
+Question & Policy & Pool & n & Acc & 95\% CI & English queries & gold in top-5 \\
+\midrule
+Telugu & closed & (no tool) & 127 & 48.0 & [39.4, 56.7] & 0\% & 0\% \\
+Telugu & dual & Indic-only & 127 & 72.4 & [64.6, 80.3] & 50\% & 80\% \\
+Telugu & dual & both & 127 & 76.4 & [69.3, 83.5] & 50\% & 93\% \\
+Telugu & dual & both [bm25] & 127 & 63.0 & [54.3, 70.9] & 50\% & 62\% \\
+Telugu & dual & English-only & 127 & 73.2 & [65.4, 81.1] & 50\% & 94\% \\
+Telugu & dual & English-only [bm25] & 127 & 65.4 & [56.7, 73.2] & 50\% & 61\% \\
+Telugu & english & Indic-only & 127 & 66.1 & [58.3, 74.0] & 100\% & 61\% \\
+Telugu & english & both & 127 & 70.9 & [63.0, 78.7] & 100\% & 87\% \\
+Telugu & english & English-only & 127 & 71.7 & [63.8, 79.5] & 100\% & 87\% \\
+Telugu & free & Indic-only & 127 & 68.5 & [60.6, 76.4] & 43\% & 61\% \\
+Telugu & free & both & 127 & 72.4 & [64.6, 80.3] & 46\% & 70\% \\
+Telugu & free & both [bm25] & 127 & 53.5 & [44.9, 62.2] & 47\% & 28\% \\
+Telugu & free & English-only & 127 & 70.1 & [62.2, 78.0] & 49\% & 71\% \\
+Telugu & free & English-only [bm25] & 127 & 57.5 & [48.8, 66.1] & 46\% & 24\% \\
+Telugu & match & Indic-only & 127 & 73.2 & [65.4, 81.1] & 1\% & 74\% \\
+Telugu & match & both & 127 & 71.7 & [63.8, 79.5] & 2\% & 78\% \\
+Telugu & match & both [bm25] & 126 & 41.3 & [32.5, 50.0] & 1\% & 9\% \\
+Telugu & match & English-only & 127 & 69.3 & [61.4, 77.2] & 1\% & 77\% \\
+Telugu & match & English-only [bm25] & 127 & 37.8 & [29.1, 46.5] & 1\% & 1\% \\
+Telugu & oracle L & (gold passage) & 127 & 85.0 & [78.7, 91.3] & 0\% & 0\% \\
+Telugu & oracle en & (gold passage) & 127 & 85.8 & [79.5, 91.3] & 0\% & 0\% \\
+English & closed & (no tool) & 127 & 55.1 & [46.5, 63.8] & 0\% & 0\% \\
+English & dual & Indic-only & 127 & 71.7 & [63.8, 79.5] & 100\% & 71\% \\
+English & free & Indic-only & 127 & 66.1 & [57.5, 74.0] & 100\% & 47\% \\
+English & free & both & 127 & 74.8 & [67.7, 81.9] & 100\% & 69\% \\
+English & free & both [bm25] & 127 & 67.7 & [59.1, 75.6] & 100\% & 42\% \\
+English & free & English-only & 127 & 74.0 & [66.1, 81.1] & 100\% & 70\% \\
+English & free & English-only [bm25] & 127 & 68.5 & [60.6, 76.4] & 100\% & 43\% \\
+English & match & Indic-only & 127 & 69.3 & [61.4, 77.2] & 100\% & 57\% \\
+English & match & both & 127 & 76.4 & [68.5, 83.5] & 100\% & 79\% \\
+English & match & English-only & 127 & 76.4 & [69.3, 83.5] & 100\% & 83\% \\
+English & oracle en & (gold passage) & 127 & 92.1 & [87.4, 96.1] & 0\% & 0\% \\
+\bottomrule
+\end{tabular}
+\caption{All cells, Qwen3-30B-A3B, Telugu items (n = items; `English queries' = share of search calls written in Latin script; `gold in top-5' = share of episodes in which a gold chunk was retrieved).}
+\end{table}

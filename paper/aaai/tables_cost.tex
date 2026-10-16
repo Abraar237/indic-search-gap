@@ -1,0 +1,24 @@
+\begin{table}[h]\centering\small
+\begin{tabular}{lr}
+\toprule
+Stage & USD \\
+\midrule
+core & 9.21 \\
+uncovered & 1.35 \\
+judge & 1.00 \\
+coverage2 & 0.63 \\
+oracle & 0.22 \\
+native\_te & 0.22 \\
+coverage & 0.19 \\
+closed & 0.08 \\
+noise & 0.08 \\
+none & 0.03 \\
+pilot & 0.03 \\
+filter & 0.01 \\
+\midrule
+Total metered (100{,}808 calls) & 13.04 \\
+\bottomrule
+\end{tabular}
+\caption{Metered API spend (exact per-call \texttt{usage.cost}). The open-weight arm ran on a rented A100 (about 2.5 GPU-hours) and the bge-m3 embeddings took about 0.5 GPU-hour; both outside the metered total.}
+\label{tab:cost}
+\end{table}

@@ -1,0 +1,56 @@
+\begin{table}[t]\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}p{5.2cm}llll@{}}
+\toprule
+Contrast, Hindi (points) & Gemini 2.5 FL & Gemini 3.1 FL & Gemini 3.6 F & Qwen3-30B \\
+\midrule
+Total gap: English minus Indic question (free, both pools) & \textbf{+9.4 [+4.5, +14.3]$^{*}$} & +3.0 [-2.0, +8.0] & +2.0 [-4.0, +8.0] & \textbf{+9.1 [+3.8, +14.6]$^{*}$} \\
+Recovered by dual-language queries & +1.8 [-3.2, +6.8] & +1.0 [-4.0, +6.0] & +0.0 [-6.0, +6.0] & +4.5 [+0.7, +8.4]$^{*}$ \\
+Recovered by English-only queries & +4.5 [+0.0, +9.1] & +2.0 [-3.0, +7.0] & +6.0 [+0.0, +14.0] & -1.4 [-6.3, +3.5] \\
+Recovered by matched-language queries & +0.7 [-3.1, +4.9] & +1.0 [-3.0, +6.1] & -- & +0.3 [-2.8, +3.5] \\
+Evidence-side: both pools minus English-only pool & -0.7 [-5.6, +3.8] & -2.0 [-7.0, +3.0] & +0.0 [-6.0, +6.0] & +5.6 [+1.0, +10.5]$^{*}$ \\
+Evidence-side: both pools minus Indic-only pool & +0.3 [-3.5, +4.2] & +4.0 [-2.0, +10.1] & -- & +1.4 [-1.7, +4.9] \\
+English queries minus matched queries, English-only pool & +6.3 [+1.7, +11.2]$^{*}$ & +3.0 [-2.0, +8.0] & -- & +3.8 [-0.7, +8.7] \\
+English queries minus matched queries, Indic-only pool & -4.9 [-10.5, +0.3] & +0.0 [-5.0, +5.0] & -- & -4.2 [-8.4, +0.0] \\
+Symmetric monolingual: en/en minus L/L & \textbf{+10.1 [+4.5, +15.7]$^{*}$} & -- & -- & \textbf{+13.2 [+7.7, +19.2]$^{*}$} \\
+Integration gap: oracle passage, English minus Indic question & \textbf{+6.3 [+2.8, +9.8]$^{*}$} & -2.0 [-6.0, +2.0] & -2.0 [-10.0, +4.0] & +4.2 [+0.7, +7.7]$^{*}$ \\
+Closed-book gap & +3.1 [-1.0, +7.7] & +3.0 [-4.0, +10.0] & +2.0 [-4.0, +8.0] & \textbf{+12.9 [+7.3, +18.5]$^{*}$} \\
+Total gap under BM25 & \textbf{+18.9 [+12.9, +24.8]$^{*}$} & -- & -- & \textbf{+19.5 [+13.6, +25.8]$^{*}$} \\
+Symmetric monolingual under BM25 & \textbf{+35.3 [+29.0, +42.0]$^{*}$} & -- & -- & -- \\
+Recovered by dual queries under BM25 & \textbf{+9.3 [+3.9, +14.6]$^{*}$} & -- & -- & \textbf{+13.6 [+8.4, +18.8]$^{*}$} \\
+Indic question: BM25 minus dense (free, both) & \textbf{-15.7 [-21.3, -10.1]$^{*}$} & -- & -- & \textbf{-16.0 [-21.6, -10.5]$^{*}$} \\
+\midrule
+Policy $\times$ evidence interaction & \textbf{+11.2 [+4.2, +18.2]$^{*}$} & +3.0 [-4.0, +10.0] & -- & +8.0 [+2.1, +14.3]$^{*}$ \\
+\bottomrule
+\end{tabular}
+\caption{Hindi questions. Paired within-item contrasts (percentage points) with item-bootstrap 95\% intervals. $^{*}$: sign-flip permutation $p<0.05$. Bold: survives Benjamini--Hochberg over the full family of 144 tests (threshold $p \le 0.0076$). Positive total gap = the English question is answered more often. Dense retriever unless marked BM25.}
+\label{tab:fullcontrasts}
+\end{table}
+\begin{table}[t]\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}p{5.2cm}llll@{}}
+\toprule
+Contrast, Telugu (points) & Gemini 2.5 FL & Gemini 3.1 FL & Gemini 3.6 F & Qwen3-30B \\
+\midrule
+Total gap: English minus Indic question (free, both pools) & +4.7 [-1.6, +11.0] & +1.0 [-5.1, +7.1] & -6.0 [-14.0, +0.0] & +2.4 [-4.7, +9.4] \\
+Recovered by dual-language queries & -2.5 [-9.2, +4.2] & -3.0 [-10.1, +3.0] & -2.0 [-8.0, +4.0] & +3.9 [-0.8, +9.4] \\
+Recovered by English-only queries & +0.0 [-6.3, +6.3] & -1.0 [-6.1, +4.0] & -2.0 [-10.0, +6.0] & -1.6 [-7.1, +3.9] \\
+Recovered by matched-language queries & -7.9 [-14.2, -1.6]$^{*}$ & -2.0 [-6.1, +2.0] & -- & -0.8 [-6.3, +4.7] \\
+Evidence-side: both pools minus English-only pool & -1.6 [-7.9, +4.7] & +1.0 [-3.0, +5.1] & +2.0 [-6.0, +10.0] & +2.4 [-3.1, +7.9] \\
+Evidence-side: both pools minus Indic-only pool & +3.1 [-2.4, +8.7] & +0.0 [-6.1, +6.1] & -- & +3.9 [-2.4, +11.0] \\
+English queries minus matched queries, English-only pool & +2.4 [-3.1, +7.9] & +3.0 [-2.0, +8.0] & -- & +2.4 [-4.7, +8.7] \\
+English queries minus matched queries, Indic-only pool & +0.8 [-7.1, +8.7] & +1.0 [+0.0, +3.0] & -- & -7.1 [-14.2, +0.0] \\
+Symmetric monolingual: en/en minus L/L & +12.6 [+3.9, +21.3]$^{*}$ & -- & -- & +3.1 [-4.7, +11.0] \\
+Integration gap: oracle passage, English minus Indic question & +6.3 [+0.0, +12.6] & -1.0 [-5.0, +2.0] & -2.0 [-6.0, +0.0] & +6.3 [+1.6, +11.0]$^{*}$ \\
+Closed-book gap & +3.9 [-2.4, +11.0] & -1.0 [-7.0, +5.0] & +0.0 [-6.0, +6.0] & +7.1 [+0.0, +14.2] \\
+Total gap under BM25 & +11.0 [+2.4, +19.7]$^{*}$ & -- & -- & \textbf{+14.2 [+6.3, +22.0]$^{*}$} \\
+Symmetric monolingual under BM25 & \textbf{+31.0 [+20.6, +41.3]$^{*}$} & -- & -- & -- \\
+Recovered by dual queries under BM25 & +7.6 [-1.7, +16.8] & -- & -- & +9.4 [+2.4, +17.3]$^{*}$ \\
+Indic question: BM25 minus dense (free, both) & \textbf{-21.3 [-30.7, -12.6]$^{*}$} & -- & -- & \textbf{-18.9 [-28.3, -9.4]$^{*}$} \\
+\midrule
+Policy $\times$ evidence interaction & +1.6 [-7.9, +11.0] & +2.0 [-3.0, +8.0] & -- & +9.4 [+0.0, +18.9] \\
+\bottomrule
+\end{tabular}
+\caption{Telugu questions. Paired within-item contrasts (percentage points) with item-bootstrap 95\% intervals. $^{*}$: sign-flip permutation $p<0.05$. Bold: survives Benjamini--Hochberg over the full family of 144 tests (threshold $p \le 0.0076$). Positive total gap = the English question is answered more often. Dense retriever unless marked BM25.}
+\label{tab:fullcontrasts_te}
+\end{table}
