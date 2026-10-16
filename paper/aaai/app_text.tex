@@ -4,9 +4,3 @@ For each of the 539 XorQA-In test questions per language we resolved the English
 \section{Judge audit}
 \label{app:audit}
 Of the judged agent answers, the string rule decided 41\% (exact or contained match to a gold alias in either script after digit normalisation); the rest went to the LLM judge (gemini-2.5-flash, not in the grid), which returned CORRECT, WRONG or ABSTAIN. We drew 40 judged answers (20 per language: 10 string-correct, 5 LLM-correct, 5 LLM-wrong or abstain) and labelled them by hand against the question and gold aliases. All 40 verdicts agreed with the manual label. Cases worth noting: a Korean-script answer accepted for the romanised gold ``mumu''; ``labour movement'' accepted for ``trade union movement''; an answer naming one of three states in the gold marked WRONG, which we consider defensible; and seven abstentions (``the search results do not contain\ldots'') marked ABSTAIN and scored as wrong. The sample is shipped as \texttt{results/audit\_sample.json}.
-\section{Per-cell tables}
-\label{app:cells}
-\input{tables_cells.tex}
-\section{Cost}
-\label{app:cost}
-\input{tables_cost.tex}
